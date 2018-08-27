@@ -159,7 +159,10 @@
                 <div class="container">
                         <div class="row">
                                 <div class="col">
-                                        <form action="#" class="clearfix">
+                                        <form action="#" class="clearfix" id="form" method="post">
+                                            <input type="hidden" name="project_name" value="Rezervhome">
+                                            <input type="hidden" name="admin_email" value="kononov.danil90@gmail.com">
+                                            <input type="hidden" name="form_subject" value='Ура! Заявка с сайта! " Подмосковье"'>
                                                 <div class="form-left">
                                                         <div class="form__title">
                                                                 <h2 class="side-pg-h2">
@@ -169,9 +172,9 @@
                                                                 </h2>
                                                         </div>
                                                         <div class="form__inputs clearfix">
-                                                                <input type="text" placeholder="Ваше ИМЯ" class="form__input float-left">
-                                                                <input type="tel" placeholder="Номер телефона" class="form__input float-right">
-                                                                <textarea class="form__input form__textarea" placeholder="Например: Кв. 2 комн., 62 м2, монолитно-кирпичный
+                                                                <input type="text" name="Имя" placeholder="Ваше ИМЯ" class="form__input float-left" required>
+                                                                <input type="tel" name="Номер телефона" placeholder="Номер телефона" class="form__input float-right" required>
+                                                                <textarea class="form__input form__textarea" name="Информация" placeholder="Например: Кв. 2 комн., 62 м2, монолитно-кирпичный
 дом, Сергиев Посад" required></textarea>
                                                         </div>
                                                 </div>
@@ -257,6 +260,8 @@
                         </div>
                 </div>
         </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
