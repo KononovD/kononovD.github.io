@@ -7,19 +7,14 @@
 </head>
 
 <body>
-        <form class="form" method="POST">
-                <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="Site-Name">
-                <input type="hidden" name="admin_email" value="kononov.danil90@gmail.com">
-                <input type="hidden" name="form_subject" value="Form-Subject">
-                <!-- END Hidden Required Fields -->
-                <input type="text" name="Name" placeholder="You name..." required>
+        <form id="application" action=" application.php" method="POST" name=" application ">
+                <input name="name" type="text" id="applicationName" placeholder="Введите ваше имя" required>
                 <br>
-                <input type="text" name="E-mail" placeholder="You E-mail..." required>
+                <input name="email" type="text" id="applicationEmail" placeholder="Введите ваш E-mail" required>
                 <br>
-                <input type="text" name="Phone" placeholder="You phone...">
+                <input name="telephone" type="tel" id="applicationTelephone" placeholder="Введите ваш телефон" required>
                 <br>
-                <input type="submit">
+                <button class="applicationButton" type="submit" form="application">Получить прайс </button>
         </form>
         <script src="jquery-3.3.1.min.js"></script>
         <script src="script.js"></script>
