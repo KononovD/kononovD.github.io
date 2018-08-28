@@ -22,9 +22,9 @@ $msg .= "</body></html>";
  
 // отправка сообщения
 if(@mail($sendto, $subject, $msg, $headers)) {
-    echo "<center><img src='images/spasibo.png'></center>";
+    echo "<center>да</center>";
 } else {
-    echo "<center><img src='images/ne-tpravleno.png'></center>";
+    echo "<center>нет</center>";
 }
  
 ?>
