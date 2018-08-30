@@ -15,22 +15,72 @@
 </head>
 
 <body>
+        <button class="menu-toggle"></button>
+        <nav>
+                <ul class="menu">
+                        <li>
+                                <a class="text-white start-modal">
+                                        Заказать звонок
+                                </a>
+                        </li>
+                        <li>
+                                <a href="index.html">
+                                        Главная
+                                </a>
+                        </li>
+                        <li>
+                                <a href="contacts.html">
+                                        Контакты
+                                </a>
+                        </li>
+                        <li>
+                                <a href="private.html">
+                                        Выкуп домов и участков
+                                </a>
+                        </li>
+                        <li>
+                                <a class=" text-beige bg-light">
+                                        Выкуп квартир и комнат в Мск
+                                </a>
+                        </li>
+                        <li>
+                                <a href="Msk.html">
+                                        Выкуп квартир в Подмосковье
+                                </a>
+                        </li>
+                        <li>
+                                <a href="commercial.html">
+                                        Выкуп коммерческой недвижемости
+                                </a>
+                        </li>
+                        <li>
+                                <a href="garage.html">
+                                        Выкуп гаражей и парковок 
+                                </a>
+                        </li>
+                        <li>
+                                <a href="http://rezervauto.ru/">
+                                        Выкуп авто
+                                </a>
+                        </li>
+                </ul>
+        </nav>
         <header class="header">
                 <div class="container">
                         <div class="row">
                                 <div class="d-none d-lg-block col-lg-3">
                                         <div class="phones">
                                                 <span class="phone" id="topLink">
-                                                        8 (495) 749-46-26
+                                                        7 (495) 749-46-26
                                                 </span>
                                                 <span class="phone phone_color">
-                                                        8 (903) 549-46-26
+                                                        7 (903) 549-46-26
                                                 </span>
                                         </div>
                                 </div>
                                 <div class="col-5 col-sm-6 col-lg-5">
-                                        <div class="head_buttons side-pg-head_btns">
-                                                <a href="#" class="btn-main btn_border-color">
+                                        <div class="head_buttons side-pg-head_btns d-none d-md-block">
+                                                <a class="btn-main btn_border-color start-modal">
                                                         Заказать звонок
                                                 </a>
                                                 <a href="contacts.html" class="btn-main">
@@ -82,7 +132,7 @@
                                                 </div>
                                         </div>
                                         <div class="side-pg-claim clearfix">
-                                                <a href="#" class="btn-main btn_border-color">
+                                                <a class="btn-main btn_border-color start-modal text-white">
                                                         Online-заявка
                                                 </a>
                                                 <p class="side-pg-claim__banner">
@@ -158,10 +208,9 @@
                 <div class="container">
                         <div class="row">
                                 <div class="col">
-                                        <form class="clearfix formm" method="post">
+                                        <form class="clearfix formm" id="formm">
                                                 <input type="hidden" name="project_name" value="Rezervhome">
-                                                <input type="hidden" name="admin_email" value="kononov.danil90@gmail.com">
-                                                <!-- rezerv-auto@yandex.ru -->
+                                                <input type="hidden" name="admin_email" value="rezerv-auto@yandex.ru">
                                                 <input type="hidden" name="form_subject" value='Ура! Заявка с сайта! " Квартиры и комнаты"'>
                                                 <div class="form-left">
                                                         <div class="form__title">
@@ -225,15 +274,15 @@
                                 <div class="d-none d-lg-block col-lg-2">
                                         <div class="footer__phones">
                                                 <span class="footer__phone">
-                                                        8 (495) 749-46-26
+                                                        7 (495) 749-46-26
                                                 </span>
                                                 <span class="footer__phone phone_color">
-                                                        8 (903) 549-46-26
+                                                        7 (903) 549-46-26
                                                 </span>
                                         </div>
                                 </div>
                                 <div class="col-6 col-sm-4 col-lg-2">
-                                        <a href="#" class="btn-main btn_border-color btn-width">
+                                        <a href="#" class="btn-main btn_border-color btn-width start-modal text-white">
                                                 Заказать звонок
                                         </a>
                                 </div>
@@ -265,6 +314,25 @@
                         </div>
                 </div>
         </footer>
+        <div id="modal_form">
+                <span id="modal_close">X</span>
+                <span class="modal__title">
+                        Мы свяжемся быстро! 
+                </span>
+                <form class="clearfix formm modal__formm" id="formm">
+                        <input type="hidden" name="project_name" value="Rezervhome">
+                        <input type="hidden" name="admin_email" value="rezerv-auto@yandex.ru">
+                        <input type="hidden" name="form_subject" value='Ура! Заявка с сайта! " Квартиры и комнаты"'>
+                        <input type="text" placeholder="Ваше ИМЯ" class="form__input modal__input" required>
+                        <br>
+                        <input type="tel" placeholder="Номер телефона" class="form__input modal__input" required>
+                        <br>
+                        <textarea class="form__input form__textarea modal__input modal__textatea" placeholder="Информация о Вашем объекте    (не обязательно, но может ускорить обработку заявки)"></textarea>
+                        <br>
+                        <input type="submit" value="Отправить" class="form__submit modal__submit">
+                </form>
+        </div>
+        <div id="overlay"></div>
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/main.js"></script>
 </body>

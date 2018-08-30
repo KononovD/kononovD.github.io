@@ -1,19 +1,17 @@
 <?php
 
-
-
-
-
-
-
-
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 
 
 $method = $_SERVER['REQUEST_METHOD'];
 
 //Script Foreach
 $c = true;
+$message='';
 if ( $method === 'POST' ) {
+
 
 	$project_name = trim($_POST["project_name"]);
 	$admin_email  = trim($_POST["admin_email"]);
