@@ -10084,6 +10084,83 @@ h2 {
   padding-bottom: 30px;
 }
 
+.statistics {
+  padding-top: 54px;
+}
+
+.statistics__title p {
+  font-size: 16px;
+}
+
+.statistics__title p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 173px;
+  background: #ececec;
+  top: 11px;
+  right: 0px;
+}
+
+.table-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e04846;
+  text-transform: uppercase;
+  padding: 13px 18px;
+  background: #fff;
+  border-bottom: 4px solid #f3f3f3;
+  position: absolute;
+  z-index: 3;
+  top: 23px;
+}
+
+.statistics__table {
+  position: relative;
+  background: #f9f9f9;
+  border-top: 3px solid #f3f3f3;
+  padding: 67px 28px 14px 24px;
+  border-collapse: separate;
+  width: 100%;
+  z-index: 2;
+  margin-top: 50px;
+}
+
+.deposits-title {
+  left: 15px;
+  border-left: 4px solid #fff;
+}
+
+.deposits-table {
+  border-right: 3px solid #f3f3f3;
+}
+
+.withdraw-title {
+  right: 15px;
+  border-right: 4px solid #fff;
+}
+
+.withdraw-table {
+  border-left: 3px solid #f3f3f3;
+}
+
+.statistics__table td {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.username {
+  font-size: 18px;
+  color: #8a8a8a;
+}
+
+.usd {
+  font-size: 18px;
+  color: #8a8a8a;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
