@@ -9668,13 +9668,13 @@ h2 {
 }
 
 .exchange-rates-list {
-  width: 1043px;
+  width: 1057px;
   height: 133px;
   background: #fff;
   border-top-right-radius: 20px;
-  margin-left: -375px;
+  margin-left: -389px;
   margin-top: -61px;
-  padding-left: 367px;
+  padding-left: 381px;
   padding-top: 12px;
 }
 
@@ -9864,6 +9864,73 @@ h2 {
 
 .card__text {
   font-size: 16px;
+}
+
+.advantages {
+  padding-top: 75px;
+  position: relative;
+}
+
+.about__title-adv {
+  text-align: right;
+  margin-bottom: 59px;
+}
+
+.about__title-adv p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 173px;
+  background: #ececec;
+  top: 11px;
+  right: 135px;
+}
+
+.advantage__item {
+  padding: 38px 0 0 60px;
+}
+
+.advantage__item_yellow-guitar {
+  background: url(../img/images/guitar-yellow.png) no-repeat top left;
+}
+
+.advantage__item_peach-guitar {
+  background: url(../img/images/guitar-peach.png) no-repeat top left;
+}
+
+.advantage__item_red-guitar {
+  background: url(../img/images/guitar-red.png) no-repeat top left;
+}
+
+.advantage__item_purple-guitar {
+  background: url(../img/images/guitar-purple.png) no-repeat top left;
+  margin-top: 40px;
+}
+
+.advantage__item_lilac-guitar {
+  background: url(../img/images/guitar-lilac.png) no-repeat top left;
+  margin-top: 40px;
+}
+
+.advantage__item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 39px;
+  text-transform: uppercase;
+}
+
+.advantage__text {
+  font-size: 16px;
+  color: #8a8a8a;
+  line-height: 24px;
+}
+
+.guitar-player-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 /*==========  Desktop First  ==========*/
