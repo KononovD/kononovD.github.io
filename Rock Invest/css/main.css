@@ -9531,6 +9531,13 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
 .header {
   background: url(../img/bg/main_bg.jpeg) no-repeat center top;
 }
@@ -9727,6 +9734,7 @@ h1 {
   margin-left: 42px;
   padding-left: 34px;
   background: url(../img/icons/stopwatch-icon.png) no-repeat center left;
+  margin-top: -10px;
 }
 
 .time p {
@@ -9743,6 +9751,7 @@ h1 {
 
 .social {
   float: right;
+  margin-top: -10px;
 }
 
 .social__item-wrap {
@@ -9758,6 +9767,103 @@ h1 {
 
 .social__item:hover {
   color: #fff;
+}
+
+.about {
+  padding-top: 95px;
+  position: relative;
+}
+
+.about__title {
+  margin-bottom: 22px;
+}
+
+.about__title p {
+  font-size: 16px;
+}
+
+.about__title p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 173px;
+  background: #ececec;
+  top: 11px;
+  right: 0px;
+}
+
+.title-number {
+  font-size: 85px;
+  font-weight: bold;
+  color: #ececec;
+  line-height: 58px;
+}
+
+.about__btns {
+  float: right;
+}
+
+.about__btns a {
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+}
+
+.learn-more {
+  background: url(../img/images/cheat-btn.png) no-repeat center center;
+  padding: 13px 108px;
+  padding-left: 107px;
+}
+
+.register-btn {
+  background: url(../img/images/cheat-bg-btn.png) no-repeat center center;
+  padding: 12.5px 79px;
+  text-transform: uppercase;
+  margin-left: 26px;
+}
+
+.about__btns a:hover {
+  box-shadow: 0 0 10px 5px rgba(216, 148, 103, 0.8);
+}
+
+.about__card {
+  padding: 29px 30px 22px 31px;
+  color: #8a8a8a;
+}
+
+.about__card_one {
+  background: url(../img/bg/about-us-bg-1.jpeg) no-repeat center center;
+  position: relative;
+  padding-left: 360px;
+  margin-bottom: 20px;
+}
+
+.about-us-guitar {
+  position: absolute;
+  top: 11px;
+  left: -151px;
+}
+
+.about__card_two {
+  background: url(../img/bg/about-us-bg-2.jpeg) no-repeat center center;
+  padding-right: 340px;
+  text-align: right;
+}
+
+.card__title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card__text_bold {
+  font-weight: bold;
+  margin-bottom: 34px;
+}
+
+.card__text {
+  font-size: 16px;
 }
 
 /*==========  Desktop First  ==========*/
