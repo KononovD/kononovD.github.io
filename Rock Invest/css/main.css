@@ -9906,11 +9906,13 @@ h2 {
 .advantage__item_purple-guitar {
   background: url(../img/images/guitar-purple.png) no-repeat top left;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .advantage__item_lilac-guitar {
   background: url(../img/images/guitar-lilac.png) no-repeat top left;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .advantage__item-title {
@@ -9931,6 +9933,155 @@ h2 {
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.tariff {
+  background: url(../img/bg/tariff-bg.png) no-repeat center top;
+  padding-top: 125px;
+  margin-top: -63px;
+}
+
+.tariff__title {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 33px;
+}
+
+.tariff__title h2 {
+  color: #fff;
+}
+
+.tariff__guitar {
+  background: url(../img/images/guitar.png) no-repeat center top;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 63px;
+  padding-bottom: 179px;
+}
+
+.tariff__percent {
+  font-size: 63px;
+  font-weight: bold;
+  color: #e04846;
+  line-height: 49px;
+}
+
+.tariff__guitar-title {
+  font-size: 17px;
+}
+
+.tariff__text_light {
+  font-size: 12px;
+  color: #c0c0c0;
+  margin-top: 8px;
+}
+
+.tariff__text {
+  font-size: 12px;
+  font-weight: bold;
+  color: #929292;
+}
+
+.invest-btn {
+  background: url(../img/images/cheat-bg-btn-2.png) no-repeat center center;
+  padding: 7px 45px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+.calculator {
+  background: url(../img/bg/calc-bg.png) no-repeat center top;
+  padding-left: 167px;
+  margin-left: -167px;
+  margin-top: 21px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-right: 73px;
+}
+
+.calculator__title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-transform: none;
+  line-height: 31px;
+}
+
+.calculator input {
+  font-size: 16px;
+  border: 2px solid #fff;
+  margin-bottom: 49px;
+  background: none;
+  padding: 8px 10px;
+  color: #fff;
+}
+
+.calculator input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.calculator input::-moz-placeholder {
+  color: #fff;
+}
+
+.calculated {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.day {
+  float: left;
+  position: relative;
+}
+
+.day:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 120px;
+  border-bottom: 34px solid rgba(255, 255, 255, 0.11);
+  border-left: 0 solid transparent;
+  border-right: 34px solid transparent;
+  top: -6px;
+  left: -7px;
+}
+
+.day-number {
+  float: right;
+  font-size: 29px;
+  line-height: 22px;
+}
+
+.total-revenue {
+  float: left;
+  position: relative;
+}
+
+.total-revenue:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 169px;
+  border-bottom: 34px solid rgba(255, 255, 255, 0.11);
+  border-left: 0 solid transparent;
+  border-right: 34px solid transparent;
+  top: -6px;
+  left: -7px;
+}
+
+.revenue {
+  float: right;
+  font-size: 29px;
+  line-height: 22px;
+}
+
+.calculated__row-two {
+  margin-top: 76px;
+  padding-bottom: 30px;
 }
 
 /*==========  Desktop First  ==========*/
