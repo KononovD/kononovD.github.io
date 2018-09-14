@@ -9559,14 +9559,22 @@ h2 {
   margin-bottom: 20px;
 }
 
-.header__telegram-support {
+.telegram-support {
   float: left;
   font-size: 12px;
   color: #ae9375 !important;
   text-decoration: underline !important;
 }
 
-.header__telegram-support i {
+.telegram-support:hover {
+  color: #fff !important;
+}
+
+.telegram-support:hover i {
+  color: #fff;
+}
+
+.telegram-support i {
   display: inline-block;
   color: #1d9ccd;
   margin-left: 5px;
@@ -9588,6 +9596,10 @@ h2 {
   font-weight: bold;
   font-size: 16px;
   color: #ddc29f;
+}
+
+.authorization a:hover {
+  color: #fff;
 }
 
 .login {
@@ -9915,6 +9927,30 @@ h2 {
   margin-bottom: 80px;
 }
 
+.exchange-rates-list-decorations {
+  position: absolute;
+}
+
+.decorations img:first-child {
+  top: -46px;
+  left: 242px;
+}
+
+.decorations img:nth-child(2) {
+  top: 2px;
+  left: 623px;
+}
+
+.decorations img:nth-child(3) {
+  top: 53px;
+  left: 392px;
+}
+
+.decorations img:last-child {
+  top: 23px;
+  left: -46px;
+}
+
 .advantage__item-title {
   font-size: 18px;
   font-weight: bold;
@@ -9926,6 +9962,18 @@ h2 {
   font-size: 16px;
   color: #8a8a8a;
   line-height: 24px;
+}
+
+.advantage-arrow {
+  position: absolute;
+  top: -4px;
+  right: 9px;
+}
+
+.advantage-arrow-LR {
+  position: absolute;
+  top: 30px;
+  right: 9px;
 }
 
 .guitar-player-bg {
@@ -10086,6 +10134,10 @@ h2 {
 
 .statistics {
   padding-top: 54px;
+  background: url(../img/bg/statistic-bg.jpeg) no-repeat center bottom;
+  padding-bottom: 640px;
+  position: relative;
+  z-index: 2;
 }
 
 .statistics__title p {
@@ -10125,6 +10177,7 @@ h2 {
   width: 100%;
   z-index: 2;
   margin-top: 50px;
+  margin-bottom: 63px;
 }
 
 .deposits-title {
@@ -10151,6 +10204,10 @@ h2 {
   border-bottom: 1px solid #eaeaea;
 }
 
+.statistics__table tr:last-child td {
+  border-bottom: none;
+}
+
 .username {
   font-size: 18px;
   color: #8a8a8a;
@@ -10159,6 +10216,212 @@ h2 {
 .usd {
   font-size: 18px;
   color: #8a8a8a;
+}
+
+.statistics__card {
+  width: 100%;
+  padding: 13px 100px 15px 18px;
+  position: relative;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.statistic__counter {
+  font-size: 37px;
+  font-weight: bold;
+  color: #f46d52;
+}
+
+.statistic__banner {
+  font-size: 14px;
+  color: #515151;
+}
+
+.statistic__cart-icon {
+  position: absolute;
+  margin: -26px;
+  top: 50%;
+  right: 50px;
+}
+
+.statistics__card_TP {
+  background: url(../img/bg/total-participant-bg.jpeg) no-repeat left bottom;
+}
+
+.statistics__card_PW {
+  background: url(../img/bg/project-working-bg.jpeg) no-repeat left bottom;
+}
+
+.statistics__card_TD {
+  background: url(../img/bg/total-deposits-bg.jpeg) no-repeat left bottom;
+}
+
+.statistics__card_AP {
+  background: url(../img/bg/active-participant-bg.jpeg) no-repeat left bottom;
+}
+
+.statistics__card_VO {
+  background: url(../img/bg/visitors-online-bg.jpeg) no-repeat left bottom;
+}
+
+.statistics__card_TW {
+  background: url(../img/bg/total-withdraw-bg.jpeg) no-repeat left bottom;
+}
+
+.statistics__bg-2 {
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+  margin: -390px -960px;
+  z-index: 2;
+}
+
+.payment-systems {
+  position: relative;
+  z-index: 3;
+  margin-top: -124px;
+}
+
+.payment-systems_bg {
+  background: #e3e3e3;
+  margin-top: 0;
+}
+
+.payment-systems__list-1 {
+  padding-left: 102px;
+}
+
+.payment-systems__list-item {
+  float: left;
+  width: 190px;
+  height: 88px;
+}
+
+.payment-systems__list-1 .payment-systems__list-item:first-child {
+  background: url(../img/icons/Norton-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-1 .payment-systems__list-item:nth-child(2) {
+  background: url(../img/icons/sprite-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-1 .payment-systems__list-item:nth-child(3) {
+  background: url(../img/icons/siteLock-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-1 .payment-systems__list-item:nth-child(4) {
+  background: url(../img/icons/Comodo-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-1 .payment-systems__list-item:last-child {
+  background: url(../img/icons/cover-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-2 .payment-systems__list-item:first-child {
+  background: url(../img/icons/PMoney-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-2 .payment-systems__list-item:nth-child(2) {
+  background: url(../img/icons/payeer-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-2 .payment-systems__list-item:nth-child(3) {
+  background: url(../img/icons/ETH-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-2 .payment-systems__list-item:nth-child(4) {
+  background: url(../img/icons/dog-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-2 .payment-systems__list-item:nth-child(5) {
+  background: url(../img/icons/bitcoin-logo.png) no-repeat center center;
+}
+
+.payment-systems__list-2 .payment-systems__list-item:last-child {
+  background: url(../img/icons/LCoin-logo.png) no-repeat center center;
+}
+
+.footer {
+  position: relative;
+  z-index: 3;
+  background: url(../img/bg/footer-bg.png) no-repeat center center;
+  padding: 65px 0;
+}
+
+.footer__menu-list {
+  width: 100%;
+  border-left: 1px solid #b6866f;
+  border-right: 1px solid #c19475;
+  padding: 0 39px;
+}
+
+.footer__menu-list:first-child {
+  padding-bottom: 25px;
+}
+
+.footer__menu-list:last-child {
+  padding-top: 25px;
+}
+
+.footer__menu-item-wrap {
+  float: left;
+}
+
+.footer__menu-item-wrap:first-child {
+  margin-left: 0;
+}
+
+.footer__menu-item-wrap:last-child {
+  margin-right: 0;
+}
+
+.footer__menu-item {
+  font-size: 16px;
+  font-family: AmericanTextC;
+  color: #ddc29f;
+}
+
+.footer__menu-item:hover {
+  color: #fff;
+}
+
+.footer__menu-list:first-child .footer__menu-item-wrap:first-child {
+  margin-right: 100px;
+}
+
+.footer__menu-list:first-child .footer__menu-item-wrap:nth-child(2) {
+  margin-right: 81px;
+}
+
+.footer__menu-list:last-child .footer__menu-item-wrap:first-child {
+  margin-right: 69px;
+}
+
+.footer__menu-list:last-child .footer__menu-item-wrap:nth-child(2) {
+  margin-right: 66px;
+}
+
+.footer__menu-list:last-child .footer__menu-item-wrap:nth-child(3) {
+  margin-right: 70px;
+}
+
+.address__title,
+.mail__title {
+  font-size: 16px;
+  font-family: AmericanTextC;
+  color: #ddc29f;
+}
+
+.address__banner,
+.mail__banner {
+  font-size: 14px;
+  color: #ddc29f;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.footer .social__item {
+  font-size: 24px;
 }
 
 /*==========  Desktop First  ==========*/
