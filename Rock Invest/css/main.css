@@ -10558,6 +10558,25 @@ h2 {
   background-position: 0 26px;
 }
 
+.rules {
+  padding-top: 70px;
+}
+
+.rules__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.rule {
+  font-size: 16px;
+  color: #545454;
+  line-height: 1.5;
+}
+
+.rule_mg {
+  margin-bottom: 30px;
+}
+
 .navBurger {
   position: fixed;
   left: 20px;
