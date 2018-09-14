@@ -10426,6 +10426,138 @@ h2 {
   font-size: 24px;
 }
 
+.about-us {
+  padding-bottom: 30px;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.about__text {
+  font-size: 16px;
+  color: #8a8a8a;
+  margin-bottom: 25px;
+}
+
+.about__text-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.about-us .about__title {
+  text-align: center;
+}
+
+.about-us .about__title p:after {
+  content: none;
+}
+
+.about__text_bold {
+  font-weight: bold;
+  margin: 0;
+}
+
+.about__text_mb {
+  margin-bottom: 48px;
+}
+
+.about_img {
+  position: relative;
+}
+
+.about_img img:last-child {
+  position: absolute;
+  top: 30px;
+  left: 22px;
+}
+
+.about-us .register-btn {
+  color: #fff;
+  margin: 30px 0 0 0;
+  display: inline-block;
+  font-size: 23px;
+  padding: 9px 79px;
+}
+
+.about-us .register-btn:hover {
+  box-shadow: 0 0 10px 5px rgba(216, 148, 103, 0.8);
+}
+
+.interview {
+  position: relative;
+  background: url(../img/bg/check-bg.png) no-repeat center top;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.interview__left {
+  border: 20px solid #fff;
+  border-image: url(../img/bg/clip-border.png) 20;
+  padding: 240px 25px 30px 25px;
+}
+
+.interview__left .about__text_bold {
+  margin-bottom: 20px;
+}
+
+.interview__left img {
+  position: absolute;
+  top: -59px;
+  left: 93px;
+}
+
+.check-btn {
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+  font-size: 23px;
+  padding: 9px 94px;
+  background: url(../img/images/cheat-bg-btn.png) no-repeat center center;
+  text-transform: uppercase;
+}
+
+.check-btn:hover {
+  box-shadow: 0 0 10px 5px rgba(216, 148, 103, 0.8);
+  color: #fff;
+}
+
+.about__list-item {
+  padding: 25px 30px 25px 115px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.list-item__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #515151;
+}
+
+.list-item__text {
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.about__list-item:first-child {
+  background: url(../img/images/virus.png) no-repeat center left;
+}
+
+.about__list-item:nth-child(2) {
+  background: url(../img/images/scales.png) no-repeat center left;
+}
+
+.about__list-item:nth-child(3) {
+  background: url(../img/images/money.png) no-repeat center left;
+}
+
+.about__list-item:last-child {
+  background: url(../img/images/cloud.png) no-repeat center left;
+  border: none;
+}
+
+.about__list .about__list-item {
+  background-position: 0 26px;
+}
+
 .navBurger {
   position: fixed;
   left: 20px;
@@ -10692,6 +10824,24 @@ h2 {
   .footer .social__item {
     font-size: 22px;
   }
+  .about__text_mb {
+    margin-bottom: 20px;
+  }
+  .about_img img:last-child {
+    top: 61px;
+  }
+  .check-btn {
+    padding: 9px 64px;
+  }
+  .interview__left img {
+    left: 66px;
+  }
+  .interview {
+    padding-bottom: 24px;
+  }
+  .about__list {
+    margin-top: -25px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -10851,6 +11001,21 @@ h2 {
     font-size: 12px;
     margin-bottom: 0;
   }
+  .about-us {
+    text-align: center;
+  }
+  .about__list-item {
+    padding: 12px 0px 12px 115px;
+  }
+  .about__list .about__list-item {
+    background-position: -4px 47px;
+  }
+  .interview {
+    background-size: 100% 104%;
+  }
+  .about-us .register-btn {
+    margin: 30px 0 22px 0;
+  }
 }
 
 @media only screen and (max-width: 766px) {
@@ -10999,6 +11164,27 @@ h2 {
   .payment-systems__list-1 .payment-systems__list-item:nth-child(4) {
     margin-left: 91px;
   }
+  .about-us .register-btn {
+    float: none;
+  }
+  .about_img img:last-child {
+    left: -84px;
+  }
+  .interview__left {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .interview__left img {
+    left: 50%;
+    top: 50px;
+    margin: -102px -95px;
+  }
+  .about__list .about__list-item {
+    background-position: -4px 17px;
+  }
+  .interview {
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -11112,6 +11298,14 @@ h2 {
   }
   .payment-systems__list-2 .payment-systems__list-item:nth-child(3) {
     background-size: 100%;
+  }
+  .about__list .about__list-item {
+    background-position: -4px 60%;
+  }
+  .about_img img:last-child {
+    top: 183px;
+    left: 50%;
+    margin: -278px -349px;
   }
 }
 
