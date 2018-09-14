@@ -10583,7 +10583,7 @@ h2 {
   background: #111;
   height: 2px;
   width: 100%;
-  right: 0;
+  left: 0;
   will-change: rotate;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
