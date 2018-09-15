@@ -10577,6 +10577,209 @@ h2 {
   margin-bottom: 30px;
 }
 
+.log-reg {
+  background: url(../img/bg/reg-log-bg.jpeg) no-repeat center top;
+  padding-bottom: 40px;
+}
+
+.log-reg__title {
+  margin-bottom: 25px;
+}
+
+.log-reg__title h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 45px;
+}
+
+.log-reg .hat {
+  margin-bottom: 26px;
+}
+
+.sing-in__input-wrap {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.sing-in__input-wrap input {
+  width: 83%;
+  float: left;
+  padding: 17px 0 17px 14px;
+  background: rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.input__decor {
+  float: right;
+  width: 17%;
+  color: #fff;
+  text-align: center;
+  padding: 11.5px 0;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.45);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sing-in__input-wrap input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.56);
+  text-transform: uppercase;
+}
+
+.sing-in__input-wrap input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.56);
+  text-transform: uppercase;
+}
+
+.sing-in__pin-wrap input {
+  width: 48.5%;
+  border-radius: 5px;
+}
+
+.sing-in__pin-wrap input::-webkit-inner-spin-button,
+.sing-in__pin-wrap input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sing-in__pin-wrap input:first-child {
+  float: left;
+}
+
+.sing-in__pin-wrap input:last-child {
+  float: right;
+}
+
+.sing-in__captcha-wrap input {
+  width: 77%;
+}
+
+.captcha__decor {
+  width: 23%;
+  font-size: 16px;
+  padding: 17px 0;
+}
+
+.sponsor__decor {
+  width: 23%;
+  background: rgba(255, 255, 255, 0.2);
+  float: left;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.56);
+  padding: 17px 0;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.sing-in__sponsor-wrap input {
+  background: rgba(255, 255, 255, 0.45);
+  width: 77%;
+  float: right;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sing-in__check-wrap {
+  text-align: center;
+}
+
+.sing-in__check-wrap input {
+  display: none;
+}
+
+.sing-in__check-wrap label {
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.sing-in__check-wrap label:before {
+  content: "";
+  display: inline-block;
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: none;
+  margin-right: 10px;
+  margin-bottom: -5px;
+}
+
+.sing-in__check-wrap input:checked + label:after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #c19d69;
+  margin: -5px;
+  top: 11px;
+  left: 9px;
+}
+
+.sing-in .register-btn {
+  text-align: center;
+  font-size: 23px;
+  color: #fff;
+  border: none;
+  margin: 10px auto 0 auto;
+  display: block;
+  background-size: 100% 100%;
+}
+
+.sing-in .register-btn:hover {
+  box-shadow: 0 0 10px 5px rgba(216, 148, 103, 0.8);
+}
+
+.sing-in .register-btn:active {
+  box-shadow: inset 0 0 10px 5px #8f5630;
+  color: #5d3939;
+}
+
+.log-reg .time,
+.log-reg .social {
+  margin-top: 515px;
+}
+
+.log-reg__title p {
+  font-size: 29px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.restore-btn {
+  background: url(../img/images/cheat-bg-btn.png) no-repeat center center;
+  padding: 12.5px 79px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 23px;
+  color: #fff;
+  border: none;
+  margin: 10px auto 0 auto;
+  display: block;
+  background-size: 100% 100%;
+}
+
+.restore-btn:hover {
+  box-shadow: 0 0 10px 5px rgba(216, 148, 103, 0.8);
+}
+
+.restore-btn:active {
+  box-shadow: inset 0 0 10px 5px #8f5630;
+  color: #5d3939;
+}
+
 .navBurger {
   position: fixed;
   left: 20px;
@@ -11035,6 +11238,22 @@ h2 {
   .about-us .register-btn {
     margin: 30px 0 22px 0;
   }
+  .log-reg .time,
+  .log-reg .social {
+    margin-left: 0;
+  }
+  .log-reg .time {
+    float: left;
+  }
+  .log-reg .social__list {
+    float: right;
+  }
+  .log-reg .social {
+    float: right;
+  }
+  .log-reg .social__item-wrap:last-child {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 766px) {
@@ -11204,6 +11423,24 @@ h2 {
   .interview {
     overflow: hidden;
   }
+  .sing-in .register-btn {
+    float: none;
+  }
+  .captcha__decor {
+    color: #787878;
+    font-weight: bold;
+  }
+  .log-reg .time,
+  .log-reg .social {
+    margin-top: 44px;
+  }
+  .login .time,
+  .login .social {
+    margin-top: 169px;
+  }
+  .login .social__item {
+    color: #fff;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -11237,6 +11474,15 @@ h2 {
   .calculator {
     background: #bc845c url(../img/bg/calc-bg.png) no-repeat center center;
     background-size: 100% 100%;
+  }
+  .log-reg {
+    background-position: -141px -54px;
+  }
+  .captcha__decor {
+    color: #fff;
+  }
+  .login .social__item {
+    color: #ddc29f;
   }
 }
 
@@ -11326,6 +11572,13 @@ h2 {
     left: 50%;
     margin: -278px -349px;
   }
+  .log-reg .telegram-support {
+    display: none;
+  }
+  .log-reg .social__item-wrap {
+    margin-right: 18px;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 399px) {
@@ -11338,6 +11591,21 @@ h2 {
   }
   .learn-more {
     padding: 16px 67px;
+  }
+  .sing-in .register-btn {
+    font-size: 23px !important;
+  }
+  .input__decor {
+    font-size: 22px;
+  }
+  .sponsor__decor {
+    font-size: 14px;
+  }
+  .sing-in__input-wrap input {
+    font-size: 14px;
+  }
+  .captcha__decor {
+    font-size: 14px;
   }
 }
 
