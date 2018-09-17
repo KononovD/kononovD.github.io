@@ -9538,6 +9538,12 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d2d2d2;
+}
+
 .header {
   background: url(../img/bg/main_bg.jpeg) no-repeat center top;
 }
@@ -10780,6 +10786,497 @@ h2 {
   color: #5d3939;
 }
 
+.faq {
+  padding: 74px 0 50px 0;
+}
+
+.faq__title {
+  text-align: center;
+}
+
+.faq__title p {
+  font-size: 16px;
+}
+
+.faq__qna-wrap {
+  position: relative;
+  margin-bottom: 21px;
+}
+
+.faq__question {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background: #f6f8fa;
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.faq__answer {
+  padding: 0;
+  transition: 1s;
+  padding: 0 80px 0 22px;
+  overflow: hidden;
+}
+
+.faq__answer p {
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.faq__mark {
+  padding: 33px;
+  background: #8f6652;
+  background: linear-gradient(to bottom, #8f6652 0%, #d5ac76 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f6652', endColorstr='#d5ac76', GradientType=0);
+  display: inline-block;
+  border-radius: 5px;
+  position: absolute;
+  top: 17px;
+  right: 0;
+  transition: 1s;
+}
+
+.faq__mark:before {
+  content: "";
+  height: 1px;
+  width: 650px;
+  position: absolute;
+  bottom: 0;
+  right: 54px;
+  background: #d5ac76;
+  transition: 0.5s ease;
+}
+
+.faq__mark img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s;
+}
+
+.faq__mark img:first-child {
+  margin: -14px 0 0 -13px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.faq__mark img:last-child {
+  opacity: 0;
+  margin: -14px -9px;
+  transition: 0.5s;
+}
+
+.faq__decor {
+  position: relative;
+  width: 100%;
+  margin-top: -60px;
+  transition: 1s;
+  height: 85px;
+  transition: 0.3s;
+}
+
+.quest-chevron {
+  font-size: 20px;
+  position: absolute;
+  left: 16px;
+  top: 71px;
+  transition: 1s;
+  color: #d5ac76;
+}
+
+.faq__qna-wrap:hover > .faq__decor .faq__mark {
+  background: #f6f8fa;
+  border: 1px solid #ececec;
+}
+
+.faq__qna-wrap:hover > .faq__decor .faq__mark:before {
+  background: #ececec;
+  bottom: -1px;
+}
+
+.faq__qna-wrap:hover > .faq__decor .quest-chevron {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: #ececec;
+}
+
+.faq__qna-wrap:hover > .faq__decor .faq__mark img:first-child {
+  opacity: 0;
+}
+
+.faq__qna-wrap:hover > .faq__decor .faq__mark img:last-child {
+  opacity: 1;
+}
+
+.faq__qna-wrap:hover > .faq__question h3 {
+  background: linear-gradient(#8f6652, #d7ae77);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #b68d66;
+}
+
+.faq__qna-wrap:hover > .faq__answer {
+  padding: 27px 80px 27px 22px;
+}
+
+.settings {
+  padding-bottom: 95px;
+}
+
+.settings-header .social {
+  margin: -5px 160px 0 0;
+}
+
+.settings-header .social__item {
+  font-size: 21px;
+}
+
+.side-menu {
+  margin: 34px 0 0 0;
+  box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.07);
+}
+
+.side-menu__item a {
+  font-size: 16px;
+  color: #c0c0c0;
+  padding: 13px 0 15px 26px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #f5f5f5;
+  border-bottom: none;
+}
+
+.side-menu__item img {
+  margin-right: 10px;
+}
+
+.side-menu__item-active a {
+  color: #b68d66;
+  font-weight: bold;
+  background: #fafafa;
+}
+
+.side-menu__item a:hover {
+  color: #b68d66;
+  font-weight: bold;
+  background: #fafafa;
+}
+
+.side-menu__item:first-child a {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.side-menu__item:last-child a {
+  border-bottom: 1px solid #c0c0c0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  background: #858585;
+}
+
+.user {
+  float: left;
+  padding-left: 57px;
+  background: url(../img/icons/welcome.png) no-repeat center left;
+}
+
+.welcome {
+  font-size: 16px;
+  color: #fff;
+}
+
+.username2 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+}
+
+.side-page__title {
+  float: right;
+}
+
+.side-page__title h2 {
+  color: #fff;
+}
+
+.settings-wrap {
+  margin-top: -130px;
+}
+
+.settings-header .time {
+  margin: 35px auto 20px auto;
+  float: none;
+  width: 175px;
+}
+
+.account__cash {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 48px 20px 48px;
+  box-shadow: 0 0 120px 0px rgba(0, 0, 0, 0.07);
+}
+
+.account__cash-list {
+  margin: 15px 0;
+}
+
+.account__cash-item {
+  float: left;
+  width: 33.3%;
+  padding-left: 65px;
+  position: relative;
+}
+
+.account__cash-name:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 54px;
+  background: #b58c66;
+  left: 33px;
+  top: 0;
+}
+
+.account__cash-name {
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+.account__cash-number {
+  font-weight: bold;
+  font-size: 28px;
+  color: #515151;
+}
+
+.account__data ul {
+  padding: 20px 0;
+  margin-top: 30px;
+  border-radius: 8px;
+  border: 1px solid #f5f5f5;
+  margin-bottom: 30px;
+}
+
+.account__data-item {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 51px 0 0 0;
+}
+
+.account__data-item:first-child {
+  background: url(../img/icons/calendar-1.png) no-repeat center top;
+}
+
+.account__data-item:nth-child(2) {
+  background: url(../img/icons/calendar-2.png) no-repeat center top;
+  position: relative;
+}
+
+.account__data-item:nth-child(2):before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 100px;
+  background: #f5f5f5;
+  top: -6px;
+  left: 0;
+}
+
+.account__data-item:nth-child(2):after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 100px;
+  background: #f5f5f5;
+  top: -6px;
+  right: 0;
+}
+
+.account__data-item:last-child {
+  background: url(../img/icons/mail-1.png) no-repeat center top;
+}
+
+.account__data-item p:first-child {
+  font-size: 12px;
+  color: #c4c4c4;
+  text-transform: uppercase;
+}
+
+.account__data-item p:last-child {
+  font-size: 16px;
+  color: #515151;
+}
+
+.settings-form {
+  width: 100%;
+}
+
+.inputs {
+  float: left;
+  width: 68%;
+}
+
+.radio {
+  float: right;
+  width: 32%;
+  text-align: center;
+}
+
+.input-wrap input {
+  padding: 24px 0 20px 18px;
+  border: 1px solid #ececec;
+  border-right: 0;
+  width: 86%;
+  background: #f6f8fa;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.input-wrap .input__decor {
+  width: 14%;
+  color: #ececec;
+  border: 1px solid #ececec;
+  padding: 16.5px 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-wrap input::-webkit-input-placeholder {
+  color: #d4d5d5;
+  text-transform: uppercase;
+}
+
+.input-wrap input::-moz-placeholder {
+  color: #d4d5d5;
+  text-transform: uppercase;
+}
+
+.input__decor-pin {
+  background: url(../img/icons/pincode.png) no-repeat center center;
+  height: 68px;
+}
+
+.input-radio {
+  position: relative;
+  margin-bottom: 43px;
+}
+
+.input-radio:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 250px;
+  background: #ececec;
+  bottom: 0;
+  left: 17px;
+}
+
+.input-radio p {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+.radio-btns label {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d2d2d2;
+  background: #f6f8fa;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  width: 123px;
+  height: 63px;
+  padding: 20px 0;
+}
+
+.radio-btns input:checked + label {
+  background: #f26456;
+  background: linear-gradient(to bottom, #f26456 0%, #fd9147 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26456', endColorstr='#fd9147', GradientType=0);
+  color: #fff;
+}
+
+.radio-btns input {
+  display: none;
+}
+
+.radio-btns label:first-child {
+  float: left;
+}
+
+.radio-btns label:last-child {
+  float: right;
+}
+
+.refback p {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+.refback {
+  width: 264px;
+  margin: 50px auto 0 auto;
+}
+
+.refback input {
+  width: 187px;
+  margin-left: 10px;
+}
+
+.refback .input__decor {
+  width: 67px;
+}
+
+.save {
+  text-transform: uppercase;
+  background: url(../img/images/save-cheet.png) no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 272px;
+  padding: 15.5px 0;
+  margin-right: 27px;
+}
+
+.save:hover,
+.pin-recovery:hover {
+  box-shadow: 0 0 10px 5px rgba(216, 148, 103, 0.8);
+  color: #fff;
+}
+
+.save:active,
+.pin-recovery:active {
+  box-shadow: inset 0 0 10px 5px #8f5630;
+  color: #5d3939;
+}
+
+.pin-recovery {
+  text-transform: uppercase;
+  background: url(../img/images/pin-recovery-cheet.png) no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  width: 272px;
+  padding: 15.5px 0;
+}
+
 .navBurger {
   position: fixed;
   left: 20px;
@@ -11064,6 +11561,27 @@ h2 {
   .about__list {
     margin-top: -25px;
   }
+  .radio-btns label {
+    width: 102px;
+  }
+  .input-radio:after {
+    width: 203px;
+  }
+  .account__cash-item {
+    padding-left: 50px;
+  }
+  .account__cash-number {
+    font-size: 26px;
+  }
+  .settings-header .social__item-wrap {
+    padding: 0;
+  }
+  .save {
+    width: 222px;
+  }
+  .pin-recovery {
+    width: 220px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -11254,6 +11772,17 @@ h2 {
   .log-reg .social__item-wrap:last-child {
     margin-right: 0;
   }
+  .settings-header .social {
+    float: right;
+  }
+  .refback .input-wrap {
+    width: 89%;
+    margin: 0 auto;
+  }
+  .refback input {
+    width: 167px;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 766px) {
@@ -11441,6 +11970,49 @@ h2 {
   .login .social__item {
     color: #fff;
   }
+  .settings-header .social {
+    margin: 0 0 62px 0;
+  }
+  .account__cash {
+    padding: 15px 20px 20px 20px;
+  }
+  .account__cash-item {
+    padding-left: 12px;
+  }
+  .account__cash-name:before {
+    left: 2px;
+  }
+  .radio-btns label {
+    width: 90%;
+    float: right;
+  }
+  .input-radio:after {
+    width: 148px;
+  }
+  .refback {
+    width: auto;
+    margin-top: 38px;
+  }
+  .refback input {
+    width: 78px;
+    margin-left: 0;
+  }
+  .input-radio {
+    margin-bottom: 23px;
+  }
+  .input-radio p {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .refback p {
+    margin-bottom: 9px;
+  }
+  .save {
+    width: 141px;
+  }
+  .pin-recovery {
+    width: 173px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -11483,6 +12055,84 @@ h2 {
   }
   .login .social__item {
     color: #ddc29f;
+  }
+  .settings-header .social__item-wrap:last-child {
+    margin: 0;
+    width: auto;
+  }
+  .account__cash-item {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .account__cash-name:before {
+    left: 50%;
+    top: auto;
+    bottom: -3px;
+    height: 1px;
+    width: 300px;
+    margin: 0 -150px;
+  }
+  .account__data-item {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 51px 0 0 0;
+    margin-bottom: 20px;
+  }
+  .account__data-item:nth-child(2):before {
+    width: 300px;
+    height: 1px;
+    top: -8px;
+    left: 50%;
+    margin: 0 -150px;
+  }
+  .account__data-item:nth-child(2):after {
+    width: 300px;
+    height: 1px;
+    top: 100px;
+    right: 50%;
+    margin: 0 -150px;
+  }
+  .inputs {
+    float: none;
+    width: 100%;
+  }
+  .radio {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 75px 0 0 0;
+  }
+  .radio-btns label {
+    width: 50%;
+    float: left;
+  }
+  .input-radio:after {
+    width: 300px;
+    margin: 0 -150px;
+    left: 50%;
+  }
+  .refback .input-wrap {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .refback .input__decor {
+    width: 70px;
+  }
+  .refback input {
+    width: 230px;
+  }
+  .save {
+    width: 150px;
+    margin: 0;
+    float: left;
+  }
+  .pin-recovery {
+    width: 150px;
+    float: right;
+    font-size: 14px;
   }
 }
 
@@ -11606,6 +12256,25 @@ h2 {
   }
   .captcha__decor {
     font-size: 14px;
+  }
+  .save {
+    width: 130px;
+    font-size: 14px;
+  }
+  .account__cash-name:before {
+    width: 270px;
+    margin: 0 -135px;
+  }
+  .account__data-item:nth-child(2):before {
+    width: 270px;
+    margin: 0 -135px;
+  }
+  .account__data-item:nth-child(2):after {
+    width: 270px;
+    margin: 0 -135px;
+  }
+  .input-wrap .input__decor {
+    padding: 18px 0;
   }
 }
 
