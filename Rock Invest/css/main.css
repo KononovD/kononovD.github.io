@@ -11277,6 +11277,54 @@ h3 {
   padding: 15.5px 0;
 }
 
+.navInside {
+  position: fixed;
+  height: 40px;
+  width: 20px;
+  border-right: 2px solid #ececec;
+  border-top: 2px solid #ececec;
+  border-bottom: 2px solid #ececec;
+  padding-top: 10px;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #fff;
+  left: 0;
+  top: 10%;
+  transition: 1s;
+  z-index: 10;
+}
+
+.navInside i {
+  transition: 1s;
+}
+
+.navInsideBlock {
+  width: 0;
+  height: 511px;
+  overflow: hidden;
+  position: fixed;
+  transition: 1s;
+  z-index: 10;
+  background: #fff;
+  top: 10%;
+}
+
+.navInside:hover {
+  left: 200px;
+}
+
+.navInside:hover i {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.navInside:hover + .navInsideBlock {
+  width: 200px;
+}
+
+.navInsideBlock .side-menu {
+  margin-top: 0;
+}
+
 .navBurger {
   position: fixed;
   left: 20px;
