@@ -11338,6 +11338,62 @@ h3 {
   padding: 15.5px 0;
 }
 
+.select-lang {
+  width: 55px;
+  position: absolute;
+  top: 124px;
+  left: 334px;
+}
+
+.flag-wrap {
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 15px;
+  width: 15px;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.flag {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+option {
+  background: #9b8054;
+  outline: none;
+}
+
+.select-language {
+  position: relative;
+  float: right;
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding-left: 15px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+}
+
+.select-lang:after {
+  content: "";
+  display: block;
+  width: 0px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  border-width: 5px 5px 0 5px;
+  position: absolute;
+  top: 6px;
+  pointer-events: none;
+  cursor: pointer;
+}
+
 .navInside {
   position: fixed;
   height: 40px;
@@ -11691,6 +11747,10 @@ h3 {
   .pin-recovery {
     width: 220px;
   }
+  .select-lang {
+    top: 113px;
+    left: 266px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -11891,6 +11951,10 @@ h3 {
   .refback input {
     width: 167px;
     margin-left: 0;
+  }
+  .select-lang {
+    top: 67px;
+    left: 200px;
   }
 }
 
@@ -12121,6 +12185,11 @@ h3 {
   }
   .pin-recovery {
     width: 173px;
+  }
+  .select-lang {
+    top: 32px;
+    left: auto;
+    right: 29px;
   }
 }
 
