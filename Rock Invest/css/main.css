@@ -10799,17 +10799,13 @@ h3 {
   font-size: 16px;
 }
 
-.faq__qna-wrap {
-  position: relative;
-  margin-bottom: 21px;
-}
-
 .faq__question {
   border: 1px solid #ececec;
   border-radius: 5px;
   background: #f6f8fa;
   padding: 20px 20px;
   width: 100%;
+  text-align: left;
 }
 
 .faq__answer {
@@ -10817,11 +10813,13 @@ h3 {
   transition: 1s;
   padding: 0 80px 0 22px;
   overflow: hidden;
+  max-height: 0;
 }
 
 .faq__answer p {
   font-size: 16px;
   color: #8a8a8a;
+  margin: 27px 0 0 0;
 }
 
 .faq__mark {
@@ -10837,15 +10835,15 @@ h3 {
   transition: 1s;
 }
 
-.faq__mark:before {
-  content: "";
-  height: 1px;
+.faq__mark-before {
+  height: 0px;
   width: 650px;
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
   right: 54px;
   background: #d5ac76;
   transition: 0.5s ease;
+  margin: 0;
 }
 
 .faq__mark img {
@@ -10853,18 +10851,7 @@ h3 {
   top: 50%;
   left: 50%;
   transition: 0.5s;
-}
-
-.faq__mark img:first-child {
-  margin: -14px 0 0 -13px;
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.faq__mark img:last-child {
-  opacity: 0;
-  margin: -14px -9px;
-  transition: 0.5s;
+  margin: -15px 0 0 -13px;
 }
 
 .faq__decor {
@@ -10874,6 +10861,8 @@ h3 {
   transition: 1s;
   height: 85px;
   transition: 0.3s;
+  pointer-events: none;
+  margin-bottom: 21px;
 }
 
 .quest-chevron {
@@ -10885,35 +10874,98 @@ h3 {
   color: #d5ac76;
 }
 
-.faq__qna-wrap:hover > .faq__decor .faq__mark {
-  background: #f6f8fa;
-  border: 1px solid #ececec;
+.quest__active,
+.faq__question:hover {
+  background: linear-gradient(#8f6652, #d7ae77);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #b68d66;
 }
 
-.faq__qna-wrap:hover > .faq__decor .faq__mark:before {
-  background: #ececec;
-  bottom: -1px;
-}
-
-.faq__qna-wrap:hover > .faq__decor .quest-chevron {
+.quest-chevron-rotate {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   color: #ececec;
 }
 
-.faq__qna-wrap:hover > .faq__decor .faq__mark img:first-child {
-  opacity: 0;
+.tabcontent {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
 }
 
-.faq__qna-wrap:hover > .faq__decor .faq__mark img:last-child {
-  opacity: 1;
+.tabs-number {
+  font-size: 38px;
+  font-weight: bold;
+  color: #dddddc;
+  float: right;
+  line-height: 18px;
+  transition: 0.5s;
 }
 
-.faq__qna-wrap:hover > .faq__question h3 {
-  background: linear-gradient(#8f6652, #d7ae77);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #b68d66;
+.tablinks {
+  width: 100%;
+  padding: 32px 22px 32px 29px;
+  font-size: 16px;
+  color: #8a8a8a;
+  border: 1px solid #eeeeee;
+  background: #fff;
+  text-align: left;
+  transition: 0.5s;
+  position: relative;
+  z-index: 3;
+}
+
+.tablinks:first-child {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tablinks:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.tablinks.active-tab,
+.tablinks:hover {
+  margin-right: 15px;
+  margin-left: -15px;
+  box-shadow: -15px 0 18px rgba(0, 0, 0, 0.05);
+  z-index: 5;
+  color: #d0a773;
+  border-radius: 8px;
+}
+
+.tablinks.active-tab > .tabs-number,
+.tablinks:hover > .tabs-number {
+  color: #d0a773;
+}
+
+.btn-back-cheat {
+  position: absolute;
+  z-index: -1;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  right: 15px;
+  height: 88px;
+  width: 20px;
+  background: linear-gradient(to right, #d5ac76 0%, #d5ac76 30%, #8f6652 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f6652', endColorstr='#d5ac76', GradientType=0);
+}
+
+.btn-back-cheat:nth-child(2) {
+  top: 0;
+}
+
+.btn-back-cheat:nth-child(4) {
+  top: 88px;
+}
+
+.btn-back-cheat:nth-child(6) {
+  top: 176px;
+}
+
+.btn-back-cheat:last-child {
+  top: 264px;
 }
 
 .settings {
@@ -11392,6 +11444,24 @@ option {
   top: 6px;
   pointer-events: none;
   cursor: pointer;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .navInside {
