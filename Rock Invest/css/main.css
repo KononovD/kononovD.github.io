@@ -11427,6 +11427,7 @@ h3 {
 
 .support {
   background: url(../img/bg/support-bg.png) no-repeat center bottom;
+  padding-top: 72px;
 }
 
 .support__title p:last-child {
