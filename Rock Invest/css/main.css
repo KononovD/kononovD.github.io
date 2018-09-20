@@ -11438,6 +11438,7 @@ h3 {
 .support__contacts-item-left {
   padding: 30px 0 23px 28px;
   float: left;
+  width: 70%;
 }
 
 .support__contacts-item-right {
@@ -11448,12 +11449,13 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef544c', endColorstr='#f98140', GradientType=0);
   position: relative;
   z-index: 2;
+  width: 30%;
 }
 
 .support__contacts-item-icon {
-  padding: 63.5px 75px;
   position: relative;
   z-index: 3;
+  padding: 50%;
 }
 
 .support__contacts-item:first-child .support__contacts-item-icon {
@@ -11519,7 +11521,6 @@ h3 {
 
 .support__right {
   float: right;
-  margin-top: -34px;
 }
 
 .support-input-wrap input,
@@ -11560,7 +11561,7 @@ h3 {
   font-weight: bold;
   font-size: 23px;
   border: none;
-  width: 467px;
+  width: 448px;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -11571,10 +11572,6 @@ h3 {
 
 .support-send:active {
   box-shadow: inset 0 0 10px 5px #8f5630;
-}
-
-.support-input-wrap {
-  width: 467px;
 }
 
 .input-decoration {
@@ -12050,6 +12047,28 @@ option {
   .faq__mark-before {
     width: 517px;
   }
+  .support__content {
+    padding: 67px 0 0 0;
+  }
+  .support__title p:last-child {
+    width: auto;
+  }
+  .support__contacts-item {
+    width: 435px;
+  }
+  .support__form {
+    padding: 30px;
+    width: auto;
+  }
+  .support-send {
+    width: 395px;
+  }
+  .support__right {
+    margin-top: -9px;
+  }
+  .support__content .social__item {
+    font-size: 27px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -12260,6 +12279,56 @@ option {
   }
   .faq__mark-before {
     width: 621px;
+  }
+  .support__content {
+    padding: 0;
+  }
+  .support__content .social {
+    float: none;
+    margin: 0 auto 20px auto;
+    width: 136px;
+  }
+  .support__left {
+    float: none;
+  }
+  .support__content .social__item-wrap:last-child {
+    margin: 0;
+  }
+  .support__contacts-item {
+    width: 48%;
+  }
+  .support__contacts-item:first-child {
+    float: left;
+  }
+  .support__contacts-item:nth-child(2) {
+    float: right;
+  }
+  .support__contacts-item:last-child {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+  .support__contacts-item:last-child .support__contacts-item-left {
+    padding: 16px 0px 0px 28px;
+  }
+  .support__contacts-item:first-child .support__contacts-item-data {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .support__contacts-item-left {
+    padding: 19px 0 0 28px;
+    float: left;
+    width: 70%;
+  }
+  .support__right {
+    margin: 0 auto;
+    float: none;
+    width: 490px;
+  }
+  .support-send {
+    width: 100%;
   }
 }
 
@@ -12499,6 +12568,24 @@ option {
   .faq__mark-before {
     width: 408px;
   }
+  .support__contacts-item:last-child .support__contacts-item-left {
+    padding: 42px 0 0 28px;
+  }
+  .support__contacts-item-left {
+    padding: 42px 0 0 28px;
+  }
+  .support__contacts-item {
+    float: none;
+    width: 100%;
+  }
+  .support__contacts-item:last-child {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .support__right {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -12718,6 +12805,19 @@ option {
     margin-right: 18px;
     padding: 0;
   }
+  .support__contacts-item-left {
+    padding: 9% 0 0 28px;
+  }
+  .support__contacts-item:last-child .support__contacts-item-left {
+    padding: 6% 0 0 28px;
+  }
+  .support-input-wrap input,
+  .support-input-wrap textarea {
+    width: 100%;
+  }
+  .input-decoration {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 399px) {
@@ -12770,6 +12870,12 @@ option {
   }
   h3 {
     font-size: 16px;
+  }
+  .support__contacts-item:last-child .support__contacts-item-left {
+    padding: 3% 0 0 28px;
+  }
+  .support__contacts-item-left {
+    padding: 6% 0 3% 28px;
   }
 }
 
