@@ -9534,7 +9534,7 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #000;
+  color: #515151;
   text-transform: uppercase;
 }
 
@@ -9569,8 +9569,9 @@ h3 {
 .telegram-support {
   float: left;
   font-size: 12px;
-  color: #ae9375 !important;
+  color: #d7b58f !important;
   text-decoration: underline !important;
+  transition: 0.5s;
 }
 
 .telegram-support:hover {
@@ -9585,6 +9586,7 @@ h3 {
   display: inline-block;
   color: #1d9ccd;
   margin-left: 5px;
+  transition: 0.5s;
 }
 
 .authorization {
@@ -9603,6 +9605,7 @@ h3 {
   font-weight: bold;
   font-size: 16px;
   color: #ddc29f;
+  transition: 0.5s;
 }
 
 .authorization a:hover {
@@ -9638,6 +9641,7 @@ h3 {
   font-size: 16px;
   font-family: AmericanTextC;
   color: #ddc29f;
+  transition: 0.5s;
 }
 
 .header__menu-item:hover {
@@ -9667,6 +9671,8 @@ h3 {
   margin-bottom: 20px;
   display: inline-block;
   margin-top: 34px;
+  transition: box-shadow 0.5s;
+  text-shadow: 0 0px 15px #4b2d1e;
 }
 
 .get-started-btn:after {
@@ -9682,8 +9688,17 @@ h3 {
 }
 
 .get-started-btn:hover {
-  color: red;
-  border-color: red;
+  color: #e04846;
+  background: url(../img/bg/get-started.png) no-repeat center center;
+  border: none;
+  padding: 12px 38px;
+  background-size: 100% 100%;
+  box-shadow: 0 0 10px 5px rgba(216, 148, 103, 0.8);
+}
+
+.get-started-btn:hover:after {
+  left: 33px;
+  top: 29px;
 }
 
 .exchange-rates-list {
@@ -9782,6 +9797,7 @@ h3 {
 .social__item {
   font-size: 29px;
   color: #ddc29f;
+  transition: 0.5s;
 }
 
 .social__item:hover {
@@ -9799,6 +9815,7 @@ h3 {
 
 .about__title p {
   font-size: 16px;
+  color: #515151;
 }
 
 .about__title p:after {
@@ -9828,6 +9845,7 @@ h3 {
   font-weight: bold;
   color: #fff;
   position: relative;
+  transition: 0.5s;
 }
 
 .learn-more {
@@ -9963,6 +9981,7 @@ h3 {
   font-weight: bold;
   margin-bottom: 39px;
   text-transform: uppercase;
+  color: #515151;
 }
 
 .advantage__text {
@@ -10040,12 +10059,18 @@ h3 {
 
 .invest-btn {
   background: url(../img/images/cheat-bg-btn-2.png) no-repeat center center;
-  padding: 7px 45px;
+  padding: 3px 45px;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 2px;
+  margin-top: 5px;
   display: inline-block;
+  transition: 0.5s;
+}
+
+.invest-btn:hover {
+  color: #fff;
+  box-shadow: 0 0 10px 5px rgba(216, 148, 103, 0.8);
 }
 
 .calculator {
@@ -10230,7 +10255,7 @@ h3 {
   width: 100%;
   padding: 13px 100px 15px 18px;
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 21px;
   text-transform: uppercase;
 }
 
@@ -10305,47 +10330,47 @@ h3 {
   height: 88px;
 }
 
-.payment-systems__list-1 .payment-systems__list-item:first-child {
+.payment-systems__list-item-norton {
   background: url(../img/icons/Norton-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-1 .payment-systems__list-item:nth-child(2) {
+.payment-systems__list-item-name {
   background: url(../img/icons/sprite-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-1 .payment-systems__list-item:nth-child(3) {
+.payment-systems__list-item-siteLock {
   background: url(../img/icons/siteLock-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-1 .payment-systems__list-item:nth-child(4) {
+.payment-systems__list-item-comodo {
   background: url(../img/icons/Comodo-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-1 .payment-systems__list-item:last-child {
+.payment-systems__list-item-cover {
   background: url(../img/icons/cover-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-2 .payment-systems__list-item:first-child {
+.payment-systems__list-item-pMoney {
   background: url(../img/icons/PMoney-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-2 .payment-systems__list-item:nth-child(2) {
+.payment-systems__list-item-payeer {
   background: url(../img/icons/payeer-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-2 .payment-systems__list-item:nth-child(3) {
+.payment-systems__list-item-eth {
   background: url(../img/icons/ETH-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-2 .payment-systems__list-item:nth-child(4) {
+.payment-systems__list-item-dogeCoin {
   background: url(../img/icons/dog-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-2 .payment-systems__list-item:nth-child(5) {
+.payment-systems__list-item-btc {
   background: url(../img/icons/bitcoin-logo.png) no-repeat center center;
 }
 
-.payment-systems__list-2 .payment-systems__list-item:last-child {
+.payment-systems__list-item-liteCoin {
   background: url(../img/icons/LCoin-logo.png) no-repeat center center;
 }
 
@@ -10387,30 +10412,35 @@ h3 {
   font-size: 16px;
   font-family: AmericanTextC;
   color: #ddc29f;
+  transition: 0.5s;
 }
 
 .footer__menu-item:hover {
   color: #fff;
 }
 
-.footer__menu-list:first-child .footer__menu-item-wrap:first-child {
+.footer__menu-item-home {
   margin-right: 100px;
 }
 
-.footer__menu-list:first-child .footer__menu-item-wrap:nth-child(2) {
+.footer__menu-item-aboutUs {
   margin-right: 81px;
 }
 
-.footer__menu-list:last-child .footer__menu-item-wrap:first-child {
+.footer__menu-item-testimonials {
   margin-right: 69px;
 }
 
-.footer__menu-list:last-child .footer__menu-item-wrap:nth-child(2) {
+.footer__menu-item-faq {
   margin-right: 66px;
 }
 
-.footer__menu-list:last-child .footer__menu-item-wrap:nth-child(3) {
+.footer__menu-item-rules {
   margin-right: 70px;
+}
+
+.footer__address .telegram-support {
+  color: #ddc29f !important;
 }
 
 .address__title,
@@ -10482,6 +10512,7 @@ h3 {
   display: inline-block;
   font-size: 23px;
   padding: 9px 79px;
+  transition: 0.5s;
 }
 
 .about-us .register-btn:hover {
@@ -10519,6 +10550,7 @@ h3 {
   padding: 9px 94px;
   background: url(../img/images/cheat-bg-btn.png) no-repeat center center;
   text-transform: uppercase;
+  transition: 0.5s;
 }
 
 .check-btn:hover {
@@ -10543,19 +10575,19 @@ h3 {
   color: #8a8a8a;
 }
 
-.about__list-item:first-child {
+.about__list-item-one {
   background: url(../img/images/virus.png) no-repeat center left;
 }
 
-.about__list-item:nth-child(2) {
+.about__list-item-two {
   background: url(../img/images/scales.png) no-repeat center left;
 }
 
-.about__list-item:nth-child(3) {
+.about__list-item-three {
   background: url(../img/images/money.png) no-repeat center left;
 }
 
-.about__list-item:last-child {
+.about__list-item-four {
   background: url(../img/images/cloud.png) no-repeat center left;
   border: none;
 }
@@ -10566,6 +10598,8 @@ h3 {
 
 .rules {
   padding-top: 70px;
+  padding-bottom: 63px;
+  background: url(../img/bg/rules-bg.png) no-repeat center bottom;
 }
 
 .rules__title {
@@ -10589,7 +10623,7 @@ h3 {
 }
 
 .log-reg__title {
-  margin-bottom: 25px;
+  margin-bottom: 6px;
 }
 
 .log-reg__title h2 {
@@ -10604,7 +10638,7 @@ h3 {
 
 .sing-in__input-wrap {
   width: 100%;
-  margin: 10px 0;
+  margin: 17px 0;
 }
 
 .sing-in__input-wrap input {
@@ -10643,7 +10677,7 @@ h3 {
 }
 
 .sing-in__pin-wrap input {
-  width: 48.5%;
+  width: 47.5%;
   border-radius: 5px;
 }
 
@@ -10668,11 +10702,26 @@ h3 {
 .captcha__decor {
   width: 23%;
   font-size: 16px;
-  padding: 17px 0;
+  padding: 0;
+  height: 56px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.captcha__decor img {
+  max-width: 100%;
 }
 
 .sponsor__decor {
-  width: 23%;
+  width: 28%;
   background: rgba(255, 255, 255, 0.2);
   float: left;
   font-size: 16px;
@@ -10686,11 +10735,20 @@ h3 {
 
 .sing-in__sponsor-wrap input {
   background: rgba(255, 255, 255, 0.45);
-  width: 77%;
+  width: 72%;
   float: right;
   border-radius: 0;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.sing-in__sponsor-wrap input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.sing-in__sponsor-wrap input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.56);
+  text-align: center;
 }
 
 .sing-in__check-wrap {
@@ -10741,6 +10799,7 @@ h3 {
   margin: 10px auto 0 auto;
   display: block;
   background-size: 100% 100%;
+  transition: 0.5s;
 }
 
 .sing-in .register-btn:hover {
@@ -10754,7 +10813,7 @@ h3 {
 
 .log-reg .time,
 .log-reg .social {
-  margin-top: 515px;
+  margin-top: 576px;
 }
 
 .log-reg__title p {
@@ -10775,6 +10834,7 @@ h3 {
   margin: 10px auto 0 auto;
   display: block;
   background-size: 100% 100%;
+  transition: 0.5s;
 }
 
 .restore-btn:hover {
@@ -10788,6 +10848,7 @@ h3 {
 
 .faq {
   padding: 74px 0 50px 0;
+  background: url(../img/bg/faq-bg.png) no-repeat center bottom;
 }
 
 .faq__title {
@@ -10806,6 +10867,7 @@ h3 {
   padding: 20px 20px;
   width: 100%;
   text-align: left;
+  transition: 0.5s;
 }
 
 .faq__answer {
@@ -10876,10 +10938,14 @@ h3 {
 
 .quest__active,
 .faq__question:hover {
-  background: linear-gradient(#8f6652, #d7ae77);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #b68d66;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.quest__active h3,
+.faq__question:hover h3 {
+  color: #be956a;
+  transition: 0.5s;
 }
 
 .quest-chevron-rotate {
@@ -10952,19 +11018,19 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f6652', endColorstr='#d5ac76', GradientType=0);
 }
 
-.btn-back-cheat:nth-child(2) {
+.btn-back-cheat-1 {
   top: 0;
 }
 
-.btn-back-cheat:nth-child(4) {
+.btn-back-cheat-2 {
   top: 88px;
 }
 
-.btn-back-cheat:nth-child(6) {
+.btn-back-cheat-3 {
   top: 176px;
 }
 
-.btn-back-cheat:last-child {
+.btn-back-cheat-4 {
   top: 264px;
 }
 
@@ -10993,6 +11059,7 @@ h3 {
   width: 100%;
   border: 1px solid #f5f5f5;
   border-bottom: none;
+  transition: 0.5s;
 }
 
 .side-menu__link:hover {
@@ -11012,68 +11079,74 @@ h3 {
   background: #858585;
 }
 
+.side-menu__item {
+  transition: 0.5s;
+}
+
 .ico {
   display: inline-block;
   width: 22px;
   height: 22px;
   margin-right: 10px;
   float: left;
+  transition: 0.5s;
 }
 
-.side-menu__item:first-child .ico {
+.ico-account {
   background: url(../img/sprite/account-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(2) .ico {
+.ico-deposit {
   background: url(../img/sprite/deposits-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(3) .ico {
+.ico-active-deposit {
   background: url(../img/sprite/active-deposit-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(4) .ico {
+.ico-withdraw {
   background: url(../img/sprite/withdraw-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(5) .ico {
+.ico-history-transaction {
   background: url(../img/sprite/history-transaction-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(6) .ico {
+.ico-history-withdraw {
   background: url(../img/sprite/history-withdraw-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(7) .ico {
+.ico-referrals {
   background: url(../img/sprite/referrals-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(8) .ico {
+.ico-banners {
   background: url(../img/sprite/banners-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(9) .ico {
+.ico-wallet {
   background: url(../img/sprite/wallet-sprite.png) no-repeat;
 }
 
-.side-menu__item:nth-child(10) .ico {
+.ico-settings {
   background: url(../img/sprite/settings-sprite.png) no-repeat;
 }
 
-.side-menu__item .side-menu__link .ico {
+.ico {
   background-position: -8px -7px;
+  transition: 0.5s;
 }
 
 .side-menu__item:hover .ico {
   background-position: -44px -7px;
 }
 
-.side-menu__item:last-child .ico {
+.ico-logout {
   background: url(../img/icons/logout-ico.png) no-repeat center left;
   background-position: 6px 5px;
 }
 
-.side-menu__item:last-child:hover .ico {
+.side-menu__item-logout:hover .ico-logout {
   background: url(../img/icons/logout-ico.png) no-repeat center left;
   background-position: 6px 5px;
 }
@@ -11097,6 +11170,7 @@ h3 {
 .welcome {
   font-size: 16px;
   color: #fff;
+  margin-bottom: -6px;
 }
 
 .username2 {
@@ -11308,6 +11382,8 @@ h3 {
   width: 123px;
   height: 63px;
   padding: 20px 0;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .radio-btns input:checked + label {
@@ -11362,6 +11438,7 @@ h3 {
   width: 272px;
   padding: 15.5px 0;
   margin-right: 27px;
+  transition: 0.5s;
 }
 
 .save:hover,
@@ -11388,6 +11465,13 @@ h3 {
   display: inline-block;
   width: 272px;
   padding: 15.5px 0;
+  transition: 0.5s;
+}
+
+.form-pin-recovery {
+  position: absolute;
+  bottom: 0;
+  right: 288px;
 }
 
 .support__title {
@@ -11455,18 +11539,18 @@ h3 {
 .support__contacts-item-icon {
   position: relative;
   z-index: 3;
-  padding: 50%;
+  padding: 46%;
 }
 
-.support__contacts-item:first-child .support__contacts-item-icon {
+.support__contacts-item-icon-phone {
   background: url(../img/icons/phone-icon.png) no-repeat center center;
 }
 
-.support__contacts-item:nth-child(2) .support__contacts-item-icon {
+.support__contacts-item-icon-postbox {
   background: url(../img/icons/postbox-icon.png) no-repeat center center;
 }
 
-.support__contacts-item:last-child .support__contacts-item-icon {
+.support__contacts-item-icon-agenda {
   background: url(../img/icons/agenda-icon.png) no-repeat center center;
 }
 
@@ -11513,6 +11597,7 @@ h3 {
 
 .support__content .social__item {
   color: #f57251;
+  transition: 0.5s;
 }
 
 .support__content .social__item:hover {
@@ -11521,6 +11606,7 @@ h3 {
 
 .support__right {
   float: right;
+  margin-top: -23px;
 }
 
 .support-input-wrap input,
@@ -11563,7 +11649,8 @@ h3 {
   border: none;
   width: 448px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 10px 0;
+  transition: 0.5s;
 }
 
 .support-send:hover {
@@ -11589,11 +11676,11 @@ h3 {
   padding: 32.5px;
 }
 
-.support-input-wrap:first-child .input-decoration-ico {
+.input-decoration-ico-user {
   background: url(../img/icons/support-head-icon.png) no-repeat center center;
 }
 
-.support-input-wrap:nth-child(2) .input-decoration-ico {
+.input-decoration-ico-postbox {
   background: url(../img/icons/support-postbox-ico.png) no-repeat center center;
 }
 
@@ -11773,7 +11860,7 @@ option {
 
 .navBurger:after {
   bottom: -10px;
-  width: 90%;
+  width: 100%;
 }
 
 .navBurger.active {
@@ -11979,19 +12066,19 @@ option {
   .footer {
     padding: 52px 0;
   }
-  .footer__menu-list:first-child .footer__menu-item-wrap:first-child {
+  .footer__menu-item-home {
     margin-right: 70px;
   }
-  .footer__menu-list:first-child .footer__menu-item-wrap:nth-child(2) {
+  .footer__menu-item-aboutUs {
     margin-right: 70px;
   }
-  .footer__menu-list:last-child .footer__menu-item-wrap:first-child {
+  .footer__menu-item-testimonials {
     margin-right: 37px;
   }
-  .footer__menu-list:last-child .footer__menu-item-wrap:nth-child(2) {
+  .footer__menu-item-faq {
     margin-right: 41px;
   }
-  .footer__menu-list:last-child .footer__menu-item-wrap:nth-child(3) {
+  .footer__menu-item-rules {
     margin-right: 38px;
   }
   .footer .social__item-wrap {
@@ -12069,6 +12156,9 @@ option {
   .support__content .social__item {
     font-size: 27px;
   }
+  .form-pin-recovery {
+    right: 242px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -12104,10 +12194,10 @@ option {
   .exchange__item {
     margin-right: 116px;
   }
-  .decorations img:nth-child(2) {
+  .exchange-rates-list-decorations-R {
     left: 335px;
   }
-  .decorations img:nth-child(3) {
+  .exchange-rates-list-decorations-B {
     left: 347px;
   }
   .cheat {
@@ -12206,19 +12296,19 @@ option {
   .footer__menu-list {
     padding: 0 13px;
   }
-  .footer__menu-list:first-child .footer__menu-item-wrap:first-child {
+  .footer__menu-item-home {
     margin-right: 65px;
   }
-  .footer__menu-list:first-child .footer__menu-item-wrap:nth-child(2) {
+  .footer__menu-item-aboutUs {
     margin-right: 47px;
   }
-  .footer__menu-list:last-child .footer__menu-item-wrap:first-child {
+  .footer__menu-item-testimonials {
     margin-right: 22px;
   }
-  .footer__menu-list:last-child .footer__menu-item-wrap:nth-child(2) {
+  .footer__menu-item-faq {
     margin-right: 19px;
   }
-  .footer__menu-list:last-child .footer__menu-item-wrap:nth-child(3) {
+  .footer__menu-item-rules {
     margin-right: 29px;
   }
   .footer .telegram-support {
@@ -12297,23 +12387,23 @@ option {
   .support__contacts-item {
     width: 48%;
   }
-  .support__contacts-item:first-child {
+  .support__contacts-item-phone {
     float: left;
   }
-  .support__contacts-item:nth-child(2) {
+  .support__contacts-item-mail {
     float: right;
   }
-  .support__contacts-item:last-child {
+  .support__contacts-item-address {
     float: none;
     width: 50%;
     margin: 0 auto;
     padding: 0px;
     margin-bottom: 40px;
   }
-  .support__contacts-item:last-child .support__contacts-item-left {
+  .support__contacts-item-address .support__contacts-item-left {
     padding: 16px 0px 0px 28px;
   }
-  .support__contacts-item:first-child .support__contacts-item-data {
+  .support__contacts-item-phone .support__contacts-item-data {
     font-size: 21px;
     font-weight: bold;
   }
@@ -12329,6 +12419,9 @@ option {
   }
   .support-send {
     width: 100%;
+  }
+  .form-pin-recovery {
+    right: 246px;
   }
 }
 
@@ -12378,19 +12471,19 @@ option {
   .exchange-rates-list .exchange__item:last-child {
     margin-right: 0;
   }
-  .decorations img:first-child {
+  .exchange-rates-list-decorations-T {
     top: -3px;
     left: 69px;
   }
-  .decorations img:nth-child(2) {
+  .exchange-rates-list-decorations-R {
     left: 345px;
     top: -5px;
   }
-  .decorations img:nth-child(3) {
+  .exchange-rates-list-decorations-B {
     left: 336px;
     top: 81px;
   }
-  .decorations img:last-child {
+  .exchange-rates-list-decorations-L {
     top: 102px;
     left: 162px;
   }
@@ -12578,13 +12671,16 @@ option {
     float: none;
     width: 100%;
   }
-  .support__contacts-item:last-child {
+  .support__contacts-item-address {
     float: none;
     width: 100%;
     margin-bottom: 40px;
   }
   .support__right {
     width: 100%;
+  }
+  .form-pin-recovery {
+    right: 178px;
   }
 }
 
@@ -12605,14 +12701,14 @@ option {
   .header__title {
     margin-bottom: 54px;
   }
-  .decorations img:nth-child(3) {
+  .exchange-rates-list-decorations-B {
     left: 400px;
     top: 111px;
   }
-  .decorations img:first-child {
+  .exchange-rates-list-decorations-T {
     left: 97px;
   }
-  .decorations img:last-child {
+  .exchange-rates-list-decorations-L {
     top: 188px;
     left: 162px;
   }
@@ -12710,13 +12806,17 @@ option {
   .faq__mark-before {
     width: 75%;
   }
+  .form-pin-recovery {
+    bottom: 398px;
+    right: 13px;
+  }
 }
 
 @media only screen and (max-width: 501px) {
   .payment-systems {
     background: #e3e3e3;
   }
-  .payment-systems__list-1 .payment-systems__list-item:nth-child(4) {
+  .payment-systems__list-item-comodo {
     margin-left: 30px;
   }
   .payment-systems__list-item:nth-child(2n) {
@@ -12744,10 +12844,10 @@ option {
   .title-number {
     font-size: 73px;
   }
-  .decorations img:nth-child(3) {
+  .exchange-rates-list-decorations-B {
     left: 302px;
   }
-  .decorations img:nth-child(2) {
+  .exchange-rates-list-decorations-R {
     left: 289px;
   }
   h1 {
@@ -12784,10 +12884,10 @@ option {
   .payment-systems__list-item {
     width: 132px;
   }
-  .payment-systems__list-1 .payment-systems__list-item:nth-child(2) {
+  .payment-systems__list-item-name {
     background-size: 100%;
   }
-  .payment-systems__list-2 .payment-systems__list-item:nth-child(3) {
+  .payment-systems__list-item-eth {
     background-size: 100%;
   }
   .about__list .about__list-item {
@@ -12871,11 +12971,24 @@ option {
   h3 {
     font-size: 16px;
   }
-  .support__contacts-item:last-child .support__contacts-item-left {
+  .support__contacts-item-address .support__contacts-item-left {
     padding: 3% 0 0 28px;
   }
   .support__contacts-item-left {
     padding: 6% 0 3% 28px;
+  }
+  .form-pin-recovery {
+    bottom: 420px;
+    right: 13px;
+  }
+  .captcha__decor {
+    height: 53px;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  .form-pin-recovery {
+    bottom: 442px;
   }
 }
 
