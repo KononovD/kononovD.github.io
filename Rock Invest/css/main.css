@@ -9956,22 +9956,22 @@ h3 {
   position: absolute;
 }
 
-.decorations img:first-child {
+.exchange-rates-list-decorations-T {
   top: -46px;
   left: 242px;
 }
 
-.decorations img:nth-child(2) {
+.exchange-rates-list-decorations-R {
   top: 2px;
   left: 623px;
 }
 
-.decorations img:nth-child(3) {
+.exchange-rates-list-decorations-B {
   top: 53px;
   left: 392px;
 }
 
-.decorations img:last-child {
+.exchange-rates-list-decorations-L {
   top: 23px;
   left: -46px;
 }
