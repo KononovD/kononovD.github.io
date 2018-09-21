@@ -10012,7 +10012,7 @@ h3 {
 .tariff {
   background: url(../img/bg/tariff-bg.png) no-repeat center top;
   padding-top: 125px;
-  margin-top: -63px;
+  margin-top: 0px;
 }
 
 .tariff__title {
@@ -10717,7 +10717,8 @@ h3 {
 }
 
 .captcha__decor img {
-  max-width: 100%;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .sponsor__decor {
@@ -11189,6 +11190,10 @@ h3 {
 
 .settings-wrap {
   margin-top: -130px;
+}
+
+.header {
+  overflow: hidden;
 }
 
 .settings-header .time {
@@ -11700,60 +11705,215 @@ h3 {
   text-transform: uppercase;
 }
 
-.select-lang {
-  width: 55px;
+.magnifying-glass {
   position: absolute;
-  top: 124px;
-  left: 334px;
-}
-
-.flag-wrap {
-  position: absolute;
-  right: 0;
-  border-radius: 50%;
-  overflow: hidden;
-  height: 15px;
-  width: 15px;
-  pointer-events: none;
+  top: 109px;
+  left: 114px;
+  background: url(../img/images/magnifying-glass.png) center center no-repeat;
+  display: block;
+  width: 77px;
+  height: 77px;
+  transition: 0.3s;
   cursor: pointer;
 }
 
-.flag {
-  pointer-events: none;
+.magnifying-glass:hover {
+  background: url(../img/images/magnifying-glass-color.png) center center no-repeat;
+  top: 111px;
+}
+
+.lang {
+  width: 53px;
+  height: 22px;
+  position: absolute;
+  color: #ffffff;
+  z-index: 10;
+  top: 125px;
+  left: 340px;
+}
+
+.selected-lang {
   cursor: pointer;
-}
-
-option {
-  background: #9b8054;
-  outline: none;
-}
-
-.select-language {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lang-list {
+  display: none;
+  position: absolute;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: 10px;
+  padding: 3px 5px;
+  width: 90px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 27px 6px rgba(0, 0, 0, 0.3);
+}
+
+.flag-selected {
+  width: 16px;
+  height: 16px;
+  display: block;
   float: right;
-  border: none;
-  background: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  border-radius: 50%;
+}
+
+.flag-menu {
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: right;
+}
+
+.lang-list li {
   width: 100%;
-  padding-left: 15px;
-  cursor: pointer;
-  outline: none;
+  display: block;
+  transition: 0.2s;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+.lang-list li:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.lang-list a {
   color: #fff;
 }
 
-.select-lang:after {
-  content: "";
+.lang-choose {
+  float: left;
   display: block;
-  width: 0px;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent;
-  border-width: 5px 5px 0 5px;
+  margin-right: 10px;
+}
+
+.selected-lang .lang-active:before {
+  content: "";
+  width: 6px;
+  height: 3px;
+  background: url(../img/icons/chevron-lang.png) no-repeat center center;
+  display: block;
   position: absolute;
-  top: 6px;
-  pointer-events: none;
-  cursor: pointer;
+  top: 8px;
+  left: -11px;
+}
+
+.man-paralax {
+  position: absolute;
+  top: 1%;
+  left: 21%;
+}
+
+.first-layer-prlx {
+  position: absolute;
+  left: -233px;
+  -webkit-animation: mainBg 8s infinite;
+  animation: mainBg 8s infinite;
+}
+
+.rockinvest-bg {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  -webkit-animation: rockinvest 4s infinite;
+  animation: rockinvest 4s infinite;
+}
+
+.rockinvest-bg-home {
+  top: 3%;
+}
+
+@-webkit-keyframes mainBg {
+  0% {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+}
+
+@keyframes mainBg {
+  0% {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+}
+
+@-webkit-keyframes rockinvest {
+  from {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  15% {
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rockinvest {
+  from {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  15% {
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeEffect {
@@ -12127,9 +12287,9 @@ option {
   .pin-recovery {
     width: 220px;
   }
-  .select-lang {
-    top: 113px;
-    left: 266px;
+  .lang {
+    top: 111px;
+    left: 277px;
   }
   .faq__mark-before {
     width: 517px;
@@ -12360,7 +12520,7 @@ option {
     width: 167px;
     margin-left: 0;
   }
-  .select-lang {
+  .lang {
     top: 67px;
     left: 200px;
   }
@@ -12653,10 +12813,10 @@ option {
   .pin-recovery {
     width: 173px;
   }
-  .select-lang {
-    top: 32px;
+  .lang {
+    top: 34px;
     left: auto;
-    right: 29px;
+    right: 10px;
   }
   .faq__mark-before {
     width: 408px;
