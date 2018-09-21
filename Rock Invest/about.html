@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="libs/bootstrap.min.css">
         <link rel="stylesheet" href="libs/flag-icon/css/flag-icon.min.css">
+        <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
@@ -59,6 +61,15 @@
         </div>
         <div class="navBurger d-md-none" role="navigation" id="navToggle"></div>
         <header class="header">
+                <div id="scene">
+                        <div data-depth="0.2">
+                                <img src="img/bg/main_bg.jpeg" class="first-layer-prlx">
+                        </div>
+                        <div data-depth="0.6">
+                                <img src="img/bg/man-paralax.png" class="man-paralax">
+                        </div>
+                </div>
+                <img src="img/bg/rockinvest.png" class="rockinvest-bg">
                 <div class="container">
                         <div class="row">
                                 <div class="col">
@@ -129,9 +140,42 @@
                                                                 </ul>
                                                         </nav>
                                                 </div>
-                                                <!-- <div class="select-language">
-                                                        <select name="" id=""></select>
-                                                </div> -->
+                                                <div class="lang clearfix">
+                                                        <div class="chooselang">
+                                                                <div class="selected-lang">
+                                                                        <span>
+                                                                                <i class="flag-icon flag-icon-us flag-icon-squared flag-selected" aria-hidden="true"></i> 
+                                                                                <span class="lang-choose lang-active">En</span>
+                                                                        </span>
+                                                                </div>
+                                                                <ul class="lang-list">
+                                                                        <li class="active clearfix">
+                                                                                <a href="#">
+                                                                                         <span>
+                                                                                <i class="flag-icon flag-icon-us flag-menu" aria-hidden="true"></i> 
+                                                                                <span class="lang-choose">En</span>
+                                                                        </span>
+                                                                                </a>
+                                                                        </li>
+                                                                        <li class="clearfix">
+                                                                                <a href="#">
+                                                                                         <span>
+                                                                                <i class="flag-icon flag-icon-ru flag-menu" aria-hidden="true"></i> 
+                                                                                <span class="lang-choose">Ru</span>
+                                                                        </span>
+                                                                                </a>
+                                                                        </li>
+                                                                        <li class="clearfix">
+                                                                                <a href="#">
+                                                                                         <span>
+                                                                                <i class="flag-icon flag-icon-ua flag-menu" aria-hidden="true"></i> 
+                                                                                <span class="lang-choose">Ua</span>
+                                                                        </span>
+                                                                                </a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
@@ -154,37 +198,37 @@
                         <div class="row">
                                 <div class="col-md-6 col-lg-7">
                                         <ul class="exchange-rates-list clearfix">
-                                                <li class="exchange__item">
+                                                <li class="exchange__item wow bounceInLeft" data-wow-offset="200" data-wow-duration="4s">
                                                         <img src="img/icons/crypto-guitar.png" class="exchange__img">
                                                         <span class="exchange__currency">
-                                                                btc
+                                                            btc
                                                         </span>
                                                         <span class="exchange__rate">
-                                                                <i class="fas fa-arrow-up"></i>
-                                                                7554.00
+                                                            <i class="fas fa-arrow-up"></i>
+                                                            7554.00
                                                         </span>
                                                 </li>
-                                                <li class="exchange__item">
+                                                <li class="exchange__item wow bounceInLeft" data-wow-offset="200" data-wow-duration="3s" data-wow-delay="1s">
                                                         <img src="img/icons/crypto-mic.png" class="exchange__img">
                                                         <span class="exchange__currency">
-                                                                fth
+                                                            fth
                                                         </span>
                                                         <span class="exchange__rate">
-                                                                <i class="fas fa-arrow-up"></i>
-                                                                754.00
+                                                            <i class="fas fa-arrow-up"></i>
+                                                            754.00
                                                         </span>
                                                 </li>
-                                                <li class="exchange__item">
+                                                <li class="exchange__item wow bounceInLeft" data-wow-offset="200" data-wow-duration="2s" data-wow-delay="2s">
                                                         <img src="img/icons/crypto-gesture.png" class="exchange__img">
                                                         <span class="exchange__currency">
                                                                 ltc
                                                         </span>
                                                         <span class="exchange__rate">
-                                                                <i class="fas fa-arrow-down"></i>
-                                                                554.00
-                                                        </span>
+                                                        <i class="fas fa-arrow-down"></i>
+                                                        554.00
+                                                                </span>
                                                 </li>
-                                                <li class="exchange__item">
+                                                <li class="exchange__item wow bounceInLeft" data-wow-offset="200" data-wow-duration="1s" data-wow-delay="3s">
                                                         <img src="img/icons/crypto-skull.png" class="exchange__img">
                                                         <span class="exchange__currency">
                                                                 doge
@@ -192,28 +236,29 @@
                                                         <span class="exchange__rate">
                                                                 <i class="fas fa-arrow-up"></i>
                                                                 755.00
-                                                        </span>
+                                                                </span>
                                                 </li>
                                                 <img src="img/images/cheat.png" class="cheat">
                                                 <div class="decorations">
-                                                        <img src="img/images/crypto-T-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-T">
-                                                        <img src="img/images/crypto-R-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-R">
-                                                        <img src="img/images/crypto-B-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-B">
-                                                        <img src="img/images/crypto-L-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-L">
+                                                        <img src="img/images/crypto-T-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-T wow rotateIn" data-wow-delay="2.5s">
+                                                        <img src="img/images/crypto-R-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-R wow rotateIn" data-wow-delay="3s">
+                                                        <img src="img/images/crypto-B-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-B wow rotateIn" data-wow-delay="2.5s">
+                                                        <img src="img/images/crypto-L-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-L wow rotateIn" data-wow-delay="1.5s">
                                                 </div>
                                         </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-5">
-                                        <div class="time">
+                                        <div class="time wow slideInRight" data-wow-offset="200">
                                                 <p>
                                                         server time
                                                 </p>
-                                                <span>
-                                                        05-10-2018 22:10:54
+                                                <span id="date">
+                                                </span>
+                                                <span id="time">
                                                 </span>
                                         </div>
                                         <div class="social">
-                                                <ul class="social__list clearfix">
+                                                <ul class="social__list clearfix wow bounceInRight" data-wow-offset="200" data-wow-delay="1.5s">
                                                         <li class="social__item-wrap">
                                                                 <!-- VK LINK -->
                                                                 <a href="" class="social__item">
@@ -294,8 +339,8 @@
                                 </div>
                                 <div class="col-lg-5">
                                         <div class="about_img">
-                                                <img src="img/images/guitar-player-room.png">
-                                                <img src="img/images/guitar-player.png">
+                                                <img src="img/images/guitar-player-room.png" class="wow slideInUp" data-wow-offset="200" data-wow-delay="0.3s">
+                                                <img src="img/images/guitar-player.png" class="wow slideInRight" data-wow-offset="200" data-wow-delay="0.8s">
                                         </div>
                                 </div>
                         </div>
@@ -305,8 +350,8 @@
                 <div class="container">
                         <div class="row">
                                 <div class="col-md-5 col-lg-4">
-                                        <div class="interview__left">
-                                                <img src="img/images/Clipboard.png">
+                                        <div class="interview__left wow fadeIn" data-wow-delay="0.4s" data-wow-offset="200">
+                                                <img class="image-link wow fadeIn" data-wow-delay="0.4s" data-wow-offset="200" src="img/images/Clipboard.png">
                                                 <p class="about__text about__text_bold">
                                                         Lorem ipsum dolor sit amet
                                                 </p>
@@ -314,7 +359,7 @@
                                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                                 </p>
                                                 <!-- CHECK BUTTON -->
-                                                <a href="" class="check-btn">
+                                                <a href="#" class="check-btn">
                                                         Check
                                                 </a>
                                         </div>
@@ -322,7 +367,7 @@
                                 <div class="col-md-7 col-lg-8">
                                         <div class="interview__right">
                                                 <ul class="about__list">
-                                                        <li class="about__list-item about__list-item-one">
+                                                        <li class="about__list-item about__list-item-one wow fadeInRightBig" data-wow-offset="200" data-wow-duration="0.3s" data-wow-duration="1.5s">
                                                                 <p class="list-item__title">
                                                                         Lorem ipsum
                                                                 </p>
@@ -330,7 +375,7 @@
                                                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                                                 </p>
                                                         </li>
-                                                        <li class="about__list-item about__list-item-two">
+                                                        <li class="about__list-item about__list-item-two wow fadeInRightBig" data-wow-offset="200" data-wow-duration="0.6s" data-wow-duration="1.2s">
                                                                 <p class="list-item__title">
                                                                         Lorem ipsum
                                                                 </p>
@@ -338,7 +383,7 @@
                                                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                                                 </p>
                                                         </li>
-                                                        <li class="about__list-item about__list-item-three">
+                                                        <li class="about__list-item about__list-item-three wow fadeInRightBig" data-wow-offset="200" data-wow-duration="0.9s" data-wow-duration="0.9s">
                                                                 <p class="list-item__title">
                                                                         Lorem ipsum
                                                                 </p>
@@ -346,7 +391,7 @@
                                                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                                                 </p>
                                                         </li>
-                                                        <li class="about__list-item about__list-item-four">
+                                                        <li class="about__list-item about__list-item-four wow fadeInRightBig" data-wow-offset="200" data-wow-duration="1.2s" data-wow-duration="0.6s">
                                                                 <p class="list-item__title">
                                                                         Lorem ipsum
                                                                 </p>
@@ -364,14 +409,14 @@
                 <div class="container">
                         <div class="row">
                                 <div class="col-3 col-md-2 col-lg-2">
-                                        <div class="footer__logo">
+                                        <div class="footer__logo wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1s">
                                                 <a href="index.html">
-                                                        <img src="img/icons/footer-logo.png" alt="Rock Invest">
+                                                    <img src="img/icons/footer-logo.png" alt="Rock Invest">
                                                 </a>
                                         </div>
                                 </div>
                                 <div class="d-none d-md-block col-md-5 col-lg-5">
-                                        <ul class="footer__menu-list clearfix">
+                                        <ul class="footer__menu-list clearfix wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1.2s">
                                                 <li class="footer__menu-item-wrap">
                                                         <a href="index.html" class="footer__menu-item footer__menu-item-home">
                                                             Home
@@ -389,7 +434,7 @@
                                                         </a>
                                                 </li>
                                         </ul>
-                                        <ul class="footer__menu-list clearfix">
+                                        <ul class="footer__menu-list clearfix wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1.2s">
                                                 <li class="footer__menu-item-wrap">
                                                         <!-- TESTIMONIALS LINK -->
                                                         <a href="" class="footer__menu-item footer__menu-item-testimonials">
@@ -414,7 +459,7 @@
                                         </ul>
                                 </div>
                                 <div class="col-4 col-md-2 col-lg-3">
-                                        <div class="footer__address">
+                                        <div class="footer__address wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1.5s">
                                                 <p class="address__title">
                                                         Address:
                                                 </p>
@@ -428,7 +473,7 @@
                                         </div>
                                 </div>
                                 <div class="col-5 col-md-3 col-lg-2">
-                                        <div class="footer__social">
+                                        <div class="footer__social wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1.5s">
                                                 <div class="footer__mail">
                                                         <p class="mail__title">
                                                                 E-mail:
@@ -441,20 +486,20 @@
                                                         <li class="social__item-wrap">
                                                                 <!-- VK LINK -->
                                                                 <a href="" class="social__item">
-                                                                        <i class="fab fa-vk"></i>
-                                                                </a>
+                                                        <i class="fab fa-vk"></i>
+                                                    </a>
                                                         </li>
                                                         <li class="social__item-wrap">
                                                                 <!-- FACEBOOK LINK -->
                                                                 <a href="" class="social__item">
-                                                                        <i class="fab fa-facebook-f"></i>
-                                                                </a>
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
                                                         </li>
                                                         <li class="social__item-wrap">
                                                                 <!-- TELEGRAM LINK -->
                                                                 <a href="" class="social__item">
-                                                                        <i class="fab fa-telegram-plane"></i>
-                                                                </a>
+                                                        <i class="fab fa-telegram-plane"></i>
+                                                    </a>
                                                         </li>
                                                 </ul>
                                         </div>
@@ -462,8 +507,31 @@
                         </div>
                 </div>
         </footer>
+        <script src="js/wow.min.js"></script>
         <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/moment/global.js"></script>
+        <script src="libs/moment-timezone/moment-timezone.js"></script>
+        <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/common.js"></script>
         <script src="js/main.js"></script>
+        <script>
+        $(document).ready(function() {
+                $('.popup-gallery').magnificPopup({
+                        delegate: 'a',
+                        type: 'image',
+                        tLoading: 'Loading image #%curr%...',
+                        mainClass: 'mfp-img-mobile',
+                        gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                        },
+                        image: {
+                                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                        }
+                });
+        });
+        </script>
 </body>
 
 </html>

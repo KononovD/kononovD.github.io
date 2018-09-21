@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="libs/bootstrap.min.css">
         <link rel="stylesheet" href="libs/flag-icon/css/flag-icon.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -19,137 +20,159 @@
                         <ul role="menu">
                                 <li>
                                         <a href="index.html" class="header__menu-item">
-                        Home
-                     </a>
+			Home
+		     </a>
                                 </li>
                                 <li>
                                         <a href="about.html" class="header__menu-item">
-                        About us
-                    </a>
+			About us
+		    </a>
                                 </li>
                                 <li>
                                         <!-- PARTNERS LINK -->
                                         <a href="" class="header__menu-item">
-                        Partners
-                    </a>
+			Partners
+		    </a>
                                 </li>
                                 <li>
                                         <!-- TESTIMONIALS LINK -->
                                         <a href="" class="header__menu-item">
-                        Testimonials
-                    </a>
+			Testimonials
+		    </a>
                                 </li>
                                 <li>
                                         <a href="faq.html" class="header__menu-item">
-                        FAQ
-                    </a>
+			FAQ
+		    </a>
                                 </li>
                                 <li>
                                         <a href="rules.html" class="header__menu-item">
-                        Rules
-                    </a>
+			Rules
+		    </a>
                                 </li>
                                 <li>
                                         <a href="support.html" class="header__menu-item">
-                        Support
-                    </a>
+			Support
+		    </a>
                                 </li>
                         </ul>
                 </nav>
         </div>
         <div class="navBurger d-md-none" role="navigation" id="navToggle"></div>
         <header class="header">
+                <div id="scene">
+                        <div data-depth="0.2">
+                                <img src="img/bg/main_bg.jpeg" class="first-layer-prlx">
+                        </div>
+                        <div data-depth="0.6">
+                                <img src="img/bg/man-paralax.png" class="man-paralax">
+                        </div>
+                </div>
+                <img src="img/bg/rockinvest.png" class="rockinvest-bg rockinvest-bg-home">
                 <div class="container">
                         <div class="row">
                                 <div class="col">
                                         <div class="hat clearfix">
                                                 <div class="logo">
                                                         <a href="index.html">
-                                <img src="img/icons/logo.png" alt="Rock Invest">
-                            </a>
+				<img src="img/icons/logo.png" alt="Rock Invest">
+			    </a>
                                                 </div>
                                                 <div class="hat-wrap">
                                                         <div class="guitar-neck clearfix">
                                                                 <!-- TELEGRAM SUPPORT LINK -->
                                                                 <a href="#" class="telegram-support">
-                                    Telegram Support
-                                    <i class="fab fa-telegram-plane"></i>
-                                </a>
+				    Telegram Support
+				    <i class="fab fa-telegram-plane"></i>
+				</a>
                                                                 <div class="authorization">
                                                                         <a href="login.html" class="login">
-                                        Login
-                                    </a>
+					Login
+				    </a>
                                                                         <span>
-                                        or
-                                    </span>
+					or
+				    </span>
                                                                         <a href="register.html" class="register">
-                                        Sign Up 
-                                    </a>
+					Sign Up 
+				    </a>
                                                                 </div>
                                                         </div>
                                                         <nav class="header__menu clearfix d-none d-md-block">
                                                                 <ul class="header__menu-list">
                                                                         <li class="header__menu-item-wrap">
                                                                                 <a href="index.html" class="header__menu-item">
-                                                                                    Home
-                                                                                </a>
+										    Home
+										</a>
                                                                         </li>
                                                                         <li class="header__menu-item-wrap">
                                                                                 <a href="about.html" class="header__menu-item">
-                                                                                    About us
-                                                                                </a>
+										    About us
+										</a>
                                                                         </li>
                                                                         <li class="header__menu-item-wrap">
                                                                                 <!-- PARTNERS LINK -->
                                                                                 <a href="" class="header__menu-item">
-                                                                                    Partners
-                                                                                </a>
+										    Partners
+										</a>
                                                                         </li>
                                                                         <li class="header__menu-item-wrap">
                                                                                 <!-- TESTIMONIALS LINK -->
                                                                                 <a href="" class="header__menu-item">
-                                                                                    Testimonials
-                                                                                </a>
+										    Testimonials
+										</a>
                                                                         </li>
                                                                         <li class="header__menu-item-wrap">
                                                                                 <a href="faq.html" class="header__menu-item">
-                                                                                    FAQ
-                                                                                </a>
+										    FAQ
+										</a>
                                                                         </li>
                                                                         <li class="header__menu-item-wrap">
                                                                                 <a href="rules.html" class="header__menu-item">
-                                                                                    Rules
-                                                                                </a>
+										    Rules
+										</a>
                                                                         </li>
                                                                         <li class="header__menu-item-wrap">
                                                                                 <a href="support.html" class="header__menu-item">
-                                                                                    Support
-                                                                                </a>
+										    Support
+										</a>
                                                                         </li>
                                                                 </ul>
                                                         </nav>
                                                 </div>
-                                                <div class="select-lang clearfix">
-                                                        <select name="" class="select-language" id="select-language">
-                                                                <option value="eng">
+                                                <div class="lang clearfix">
+                                                        <div class="chooselang">
+                                                                <div class="selected-lang">
                                                                         <span>
-                                                                            En
+										<i class="flag-icon flag-icon-us flag-icon-squared flag-selected" aria-hidden="true"></i> 
+										<span class="lang-choose lang-active">En</span>
                                                                         </span>
-                                                                </option>
-                                                                <option value="ru">
-                                                                        <span> 
-                                                                            Ru
-                                                                        </span>
-                                                                </option>
-                                                                <option value="ua">
-                                                                        <span> 
-                                                                            Ua
-                                                                        </span>
-                                                                </option>
-                                                        </select>
-                                                        <div class="flag-wrap">
-                                                                <div id="flag" class="flag-icon flag-icon-us flag-icon-squared flag">
                                                                 </div>
+                                                                <ul class="lang-list">
+                                                                        <li class="active clearfix">
+                                                                                <a href="#">
+											 <span>
+										<i class="flag-icon flag-icon-us flag-menu" aria-hidden="true"></i> 
+										<span class="lang-choose">En</span>
+									</span>
+										</a>
+                                                                        </li>
+                                                                        <li class="clearfix">
+                                                                                <a href="#">
+											 <span>
+										<i class="flag-icon flag-icon-ru flag-menu" aria-hidden="true"></i> 
+										<span class="lang-choose">Ru</span>
+									</span>
+										</a>
+                                                                        </li>
+                                                                        <li class="clearfix">
+                                                                                <a href="#">
+											 <span>
+										<i class="flag-icon flag-icon-ua flag-menu" aria-hidden="true"></i> 
+										<span class="lang-choose">Ua</span>
+									</span>
+										</a>
+                                                                        </li>
+                                                                </ul>
                                                         </div>
                                                 </div>
                                         </div>
@@ -159,98 +182,99 @@
                                 <div class="col-md-7 col-lg-6">
                                         <div class="header__title">
                                                 <h1>
-                                                    Lorem ipsum
-                                                </h1>
+						    Lorem ipsum
+						</h1>
                                                 <p class="header__banner">
                                                         Dolor sit amet, consectetur adipisicing elitDolor sit amet, consectetur adipisicing elitDolor sit amet, consectetur adipisicing elitDolor sit amet, consectetur adipisicing elitDolor sit amet, consectetur adipisicing elit
                                                 </p>
                                                 <!-- GET STARTED BTN -->
                                                 <a href="#" class="get-started-btn">
-                                                    Get started
-                                                </a>
+						    Get started
+						</a>
                                         </div>
                                 </div>
                         </div>
                         <div class="row">
                                 <div class="col-md-6 col-lg-7">
                                         <ul class="exchange-rates-list clearfix">
-                                                <li class="exchange__item">
+                                                <li class="exchange__item wow bounceInLeft" data-wow-offset="200" data-wow-duration="4s">
                                                         <img src="img/icons/crypto-guitar.png" class="exchange__img">
                                                         <span class="exchange__currency">
-                                                            btc
-                                                        </span>
+							    btc
+							</span>
                                                         <span class="exchange__rate">
-                                                            <i class="fas fa-arrow-up"></i>
-                                                            7554.00
-                                                        </span>
+							    <i class="fas fa-arrow-up"></i>
+							    7554.00
+							</span>
                                                 </li>
-                                                <li class="exchange__item">
+                                                <li class="exchange__item wow bounceInLeft" data-wow-offset="200" data-wow-duration="3s" data-wow-delay="1s">
                                                         <img src="img/icons/crypto-mic.png" class="exchange__img">
                                                         <span class="exchange__currency">
-                                                            fth
-                                                        </span>
+							    fth
+							</span>
                                                         <span class="exchange__rate">
-                                                            <i class="fas fa-arrow-up"></i>
-                                                            754.00
-                                                        </span>
+							    <i class="fas fa-arrow-up"></i>
+							    754.00
+							</span>
                                                 </li>
-                                                <li class="exchange__item">
+                                                <li class="exchange__item wow bounceInLeft" data-wow-offset="200" data-wow-duration="2s" data-wow-delay="2s">
                                                         <img src="img/icons/crypto-gesture.png" class="exchange__img">
                                                         <span class="exchange__currency">
-                                                                ltc
-                                                        </span>
+								ltc
+							</span>
                                                         <span class="exchange__rate">
-                                            <i class="fas fa-arrow-down"></i>
-                                            554.00
-                                        </span>
+					    		<i class="fas fa-arrow-down"></i>
+					    		554.00
+								</span>
                                                 </li>
-                                                <li class="exchange__item">
+                                                <li class="exchange__item wow bounceInLeft" data-wow-offset="200" data-wow-duration="1s" data-wow-delay="3s">
                                                         <img src="img/icons/crypto-skull.png" class="exchange__img">
                                                         <span class="exchange__currency">
-                                                                doge
-                                                        </span>
+								doge
+							</span>
                                                         <span class="exchange__rate">
-                                            <i class="fas fa-arrow-up"></i>
-                                            755.00
-                                        </span>
+					    			<i class="fas fa-arrow-up"></i>
+					    			755.00
+								</span>
                                                 </li>
                                                 <img src="img/images/cheat.png" class="cheat">
                                                 <div class="decorations">
-                                                        <img src="img/images/crypto-T-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-T">
-                                                        <img src="img/images/crypto-R-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-R">
-                                                        <img src="img/images/crypto-B-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-B">
-                                                        <img src="img/images/crypto-L-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-L">
+                                                        <img src="img/images/crypto-T-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-T wow rotateIn" data-wow-delay="2.5s">
+                                                        <img src="img/images/crypto-R-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-R wow rotateIn" data-wow-delay="3s">
+                                                        <img src="img/images/crypto-B-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-B wow rotateIn" data-wow-delay="2.5s">
+                                                        <img src="img/images/crypto-L-heart.png" class="exchange-rates-list-decorations exchange-rates-list-decorations-L wow rotateIn" data-wow-delay="1.5s">
                                                 </div>
                                         </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-5">
-                                        <div class="time">
+                                        <div class="time wow slideInRight" data-wow-offset="200">
                                                 <p>
                                                         server time
                                                 </p>
-                                                <span>
-                                            05-10-2018 22:10:54
-                                        </span>
+                                                <span id="date">
+						</span>
+                                                <span id="time">
+						</span>
                                         </div>
-                                        <div class="social">
+                                        <div class="social wow bounceInRight" data-wow-offset="200" data-wow-delay="1.5s">
                                                 <ul class="social__list clearfix">
                                                         <li class="social__item-wrap">
                                                                 <!-- VK LINK -->
                                                                 <a href="" class="social__item">
-                                                        <i class="fab fa-vk"></i>
-                                                    </a>
+							<i class="fab fa-vk"></i>
+						    </a>
                                                         </li>
                                                         <li class="social__item-wrap">
                                                                 <!-- FACEBOOK LINK -->
                                                                 <a href="" class="social__item">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
+							<i class="fab fa-facebook-f"></i>
+						    </a>
                                                         </li>
                                                         <li class="social__item-wrap">
                                                                 <!-- TELEGRAM LINK -->
                                                                 <a href="" class="social__item">
-                                                        <i class="fab fa-telegram-plane"></i>
-                                                    </a>
+							<i class="fab fa-telegram-plane"></i>
+						    </a>
                                                         </li>
                                                 </ul>
                                         </div>
@@ -258,142 +282,6 @@
                         </div>
                 </div>
         </header>
-        <section class="about">
-                <div class="container">
-                        <div class="row">
-                                <div class="col-6 col-sm-5 col-md-4 col-lg-3">
-                                        <div class="about__title">
-                                                <p>
-                                                        Lorem ipsum
-                                                </p>
-                                                <h2>
-                                About us
-                            </h2>
-                                        </div>
-                                </div>
-                                <div class="col-1">
-                                        <b class="title-number">
-                            1
-                        </b>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-6 offset-lg-2">
-                                        <div class="about__btns clearfix">
-                                                <a href="about.html" class="learn-more">
-                            </a>
-                                                <a href="register.html" class="register-btn">
-                                Register
-                            </a>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col">
-                                        <div class="about__card about__card_one">
-                                                <p class="card__title">
-                                                        Lorem ipsum dolor sit amet
-                                                </p>
-                                                <p class="card__text card__text_bold">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                                </p>
-                                                <p class="card__text">
-                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                                                </p>
-                                                <img src="img/images/about-us-guitar.png" class="about-us-guitar">
-                                        </div>
-                                        <div class="about__card about__card_two">
-                                                <p class="card__title">
-                                                        Lorem ipsum dolor sit amet
-                                                </p>
-                                                <p class="card__text card__text_bold">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                                </p>
-                                                <p class="card__text">
-                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                                                </p>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </section>
-        <section class="advantages">
-                <div class="container">
-                        <div class="row">
-                                <div class="col-1 offset-2 offset-sm-5 offset-md-7 col-lg-1 offset-lg-8">
-                                        <b class="title-number">
-                            2
-                        </b>
-                                </div>
-                                <div class="col-8 col-md-4 col-lg-3">
-                                        <div class="about__title about__title-adv">
-                                                <p>
-                                                        Lorem ipsum
-                                                </p>
-                                                <h2>
-                                Advantages
-                            </h2>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                        <div class="advantage__item advantage__item_yellow-guitar">
-                                                <p class="advantage__item-title">
-                                                        Lorem ipsum
-                                                </p>
-                                                <p class="advantage__text">
-                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                </p>
-                                        </div>
-                                        <img src="img/images/arrow-LR-1.png" class="advantage-arrow">
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                        <div class="advantage__item advantage__item_peach-guitar">
-                                                <p class="advantage__item-title">
-                                                        Lorem ipsum
-                                                </p>
-                                                <p class="advantage__text">
-                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                </p>
-                                        </div>
-                                        <img src="img/images/arrow-LR-2.png" class="advantage-arrow">
-                                </div>
-                                <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
-                                        <div class="advantage__item advantage__item_red-guitar">
-                                                <p class="advantage__item-title">
-                                                        Lorem ipsum
-                                                </p>
-                                                <p class="advantage__text">
-                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                </p>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col-md-6 col-lg-4 offset-lg-2 ">
-                                        <div class="advantage__item advantage__item_purple-guitar">
-                                                <p class="advantage__item-title">
-                                                        Lorem ipsum
-                                                </p>
-                                                <p class="advantage__text">
-                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                </p>
-                                        </div>
-                                        <img src="img/images/arrow-RL.png" class="advantage-arrow-LR">
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                        <div class="advantage__item advantage__item_lilac-guitar">
-                                                <p class="advantage__item-title">
-                                                        Lorem ipsum
-                                                </p>
-                                                <p class="advantage__text">
-                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                </p>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-                <img src="img/images/guitar-player_bg.png" class="guitar-player-bg">
-        </section>
         <section class="tariff">
                 <div class="container">
                         <div class="row">
@@ -403,8 +291,8 @@
                                                         Lorem ipsum
                                                 </p>
                                                 <h2>
-                                Advantages
-                            </h2>
+				Tariff plans
+			    </h2>
                                         </div>
                                 </div>
                         </div>
@@ -440,8 +328,8 @@
                                                 </p>
                                                 <!-- INVEST BUTTON -->
                                                 <a href="#" class="invest-btn">
-                                                    Invest
-                                                </a>
+						    Invest
+						</a>
                                         </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-4">
@@ -451,26 +339,162 @@
                                                 </p>
                                                 <input type="text" placeholder="AMOUNT">
                                                 <!-- <div class="">
-                                                        <select name="" id=""></select>
-                                                </div> -->
+							<select name="" id=""></select>
+						</div> -->
                                                 <div class="calculated clearfix">
                                                         <div class="calculated__row-one clearfix">
                                                                 <span class="day">
-                                                        In a days
-                                                    </span>
+							In a days
+						    </span>
                                                                 <span class="day-number">
-                                                        75465.00$
-                                                    </span>
+							75465.00$
+						    </span>
                                                         </div>
                                                         <div class="calculated__row-two clearfix">
                                                                 <span class="total-revenue">
-                                                        Total revenue
-                                                    </span>
+							Total revenue
+						    </span>
                                                                 <span class="revenue">
-                                                        0.00$
-                                                    </span>
+							0.00$
+						    </span>
                                                         </div>
                                                 </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <section class="advantages">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-1 offset-2 offset-sm-5 offset-md-7 col-lg-1 offset-lg-8">
+                                        <b class="title-number">
+			    2
+			</b>
+                                </div>
+                                <div class="col-8 col-md-4 col-lg-3">
+                                        <div class="about__title about__title-adv">
+                                                <p>
+                                                        Lorem ipsum
+                                                </p>
+                                                <h2>
+				Advantages
+			    </h2>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                        <div class="advantage__item advantage__item_yellow-guitar wow bounceInLeft" data-wow-offset="200" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                                                <p class="advantage__item-title">
+                                                        Lorem ipsum
+                                                </p>
+                                                <p class="advantage__text">
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                </p>
+                                        </div>
+                                        <img src="img/images/arrow-LR-1.png" class="advantage-arrow wow rotateIn" data-wow-offset="200" data-wow-duration="1s" data-wow-delay="1s">
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                        <div class="advantage__item advantage__item_peach-guitar wow bounceInLeft" data-wow-offset="200" data-wow-duration="1.5s" data-wow-delay="1s">
+                                                <p class="advantage__item-title">
+                                                        Lorem ipsum
+                                                </p>
+                                                <p class="advantage__text">
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                </p>
+                                        </div>
+                                        <img src="img/images/arrow-LR-2.png" class="advantage-arrow wow rotateIn" data-wow-offset="200" data-wow-duration="1s" data-wow-delay="1.5s">
+                                </div>
+                                <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+                                        <div class="advantage__item advantage__item_red-guitar wow bounceInLeft" data-wow-offset="200" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                                                <p class="advantage__item-title">
+                                                        Lorem ipsum
+                                                </p>
+                                                <p class="advantage__text">
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-6 col-lg-4 offset-lg-2 ">
+                                        <div class="advantage__item advantage__item_purple-guitar wow bounceInRight" data-wow-offset="200" data-wow-duration="1.5s" data-wow-delay="2.5s">
+                                                <p class="advantage__item-title">
+                                                        Lorem ipsum
+                                                </p>
+                                                <p class="advantage__text">
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                </p>
+                                        </div>
+                                        <img src="img/images/arrow-RL.png" class="advantage-arrow-LR wow rotateIn" data-wow-offset="200" data-wow-duration="1s" data-wow-delay="2.5s">
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                        <div class="advantage__item advantage__item_lilac-guitar wow bounceInRight" data-wow-offset="200" data-wow-duration="1.5s" data-wow-delay="2s">
+                                                <p class="advantage__item-title">
+                                                        Lorem ipsum
+                                                </p>
+                                                <p class="advantage__text">
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <img src="img/images/guitar-player_bg.png" class="guitar-player-bg">
+        </section>
+        <section class="about">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+                                        <div class="about__title">
+                                                <p>
+                                                        Lorem ipsum
+                                                </p>
+                                                <h2>
+				About us
+			    </h2>
+                                        </div>
+                                </div>
+                                <div class="col-1">
+                                        <b class="title-number">
+			    3
+			</b>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 offset-lg-2">
+                                        <div class="about__btns clearfix">
+                                                <a href="about.html" class="learn-more">
+			    </a>
+                                                <a href="register.html" class="register-btn">
+				Register
+			    </a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col">
+                                        <div class="about__card about__card_one wow fadeInLeftBig" data-wow-offset="200">
+                                                <p class="card__title">
+                                                        Lorem ipsum dolor sit amet
+                                                </p>
+                                                <p class="card__text card__text_bold">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </p>
+                                                <p class="card__text">
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                                </p>
+                                                <img src="img/images/about-us-guitar.png" class="about-us-guitar">
+                                        </div>
+                                        <div class="about__card about__card_two wow fadeInRightBig" data-wow-offset="200" data-wow-delay="0.5s">
+                                                <p class="card__title">
+                                                        Lorem ipsum dolor sit amet
+                                                </p>
+                                                <p class="card__text card__text_bold">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </p>
+                                                <p class="card__text">
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                                </p>
                                         </div>
                                 </div>
                         </div>
@@ -485,20 +509,20 @@
                                                         Lorem ipsum
                                                 </p>
                                                 <h2>
-                                Statistics
-                            </h2>
+				Statistics
+			    </h2>
                                         </div>
                                 </div>
                                 <div class="col-1">
                                         <b class="title-number">
-                            4
-                        </b>
+			    4
+			</b>
                                 </div>
                         </div>
                         <div class="row">
                                 <div class="col-lg-6">
-                                        <table class="statistics__table deposits-table">
-                                                <p class="table-title deposits-title">
+                                        <table class="statistics__table deposits-table wow rotateInDownLeft" data-wow-offset="200" data-wow-delay="1s">
+                                                <p class="table-title deposits-title wow rotateInDownLeft" data-wow-offset="200" data-wow-delay="1s">
                                                         Last deposits
                                                 </p>
                                                 <tr>
@@ -560,8 +584,8 @@
                                         </table>
                                 </div>
                                 <div class="col-lg-6">
-                                        <table class="statistics__table withdraw-table">
-                                                <p class="table-title withdraw-title">
+                                        <table class="statistics__table withdraw-table wow rotateInDownRight" data-wow-offset="200" data-wow-delay="1s">
+                                                <p class="table-title withdraw-title wow rotateInDownRight" data-wow-offset="200" data-wow-delay="1s">
                                                         Last withdraw
                                                 </p>
                                                 <tr>
@@ -625,7 +649,7 @@
                         </div>
                         <div class="row">
                                 <div class="col-md-6 col-lg-4">
-                                        <div class="statistics__card statistics__card_TP">
+                                        <div class="statistics__card statistics__card_TP wow fadeInLeft" data-wow-offset="200" data-wow-delay="1s" data-wow-duration="1.5s">
                                                 <p class="statistic__counter">
                                                         1646
                                                 </p>
@@ -636,7 +660,7 @@
                                         </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                        <div class="statistics__card statistics__card_PW">
+                                        <div class="statistics__card statistics__card_PW wow fadeInUpBig" data-wow-offset="200" data-wow-delay="2s" data-wow-duration="1.5s">
                                                 <p class="statistic__counter">
                                                         52 Days
                                                 </p>
@@ -647,7 +671,7 @@
                                         </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                        <div class="statistics__card statistics__card_TD">
+                                        <div class="statistics__card statistics__card_TD wow fadeInRightBig" data-wow-offset="200" data-wow-delay="1.5s" data-wow-duration="1.5s">
                                                 <p class="statistic__counter">
                                                         $ 245454.545
                                                 </p>
@@ -658,7 +682,7 @@
                                         </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                        <div class="statistics__card statistics__card_AP">
+                                        <div class="statistics__card statistics__card_AP wow fadeInLeft" data-wow-offset="200" data-wow-delay="1s" data-wow-duration="1.5s">
                                                 <p class="statistic__counter">
                                                         1012
                                                 </p>
@@ -669,7 +693,7 @@
                                         </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                        <div class="statistics__card statistics__card_VO">
+                                        <div class="statistics__card statistics__card_VO wow fadeInUpBig" data-wow-offset="200" data-wow-delay="2s" data-wow-duration="1.5s">
                                                 <p class="statistic__counter">
                                                         646
                                                 </p>
@@ -680,7 +704,7 @@
                                         </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                        <div class="statistics__card statistics__card_TW">
+                                        <div class="statistics__card statistics__card_TW wow fadeInRightBig" data-wow-offset="200" data-wow-delay="1.5s" data-wow-duration="1.5s">
                                                 <p class="statistic__counter">
                                                         $ 45646.64
                                                 </p>
@@ -699,11 +723,11 @@
                         <div class="row">
                                 <div class="col">
                                         <ul class="payment-systems__list payment-systems__list-1 clearfix">
-                                                <li class="payment-systems__list-item payment-systems__list-item-norton"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-name"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-siteLock"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-comodo"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-cover"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-norton wow slideInLeft" data-wow-delay="0.5s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-name wow rotateIn" data-wow-delay="1s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-siteLock wow zoomIn" data-wow-delay="1.5s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-comodo wow rotateIn" data-wow-delay="2s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-cover wow fadeInRightBig" data-wow-delay="2.5s" data-wow-offset="200" data-wow-duration="1s"></li>
                                         </ul>
                                 </div>
                         </div>
@@ -714,12 +738,12 @@
                         <div class="row">
                                 <div class="col">
                                         <ul class="payment-systems__list payment-systems__list-2 clearfix">
-                                                <li class="payment-systems__list-item payment-systems__list-item-pMoney"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-payeer"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-eth"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-dogeCoin"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-btc"></li>
-                                                <li class="payment-systems__list-item payment-systems__list-item-liteCoin"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-pMoney wow zoomIn" data-wow-delay="3.5s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-payeer wow flipInX" data-wow-delay="4.5s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-eth wow fadeInUpBig" data-wow-delay="5s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-dogeCoin wow slideInUp" data-wow-delay="5s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-btc wow zoomIn" data-wow-delay="4s" data-wow-offset="200" data-wow-duration="1s"></li>
+                                                <li class="payment-systems__list-item payment-systems__list-item-liteCoin wow slideInUp" data-wow-delay="3s" data-wow-offset="200" data-wow-duration="1s"></li>
                                         </ul>
                                 </div>
                         </div>
@@ -729,57 +753,57 @@
                 <div class="container">
                         <div class="row">
                                 <div class="col-3 col-md-2 col-lg-2">
-                                        <div class="footer__logo">
+                                        <div class="footer__logo wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1s">
                                                 <a href="index.html">
-                                                    <img src="img/icons/footer-logo.png" alt="Rock Invest">
-                                                </a>
+						    <img src="img/icons/footer-logo.png" alt="Rock Invest">
+						</a>
                                         </div>
                                 </div>
                                 <div class="d-none d-md-block col-md-5 col-lg-5">
-                                        <ul class="footer__menu-list clearfix">
+                                        <ul class="footer__menu-list clearfix wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1.2s">
                                                 <li class="footer__menu-item-wrap">
                                                         <a href="index.html" class="footer__menu-item footer__menu-item-home">
-                                                            Home
-                                                        </a>
+							    Home
+							</a>
                                                 </li>
                                                 <li class="footer__menu-item-wrap">
                                                         <a href="about.html" class="footer__menu-item footer__menu-item-aboutUs">
-                                                            About us
-                                                        </a>
+							    About us
+							</a>
                                                 </li>
                                                 <li class="footer__menu-item-wrap">
                                                         <!-- PARTNERS LINK -->
                                                         <a href="" class="footer__menu-item footer__menu-item-partners">
-                                                            Partners
-                                                        </a>
+							    Partners
+							</a>
                                                 </li>
                                         </ul>
-                                        <ul class="footer__menu-list clearfix">
+                                        <ul class="footer__menu-list clearfix wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1.2s">
                                                 <li class="footer__menu-item-wrap">
                                                         <!-- TESTIMONIALS LINK -->
                                                         <a href="" class="footer__menu-item footer__menu-item-testimonials">
-                                                            Testimonials
-                                                        </a>
+							    Testimonials
+							</a>
                                                 </li>
                                                 <li class="footer__menu-item-wrap">
                                                         <a href="faq.html" class="footer__menu-item footer__menu-item-faq">
-                                                            FAQ
-                                                        </a>
+							    FAQ
+							</a>
                                                 </li>
                                                 <li class="footer__menu-item-wrap">
                                                         <a href="rules.html" class="footer__menu-item footer__menu-item-rules">
-                                                            Rules
-                                                        </a>
+							    Rules
+							</a>
                                                 </li>
                                                 <li class="footer__menu-item-wrap">
                                                         <a href="support.html" class="footer__menu-item">
-                                                            Support
-                                                        </a>
+							    Support
+							</a>
                                                 </li>
                                         </ul>
                                 </div>
                                 <div class="col-4 col-md-2 col-lg-3">
-                                        <div class="footer__address">
+                                        <div class="footer__address wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1.5s">
                                                 <p class="address__title">
                                                         Address:
                                                 </p>
@@ -787,13 +811,13 @@
                                                         Unit 24, Easton business centre, felix road, bristol, BS6 0HE, England
                                                 </p>
                                                 <a href="#" class="telegram-support">
-                                                        Telegram Support
-                                                        <i class="fab fa-telegram-plane"></i>
-                                                </a>
+							Telegram Support
+							<i class="fab fa-telegram-plane"></i>
+						</a>
                                         </div>
                                 </div>
                                 <div class="col-5 col-md-3 col-lg-2">
-                                        <div class="footer__social">
+                                        <div class="footer__social wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="100" data-wow-delay="1.5s">
                                                 <div class="footer__mail">
                                                         <p class="mail__title">
                                                                 E-mail:
@@ -806,20 +830,20 @@
                                                         <li class="social__item-wrap">
                                                                 <!-- VK LINK -->
                                                                 <a href="" class="social__item">
-                                                        <i class="fab fa-vk"></i>
-                                                    </a>
+							<i class="fab fa-vk"></i>
+						    </a>
                                                         </li>
                                                         <li class="social__item-wrap">
                                                                 <!-- FACEBOOK LINK -->
                                                                 <a href="" class="social__item">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
+							<i class="fab fa-facebook-f"></i>
+						    </a>
                                                         </li>
                                                         <li class="social__item-wrap">
                                                                 <!-- TELEGRAM LINK -->
                                                                 <a href="" class="social__item">
-                                                        <i class="fab fa-telegram-plane"></i>
-                                                    </a>
+							<i class="fab fa-telegram-plane"></i>
+						    </a>
                                                         </li>
                                                 </ul>
                                         </div>
@@ -828,7 +852,20 @@
                 </div>
         </footer>
         <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/moment/global.js"></script>
+        <script src="libs/moment-timezone/moment-timezone.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/common.js"></script>
         <script src="js/main.js"></script>
+        <script>
+        (function() {
+                //parallax
+                var scene = document.getElementById('scene');
+                var parallax = new Parallax(scene);
+                parallax.friction(0.2, 0.2);
+        })();
+        </script>
 </body>
 
 </html>

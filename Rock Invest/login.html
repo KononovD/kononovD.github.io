@@ -162,7 +162,8 @@
                                                 <div class="sing-in__input-wrap sing-in__captcha-wrap clearfix">
                                                         <input type="text">
                                                         <div class="input__decor captcha__decor">
-                                                                <img src="img/bg/main_bg.jpeg" alt="">
+                                                                <!-- <img src="img/bg/main_bg.jpeg" alt="Капча"> -->
+                                                                123456
                                                         </div>
                                                 </div>
                                                 <input type="submit" id="login-btn" class="register-btn" value="Login">
@@ -173,8 +174,9 @@
                                                 <p>
                                                         server time
                                                 </p>
-                                                <span>
-                                                        05-10-2018 22:10:54
+                                                <span id="date">
+                                                </span>
+                                                <span id="time">
                                                 </span>
                                         </div>
                                         <div class="social clearfix">
@@ -204,6 +206,8 @@
                 </div>
         </section>
         <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/moment/global.js"></script>
+        <script src="libs/moment-timezone/moment-timezone.js"></script>
         <script src="js/main.js"></script>
 </body>
 
