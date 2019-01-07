@@ -1345,11 +1345,417 @@ ul.phone__menu li:hover:after {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-.chat-close{
+.chat-close {
     position: absolute;
     right: 10px;
     top: 10px;
     font-size: 20px;
-    color:#1b1e21;
+    color: #1b1e21;
     font-weight: 500;
+}
+
+.mines-top {
+    padding-top: 25px;
+    padding-bottom: 3px;
+    background: #f7f7fa;
+}
+
+.cash {
+    padding-top: 28px;
+}
+
+.cash__replenish-btn {
+    float: left;
+    margin-left: 72px;
+    margin-top: 35px;
+    margin-right: 39px;
+}
+
+.cash__name {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+}
+
+.cash__current-account {
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 4px;
+    color: #000;
+    padding: 11px 50px 12px 65px;
+    background: url("../img/game-coin.png") no-repeat center left;
+    background-position-x: 15px;
+    border: 1px solid #f3802c;
+}
+
+.cash__curr {
+    float: left;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.cash__name {
+    margin-bottom: 11px;
+}
+
+.cash:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 630px;
+    background-image: -moz-linear-gradient(45deg, rgba(225, 159, 41, 0) 0%, rgb(225, 159, 41) 70%, rgb(207, 112, 46) 100%);
+    background-image: -webkit-linear-gradient(45deg, rgba(225, 159, 41, 0) 0%, rgb(225, 159, 41) 70%, rgb(207, 112, 46) 100%);
+    background-image: -ms-linear-gradient(45deg, rgba(225, 159, 41, 0) 0%, rgb(225, 159, 41) 70%, rgb(207, 112, 46) 100%);
+    bottom: 0;
+    left: 0;
+}
+
+.right-btn {
+    clear: right;
+    padding-top: 69px;
+}
+
+.back-btn {
+    background-color: rgb(239, 239, 242);
+    border-radius: 10px;
+    padding: 10px 21px 11px 20px;
+    color: #ccd7dd;
+}
+
+.back-btn i {
+    margin-right: 11px;
+}
+
+.settings {
+    color: #ccd7dd;
+    background-color: rgb(239, 239, 242);
+    border-radius: 50%;
+    padding: 7px 10px;
+    font-size: 18px;
+    margin-left: 18px;
+}
+
+.right-btn a:hover {
+    color: #0b2e13;
+}
+
+.mines-the-game {
+    padding-top: 33px;
+    padding-bottom: 60px;
+    position: relative;
+    background: #f7f7fa;
+}
+
+.mines-the-game:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 630px;
+    background-image: -moz-linear-gradient(45deg, rgb(207, 112, 46) 0%, rgb(225, 159, 41) 70%, rgba(225, 159, 41, 0) 100%);
+    background-image: -webkit-linear-gradient(45deg, rgb(207, 112, 46) 0%, rgb(225, 159, 41) 70%, rgba(225, 159, 41, 0) 100%);
+    background-image: -ms-linear-gradient(45deg, rgb(207, 112, 46) 0%, rgb(225, 159, 41) 70%, rgba(225, 159, 41, 0) 100%);
+    bottom: 22px;
+    left: 17%;
+}
+
+.game__settings-form {
+    background: #fff;
+    box-shadow: 0 0 20px 5px #ccd7dd;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.form__money-wrap {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.inputSum {
+    padding: 8px 10px;
+    width: 172px;
+    margin-right: 20px;
+    border-radius: 3px;
+    border: 1px solid #cad4da;
+    outline: none;
+}
+
+.form__label {
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+.factorBtn,
+.form__min-label {
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid rgb(237, 102, 79);
+    border-radius: 5px;
+    background-image: -moz-linear-gradient(45deg, rgb(235, 80, 55) 0%, rgb(247, 164, 37) 100%);
+    background-image: -webkit-linear-gradient(45deg, rgb(235, 80, 55) 0%, rgb(247, 164, 37) 100%);
+    background-image: -ms-linear-gradient(45deg, rgb(235, 80, 55) 0%, rgb(247, 164, 37) 100%);
+    padding: 8px 10px;
+    margin-right: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.factorBtn:hover,
+.form__min-label:hover {
+    background-image: -moz-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    background-image: -webkit-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    background-image: -ms-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    box-shadow: 0 0 20px 6px rgb(235, 80, 55);
+}
+
+.checkbox_hidden {
+    display: none;
+}
+
+.checkbox_hidden:checked + label {
+    background-image: -moz-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    background-image: -webkit-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    background-image: -ms-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    box-shadow: 0 0 20px 6px rgb(235, 80, 55);
+}
+
+.form__min-label {
+    width: 43px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.min-custom-number {
+    display: none;
+}
+
+.min-custom-label {
+    font-size: 13px;
+    color: rgb(235, 77, 56);
+    font-weight: 700;
+    padding: 8px 28px;
+    border: 2px solid rgb(235, 77, 56);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.min-custom-label:hover {
+    border: 2px solid rgb(247, 211, 16);
+    box-shadow: 0 0 15px 2px rgb(235, 77, 56);
+}
+
+.min-custom-number-settings:checked + label {
+    color: #fff;
+}
+
+.min-custom-number-settings:checked + label + .min-custom-number {
+    display: block;
+}
+
+.min-custom-number {
+    position: absolute;
+    top: 36px;
+    left: 260px;
+    border: none;
+    outline: none;
+}
+
+.form__mine-wrap {
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.press-to-play {
+    width: 100%;
+}
+
+.form__left {
+    float: left;
+    padding: 26px 63px 0 60px;
+    width: 43%;
+    height: 100%;
+}
+
+.form__right {
+    float: right;
+    padding: 26px 15px 26px 64px;
+    background: #ccd7dd;
+    width: 57%;
+}
+
+.bomb-coin-ratio {
+    margin-top: 264px;
+
+}
+
+.coin-ratio {
+    background: url("../img/extra-coin.png") no-repeat center left;
+    -webkit-background-size: 100%;
+    background-size: contain;
+    padding: 20px 3px 16px 46px;
+    margin-right: 130px;
+    font-weight: 700;
+    color: #f59d26;
+}
+
+.bomb-ratio {
+    background: url("../img/bomb.png") no-repeat center left;
+    -webkit-background-size: 100%;
+    background-size: contain;
+    padding: 20px 3px 16px 70px;
+    font-weight: 700;
+    color: #ec5736;
+}
+
+.play-button {
+    border-radius: 18px;
+    background-color: rgb(133, 162, 180);
+    width: 106px;
+    height: 107px;
+    border: none;
+    outline: none !important;
+}
+
+.statistics {
+    padding-top: 44px;
+    padding-bottom: 54px;
+}
+
+.tablinks {
+    text-align: center;
+    border: none;
+    background: none;
+    font-weight: 700;
+    outline: none !important;
+    cursor: pointer;
+    margin-right: 60px;
+    margin-bottom: 34px;
+    animation: fadeEffect 1s linear;
+}
+
+.tab-active {
+    background-image: -moz-linear-gradient(45deg, #ea443a 0%, #f59728 100%);
+    background-image: -webkit-linear-gradient(45deg, #ea443a 0%, #f59728 100%);
+    background-image: -ms-linear-gradient(45deg, #ea443a 0%, #f59728 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    animation: fadeEffect 1s linear;
+}
+
+.tab-active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #eb4939;
+    left: 0;
+    bottom: -1px;
+    animation: fadeEffect 1s linear;
+}
+
+.game__statistics {
+    caption-side: bottom;
+}
+
+tr > td:last-child {
+    margin: 0;
+}
+
+table {
+    border-collapse: separate;
+}
+
+.table-title {
+    font-weight: 900;
+    font-size: 14px;
+    margin-bottom: 30px !important;
+    display: inline-block;
+    color:#000;
+}
+
+.td-bet{
+    background: url("../img/mini-coin-table.png") no-repeat center left;
+    background-position-x: 62px;
+}
+
+.td-money{
+    color:#f7a226;
+}
+
+.td-positive{
+    color:#2bc024;
+}
+
+.td-negative{
+    color:#e21e1e;
+}
+
+.td-profit-pay{
+    float: left;
+}
+
+.td-profit{
+    padding-left: 49px;
+    background: url("../img/mini-coin-table.png") no-repeat center left;
+    background-position-x: 25px;
+}
+
+td {
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    font-size: 14px;
+    color:#ccd7dd;
+    padding: 11px 0;
+}
+
+.table-title-game,
+.td-game{
+    width: 279px;
+    text-align: left;
+}
+
+.table-title-time,
+.td-time{
+    width: 212px;
+}
+
+.table-title-bet,
+.td-bet{
+    width: 255px;
+}
+
+.table-title-rate,
+.td-rate{
+    width: 211px;
+}
+
+.table-title-profit,
+.td-profit{
+    width: 149px;
+    text-align: right;
+}
+
+.table-title:last-child {
+    padding-right: 0;
+}
+
+.td-game{
+    background: url("../img/mini-bomb.png") no-repeat center left;
+    padding-left: 45px;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -93,7 +93,7 @@
 		</div>
 </section>
 
-<section class="top">
+<section class="mines-top">
 		<div class="container">
 				<div class="row">
 						<div class="col-lg-2">
@@ -102,7 +102,7 @@
 								</div>
 						</div>
 						<div class="col-lg-7">
-								<div class="cash">
+								<div class="cash clearfix">
 										<a href="#" class="cash__replenish-btn hat__btn a_hover">
 												Пополнить
 										</a>
@@ -124,8 +124,8 @@
 										</div>
 								</div>
 						</div>
-						<div class="col-lg-3 offset-lg-1">
-								<div class="right-btn">
+						<div class="col-lg-3">
+								<div class="right-btn clearfix">
 										<a href="#" class="back-btn">
 												<i class="fas fa-chevron-left"></i>
 												Назад
@@ -139,10 +139,240 @@
 		</div>
 </section>
 <section class="mines-the-game">
-
+		<div class="container">
+				<div class="row">
+						<div class="col-12">
+								<div class="game__settings">
+										<form action="#" class="game__settings-form clearfix">
+												<div class="form__left">
+														<div class="form__money-wrap">
+																<p for="inputSum" class="form__label">
+																		Сумма ставки($):
+																</p>
+																<input type="text" id="inputSum" class="inputSum">
+																<input type="button" value="1/2" class="factorBtn">
+																<input type="button" value="2X" class="factorBtn">
+																<input type="button" value="3X" class="factorBtn">
+														</div>
+														<div class="form__mine-wrap">
+																<p class="form__label">
+																		Количество мин:
+																</p>
+																<input type="radio" name="min-number" id="min-number-1"
+																       class="checkbox_hidden">
+																<label for="min-number-1" class="form__min-label">
+																		1
+																</label>
+																<input type="radio" name="min-number" id="min-number-2"
+																       class="checkbox_hidden">
+																<label for="min-number-2" class="form__min-label">
+																		2
+																</label>
+																<input type="radio" name="min-number" id="min-number-3"
+																       class="checkbox_hidden">
+																<label for="min-number-3" class="form__min-label">
+																		3
+																</label>
+																<input type="radio" name="min-number" id="min-number-10"
+																       class="checkbox_hidden">
+																<label for="min-number-10" class="form__min-label">
+																		10
+																</label>
+																<input type="radio" name="min-number"
+																       id="min-number-custom"
+																       class="min-custom-number min-custom-number-settings">
+																<label for="min-number-custom" class="min-custom-label">
+																		Клиентский
+																</label>
+																<input type="number" min="1" max="24"
+																       id="min-custom-number" class="min-custom-number"
+																       placeholder="000">
+														</div>
+														<input type="submit" value="Нажмите, чтобы играть"
+														       class="press-to-play hat__btn a_hover">
+														<div class="bomb-coin-ratio">
+																<span class="coin-ratio">
+																		3
+																</span>
+																<span class="bomb-ratio">
+																		10
+																</span>
+														</div>
+												</div>
+												<div class="form__right">
+														<div class="play-field">
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+																<button class="play-button"></button>
+														</div>
+												</div>
+										</form>
+								</div>
+						</div>
+				</div>
+		</div>
 </section>
 <section class="statistics">
-
+		<div class="container">
+				<div class="row">
+						<div class="col-12">
+								<div class="tabs">
+										<div class="tab clearfix">
+												<button class="tablinks" onclick="openLogs(event, 'my' )"
+												        id="defaultOpen">Мои ставки
+												</button>
+												<button class="tablinks" onclick="openLogs(event, 'all')">Все
+														ставки в игре
+												</button>
+										</div>
+										<div id="my" class="tabcontent">
+												<table class="game__statistics">
+														<tr>
+																<td class="table-title table-title-game">Игра</td>
+																<td class="table-title table-title-time">Время</td>
+																<td class="table-title table-title-bet">Ставка</td>
+																<td class="table-title table-title-rate">Коэффициент</td>
+																<td class="table-title table-title-profit">Прибыль</td>
+														</tr>
+														<tr>
+																<td class="td-game">
+																		Mines
+																</td>
+																<td class="td-time">
+																		17:12:09
+																</td>
+																<td class="td-bet">
+																		(PM)
+																		<span class="td-money">
+																				$12.29
+																		</span>
+																</td>
+																<td class="td-rate">
+																		1.90x
+																</td>
+																<td class="td-profit">
+																		<span class="td-profit-pay">
+																				(PM)
+																		</span>
+																		<span class="td-positive">
+																				$12.29
+																		</span>
+																</td>
+														</tr>
+														<tr>
+																<td class="td-game">
+																		Mines
+																</td>
+																<td class="td-time">
+																		17:12:09
+																</td>
+																<td class="td-bet">
+																		(P)
+																		<span class="td-money">
+																				$12.29
+																		</span>
+																</td>
+																<td class="td-rate">
+																		1.90x
+																</td>
+																<td class="td-profit clearfix">
+																		<span class="td-profit-pay">
+																				(PM)
+																		</span>
+																		<span class="td-negative">
+																				-$12.29
+																		</span>
+																</td>
+														</tr>
+												</table>
+										</div>
+										<div id="all" class="tabcontent">
+												<table class="game__statistics">
+														<tr>
+																<td class="table-title table-title-game">тест</td>
+																<td class="table-title table-title-time">таблицы</td>
+																<td class="table-title table-title-bet">йййййййййй</td>
+																<td class="table-title table-title-rate">цццццццццц</td>
+																<td class="table-title table-title-profit">уу</td>
+														</tr>
+														<tr>
+																<td class="td-game">
+																		Mines
+																</td>
+																<td class="td-time">
+																		17:12:09
+																</td>
+																<td class="td-bet">
+																		(PM)
+																		<span class="td-money">
+																				$12.29
+																		</span>
+																</td>
+																<td class="td-rate">
+																		1.90x
+																</td>
+																<td class="td-profit">
+																		<span class="td-profit-pay">
+																				(PM)
+																		</span>
+																		<span class="td-positive">
+																				$12.29
+																		</span>
+																</td>
+														</tr>
+														<tr>
+																<td class="td-game">
+																		Mines
+																</td>
+																<td class="td-time">
+																		17:12:09
+																</td>
+																<td class="td-bet">
+																		(P)
+																		<span class="td-money">
+																				$12.29
+																		</span>
+																</td>
+																<td class="td-rate">
+																		1.90x
+																</td>
+																<td class="td-profit clearfix">
+																		<span class="td-profit-pay">
+																				(PM)
+																		</span>
+																		<span class="td-negative">
+																				-$12.29
+																		</span>
+																</td>
+														</tr>
+												</table>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
 </section>
 
 
@@ -269,7 +499,36 @@
 		</div>
 </footer>
 <script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script>
+    function openLogs(evt, person) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(person).style.display = "block";
+        evt.currentTarget.className += " tab-active";
+    }
+
+    document.getElementById("defaultOpen").click();
+</script>
 <script src="js/main.js"></script>
+
 </body>
 
 </html>
