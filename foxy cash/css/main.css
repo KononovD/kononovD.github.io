@@ -585,12 +585,12 @@ img {
     position: relative;
 }
 
-.mines-game:after {
+.footer:before {
     content: "";
     display: block;
     position: absolute;
     left: 0;
-    bottom: -1px;
+    top: -1px;
     height: 3px;
     width: 1146px;
     background: #cb463d;
@@ -604,6 +604,7 @@ img {
 .footer {
     padding-top: 61px;
     background: #232323;
+    position: relative;
 }
 
 .footer__menu {

@@ -46,7 +46,7 @@ $(document).ready(function () {
         $('._image-foxicash').parallax(80, e);
     });
 
-    $('button').on('click', function () {
+    $('.menu__open').on('click', function () {
         $('body').toggleClass('open');
     });
 
