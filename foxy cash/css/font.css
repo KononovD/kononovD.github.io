@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/GeometriaHeavy/GeometriaHeavy.eot');
+    src: url('../fonts/Geometria/GeometriaHeavy/GeometriaHeavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria/GeometriaHeavy/GeometriaHeavy.woff') format('woff'),
+    url('../fonts/Geometria/GeometriaHeavy/GeometriaHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/GeometriaMedium/GeometriaMedium.eot');
+    src: url('../fonts/Geometria/GeometriaMedium/GeometriaMedium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria/GeometriaMedium/GeometriaMedium.woff') format('woff'),
+    url('../fonts/Geometria/GeometriaMedium/GeometriaMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/GeometriaRegular/Geometria.eot');
+    src: url('../fonts/Geometria/GeometriaRegular/Geometria.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria/GeometriaRegular/Geometria.woff') format('woff'),
+    url('../fonts/Geometria/GeometriaRegular/Geometria.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/GeometriaBold/GeometriaBold.eot');
+    src: url('../fonts/Geometria/GeometriaBold/GeometriaBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria/GeometriaBold/GeometriaBold.woff') format('woff'),
+    url('../fonts/Geometria/GeometriaBold/GeometriaBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/GeometriaLight/GeometriaLight.eot');
+    src: url('../fonts/Geometria/GeometriaLight/GeometriaLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria/GeometriaLight/GeometriaLight.woff') format('woff'),
+    url('../fonts/Geometria/GeometriaLight/GeometriaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

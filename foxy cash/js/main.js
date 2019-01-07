@@ -1,0 +1,61 @@
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-chevron-left nav-owl nav-left'></i>", "<i class='fa fa-chevron-right nav-owl nav-right'></i>"]
+    });
+    new WOW({}).init({offset: 70});
+
+    $("a.footer__up-btn").click(function () {
+        return $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top + "px"}, {
+            duration: 500,
+            easing: "swing"
+        });
+    });
+
+    $.fn.parallax = function (resistance, mouse) {
+        $el = $(this);
+        TweenLite.to($el, 0.2,
+            {
+                x: -((mouse.clientX - (window.innerWidth / 2)) / resistance),
+                y: -((mouse.clientY - (window.innerHeight / 2)) / resistance)
+            });
+    };
+
+    $('body').mousemove(function (e) {
+        $('._image-2').parallax(-10, e);
+        $('._image-3').parallax(20, e);
+        $('._image-4').parallax(30, e);
+        $('._image-5').parallax(40, e);
+        $('._image-6').parallax(-50, e);
+        $('._image-7').parallax(60, e);
+        $('._image-9').parallax(70, e);
+        $('._image-11').parallax(80, e);
+        $('._image-10').parallax(90, e);
+        $('._image-14').parallax(-30, e);
+        $('._image-15').parallax(-20, e);
+        $('._image-16').parallax(70, e);
+        $('._image-fox-circle').parallax(50, e);
+        $('._image-fox-bg').parallax(30, e);
+        $('._image-18').parallax(40, e);
+        $('._image-19').parallax(60, e);
+        $('._image-20').parallax(20, e);
+        $('._image-21').parallax(10, e);
+        $('._image-foxicash').parallax(80, e);
+    });
+
+    $('button').on('click', function () {
+        $('body').toggleClass('open');
+    });
+
+    // $('.mobile__choice-lang').click(function () {
+    //     $(this).siblings('.mobile__lang-menu').toggle();
+    //     $(this).toggleClass('active-language');
+    // });
+    // $(window).click(function () {
+    //     $('.mobile__lang-menu').fadeOut('middle');
+    //     $('.selected-lang').removeClass('active-language');
+    // });
+});

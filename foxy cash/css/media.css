@@ -1,0 +1,289 @@
+@media screen and (max-width: 1199px) {
+    .menu__list-item {
+        margin-left: 30px;
+    }
+
+    .lang-menu-item {
+        margin-left: 6px;
+    }
+
+    .stats__list:before {
+        height: 405px;
+    }
+
+    .stats__item:last-child {
+        margin-left: 81px;
+    }
+
+    .owl-carousel {
+        margin-top: 51px;
+    }
+
+    ._image-fox-circle {
+        margin: -49% -48%;
+        top: 583px;
+    }
+
+    .stats__list:before {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+    .menu__open {
+        display: block;
+    }
+
+    ._image-foxicash {
+        top: 1206px;
+    }
+
+    .stats__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stats__item:last-child {
+        margin-left: 43px;
+    }
+
+    .carousel__box {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .game__wrap {
+        padding: 23px 35px 38px 230px;
+    }
+
+    ._image-20 {
+        left: 352px;
+    }
+
+    .footer__menu {
+        margin-left: 41px;
+    }
+
+    .footer__menu:first-child {
+        margin-left: 26px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__title {
+        font-size: 78px;
+    }
+
+    ._image-foxicash {
+        top: 1069px;
+    }
+
+    .footer__menu {
+        margin-left: 20px;
+    }
+
+    .footer__menu:first-child {
+        margin-left: 0;
+    }
+
+    .footer__bot {
+        margin-top: 40px;
+    }
+
+    .footer__menu {
+        margin-right: 35px;
+    }
+
+    .footer__menu:first-child {
+        margin-left: 60px;
+    }
+
+    .mines-game:after {
+        width: 100%;
+    }
+
+    .hat:after {
+        width: 100%;
+    }
+
+    .stats:before {
+        width: 100%;
+        left: 0;
+        margin: 0;
+    }
+
+    .stats:after {
+        width: 100%;
+        left: 0;
+        margin: 0;
+    }
+
+    ._image-fox {
+        margin: -50%;
+        top: 380px;
+    }
+
+    ._image-fox-bg {
+        margin: -50%;
+    }
+
+
+    .modal_input {
+        width: 205px;
+    }
+
+    .modal-dialog {
+        margin: 20px auto;
+    }
+
+    .help-link {
+        float: none;
+    }
+
+    .help-link-wrap {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .modal-content {
+        width: 300px;
+        padding: 30px 10px 30px 10px;
+        margin: 0 auto;
+    }
+
+    .hat__btn {
+        padding: 8px 18px;
+    }
+
+    .menu__open {
+        top: 33px;
+    }
+
+    ._image-fox {
+        top: 253px;
+    }
+
+    ._image-fox-bg {
+        top: 161px;
+    }
+
+    .header__title-wrap {
+        margin-top: 473px;
+        font-size: 52px;
+    }
+
+    ._image-foxicash {
+        top: 598px;
+    }
+
+    .stats__list {
+        display: block;
+    }
+
+    .stats__item {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .stats__item:last-child {
+        margin: 0 auto;
+    }
+
+    .stats__item:first-child {
+        margin: 0 auto;
+    }
+
+    .stats__carousel {
+        padding: 10px;
+    }
+
+    .carousel__title {
+        text-align: center;
+    }
+
+    .carousel__box {
+        padding-top: 99px;
+        padding-bottom: 5px;
+        padding-left: 0;
+        background-position: top center;
+    }
+
+    .nav-owl {
+        top: 41%;
+    }
+
+    .game__wrap {
+        padding: 10px;
+    }
+
+    .game__wrap {
+        margin-top: 31px;
+        margin-bottom: 52px;
+        padding: 20px 20px 30px 20px;
+        text-align: center;
+    }
+
+    ._image-mines-game {
+        display: none;
+    }
+
+    .more-games {
+        margin-bottom: 56px;
+    }
+
+    .footer__menu {
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+
+    .footer__menu:first-child {
+        margin: 0;
+    }
+
+    .footer__list-title {
+        margin-bottom: 0;
+    }
+
+    .footer__list {
+        margin-top: 30px;
+    }
+
+    .chat__header-top {
+        padding: 36px 19px 30px 25px;
+    }
+
+    .chat__header-bot {
+        padding: 18px 6px 0 7px;
+    }
+
+    .chat__tab {
+        padding: 9px 19px 9px 10px;
+    }
+
+    .chat__massage-list {
+        padding: 36px 25px 7px 25px;
+    }
+
+    .chat__send-mail {
+        padding: 26px 25px 42px 25px;
+    }
+
+    .chat__send-massage {
+        right: 28px;
+    }
+
+    .modal-dialog {
+        max-width: 300px;
+        margin: 1.75rem auto;
+    }
+
+    .chat-modal {
+        padding: 0;
+    }
+}
