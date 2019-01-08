@@ -50,6 +50,22 @@ $(document).ready(function () {
         $('body').toggleClass('open');
     });
 
+    document.querySelectorAll('.play-button').forEach(button => {
+        button.style.backgroundImage = drawBackground();
+    });
+
+    document.querySelectorAll('.play-button').forEach(button => {
+        button.addEventListener('click', e => {
+            e.target.classList.add('shake');
+            e.target.classList.add('revealed');
+        });
+    });
+
+    function drawBackground() {
+        const backgroundValue = Math.floor(Math.random() * 101) % 2 != 0 ? 'game-coin' : 'game-bomb';
+        return `url('./img/${backgroundValue}.png')`;
+    }
+
     // $('.mobile__choice-lang').click(function () {
     //     $(this).siblings('.mobile__lang-menu').toggle();
     //     $(this).toggleClass('active-language');

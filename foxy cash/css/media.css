@@ -28,7 +28,55 @@
         display: none;
     }
 
+    .cash__replenish-btn {
+        margin-left: 0;
+        margin-right: 19px;
+    }
 
+    .cash__curr {
+        margin-right: 17px;
+    }
+
+    .cash__curr:last-child {
+        margin-right: 0;
+    }
+
+    .form__left {
+        padding: 26px 24px 0 22px;
+    }
+
+    .form__right {
+        padding: 20px;
+    }
+
+    .play-button {
+        width: 95px;
+        height: 96px;
+    }
+
+    .bomb-coin-ratio {
+        margin-top: 214px;
+    }
+
+    .table-title-game, .td-game {
+        width: 177px;
+    }
+
+    .table-title-time, .td-time {
+        width: 200px;
+    }
+
+    .table-title-bet, .td-bet {
+        width: 200px;
+    }
+
+    .table-title-rate, .td-rate {
+        width: 200px;
+    }
+
+    .td-bet {
+        background-position-x: 37px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -68,6 +116,101 @@
 
     .footer__menu:first-child {
         margin-left: 26px;
+    }
+
+    .choice-lang_right {
+        float: right;
+    }
+
+    .foxy-logo-mines img {
+        position: absolute;
+        width: auto;
+        height: 100px;
+        margin-top: -50px;
+        margin-left: -56px;
+        left: 50%;
+        top: -78px;
+    }
+
+    .cash::before {
+        width: 100%;
+        bottom: -15px;
+    }
+
+    .mines-money {
+        float: right;
+    }
+
+    .right-btn {
+        float: right;
+        padding-top: 39px;
+        padding-bottom: 5px;
+    }
+
+    .form__left {
+        padding: 26px 30px 38px 30px;
+        width: 100%;
+    }
+
+    .form__right {
+        padding: 50px 0;
+        width: 100%;
+    }
+
+    .play-button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .play-field {
+        margin: 0 auto;
+        width: 515px;
+    }
+
+    .bomb-coin-ratio {
+        position: absolute;
+        margin: 0;
+        top: 40px;
+        right: 136px;
+    }
+
+    .coin-ratio {
+        display: block;
+        margin: 0 0 35px 0;
+        padding-left: 65px;
+    }
+
+    .bomb-ratio {
+        display: block;
+    }
+
+    .mines-the-game::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .table-title-game, .td-game {
+        width: 100px;
+    }
+
+    .table-title-time, .td-time {
+        width: 108px;
+    }
+
+    .table-title-bet, .td-bet {
+        width: 132px;
+    }
+
+    .table-title-rate, .td-rate {
+        width: 167px;
+    }
+
+    .td-bet {
+        background-position-x: 2px;
+    }
+
+    .footer::before {
+        width: 100%;
     }
 }
 
@@ -145,6 +288,70 @@
     .help-link-wrap {
         text-align: center;
     }
+
+    .bomb-coin-ratio {
+        right: 34px;
+    }
+
+    .play-field {
+        width: 490px;
+    }
+
+    .form__right {
+        width: 100%;
+    }
+
+    .table-title-time, .td-time {
+        display: none;
+    }
+
+    .table-title-bet, .td-bet {
+        display: none;
+    }
+
+    .table-title-game, .td-game {
+        width: 95px;
+    }
+
+    .game__statistics {
+        width: 100%;
+    }
+
+    .table-title-profit, .td-profit {
+        width: 30%;
+        float: right;
+    }
+
+    .table-title-game, .td-game {
+        width: 20%;
+    }
+
+    .table-title-rate, .td-rate {
+        width: 50%;
+    }
+
+    .play-button {
+        width: 95px;
+        height: 95px;
+    }
+
+    .footer__menu {
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+
+    .footer__menu:first-child {
+        margin: 0;
+    }
+
+    .footer__list-title {
+        margin-bottom: 0;
+    }
+
+    .footer__list {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -206,7 +413,7 @@
         text-align: center;
     }
 
-    .carousel__box {
+    .carousel__text {
         padding-top: 99px;
         padding-bottom: 5px;
         padding-left: 0;
@@ -236,23 +443,6 @@
         margin-bottom: 56px;
     }
 
-    .footer__menu {
-        margin: 0;
-        float: none;
-        text-align: center;
-    }
-
-    .footer__menu:first-child {
-        margin: 0;
-    }
-
-    .footer__list-title {
-        margin-bottom: 0;
-    }
-
-    .footer__list {
-        margin-top: 30px;
-    }
 
     .chat__header-top {
         padding: 36px 19px 30px 25px;
@@ -285,5 +475,103 @@
 
     .chat-modal {
         padding: 0;
+    }
+
+    .play-button {
+        width: 19%;
+        height: 84px;
+        display: inline-block;
+    }
+
+    .bomb-coin-ratio {
+        display: none;
+    }
+
+    .form__right {
+        padding: 16px 0;
+    }
+
+    .play-button {
+        width: 54px;
+        height: 61px;
+    }
+
+    .play-field {
+        width: 285px;
+    }
+
+    .tablinks:first-child {
+        float: left;
+        margin-right: 0;
+    }
+
+    .tablinks:last-child {
+        float: right;
+        margin-right: 0;
+    }
+
+    .td-negative {
+        float: right;
+    }
+
+    .td-positive {
+        float: right;
+    }
+
+    .td-profit-pay {
+        float: right;
+    }
+
+    .td-profit {
+        padding-left: 17px;
+        background-position-x: 32px;
+        background-position-y: 16px;
+    }
+
+    .foxy-logo-mines img {
+        height: 75px;
+        margin-top: -37px;
+        margin-left: -42px;
+        left: 50%;
+        top: -68px;
+    }
+
+    .mines-money {
+        float: none;
+    }
+    .cash__replenish-btn{
+        margin: 0 auto;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .cash__curr{
+        float: none;
+        margin: 15px 0 0 0;
+    }
+    .cash__name {
+        margin-bottom: 3px;
+    }
+    .form__money-wrap {
+        text-align: center;
+    }
+    .inputSum {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .form__mine-wrap {
+        text-align: center;
+    }
+    .min-custom-number {
+        top: 84px;
+        left: 98px;
+    }
+    .container{
+        width: 320px;
+    }
+
+    .revealed {
+        background-size: auto 37px;
     }
 }

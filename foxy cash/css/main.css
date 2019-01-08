@@ -55,7 +55,7 @@ img {
     padding-bottom: 39px;
 }
 
-.hat:after {
+.hat::after {
     content: "";
     display: block;
     position: absolute;
@@ -96,7 +96,7 @@ img {
     position: relative;
 }
 
-.a_hover:before {
+.a_hover::before {
     content: "";
     position: absolute;
     width: 0;
@@ -120,7 +120,7 @@ img {
     width: 100%;
 }
 
-.a_hover-main:before {
+.a_hover-main::before {
     bottom: -8px;
 }
 
@@ -407,7 +407,7 @@ img {
     padding-bottom: 60px;
 }
 
-.stats:before {
+.stats::before {
     content: "";
     display: block;
     position: absolute;
@@ -419,7 +419,7 @@ img {
     background: #5e554f;
 }
 
-.stats:after {
+.stats::after {
     content: "";
     display: block;
     position: absolute;
@@ -481,7 +481,7 @@ img {
     position: relative;
 }
 
-.stats__list:before {
+.stats__list::before {
     position: absolute;
     content: '';
     background: rgba(255, 255, 255, 0.3);
@@ -585,7 +585,7 @@ img {
     position: relative;
 }
 
-.footer:before {
+.footer::before {
     content: "";
     display: block;
     position: absolute;
@@ -850,7 +850,7 @@ img {
     transition: opacity 0.2s ease-out;
 }
 
-.menu__open:before {
+.menu__open::before {
     content: "";
     position: absolute;
     top: 0;
@@ -865,7 +865,7 @@ img {
     transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out;
 }
 
-.menu__open:after {
+.menu__open::after {
     opacity: 0;
     content: '×';
     color: #fff;
@@ -892,12 +892,12 @@ img {
     opacity: 1;
 }
 
-.open .menu__open:before {
+.open .menu__open::before {
     opacity: 0;
     width: 0;
 }
 
-.open .menu__open:after {
+.open .menu__open::after {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
     transform: translate3d(0, 0, 0) rotate(360deg);
@@ -921,7 +921,7 @@ img {
     overflow: hidden;
 }
 
-.phone__nav:before {
+.phone__nav::before {
     content: '';
     position: absolute;
     top: 0;
@@ -941,7 +941,7 @@ img {
     top: 0;
 }
 
-.open .phone__nav:before {
+.open .phone__nav::before {
     -webkit-animation: menu-animation 0.8s ease-out forwards;
     animation: menu-animation 0.8s ease-out forwards;
 }
@@ -965,7 +965,7 @@ ul.phone__menu li {
     transform: translate3d(0, 36px, 0);
 }
 
-ul.phone__menu li:before {
+ul.phone__menu li::before {
     content: '';
     position: absolute;
     top: 0;
@@ -981,7 +981,7 @@ ul.phone__menu li:before {
     transition: width 0.14s ease-out;
 }
 
-ul.phone__menu li:after {
+ul.phone__menu li::after {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -999,13 +999,13 @@ ul.phone__menu li:after {
     transition: transform 0.1s ease-out, opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
 }
 
-ul.phone__menu li:hover:before {
+ul.phone__menu li:hover::before {
     left: 0;
     right: auto;
     width: 100%;
 }
 
-ul.phone__menu li:hover:after {
+ul.phone__menu li:hover::after {
     opacity: 1;
     padding: 0 20px;
     -webkit-transform: translate(0px, 6px);
@@ -1159,7 +1159,7 @@ ul.phone__menu li:hover:after {
     border-radius: 0;
 }
 
-.chat-modal:before {
+.chat-modal::before {
     content: "";
     display: block;
     position: absolute;
@@ -1383,7 +1383,7 @@ ul.phone__menu li:hover:after {
     border-radius: 4px;
     color: #000;
     padding: 11px 50px 12px 65px;
-    background: url("../img/game-coin.png") no-repeat center left;
+    background: url("../img/table-coin.png") no-repeat center left;
     background-position-x: 15px;
     border: 1px solid #f3802c;
 }
@@ -1398,7 +1398,7 @@ ul.phone__menu li:hover:after {
     margin-bottom: 11px;
 }
 
-.cash:before {
+.cash::before {
     content: "";
     display: block;
     position: absolute;
@@ -1409,6 +1409,7 @@ ul.phone__menu li:hover:after {
     background-image: -ms-linear-gradient(45deg, rgba(225, 159, 41, 0) 0%, rgb(225, 159, 41) 70%, rgb(207, 112, 46) 100%);
     bottom: 0;
     left: 0;
+    animation: pulse-color 1s infinite linear;
 }
 
 .right-btn {
@@ -1447,7 +1448,7 @@ ul.phone__menu li:hover:after {
     background: #f7f7fa;
 }
 
-.mines-the-game:before {
+.mines-the-game::before {
     content: "";
     display: block;
     position: absolute;
@@ -1458,6 +1459,7 @@ ul.phone__menu li:hover:after {
     background-image: -ms-linear-gradient(45deg, rgb(207, 112, 46) 0%, rgb(225, 159, 41) 70%, rgba(225, 159, 41, 0) 100%);
     bottom: 22px;
     left: 17%;
+    animation: pulse-color 1s infinite linear;
 }
 
 .game__settings-form {
@@ -1612,12 +1614,21 @@ ul.phone__menu li:hover:after {
 }
 
 .play-button {
+    display: inline-block;
     border-radius: 18px;
     background-color: rgb(133, 162, 180);
     width: 106px;
     height: 107px;
     border: none;
     outline: none !important;
+    background-size: 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.play-button:hover{
+    transform: scale(0.9);
 }
 
 .statistics {
@@ -1647,7 +1658,7 @@ ul.phone__menu li:hover:after {
     animation: fadeEffect 1s linear;
 }
 
-.tab-active:before {
+.tab-active::before {
     content: "";
     display: block;
     position: absolute;
@@ -1757,5 +1768,57 @@ td {
     }
     to {
         opacity: 1;
+    }
+}
+
+.revealed {
+    background-color: #6881a7;
+    pointer-events: none;
+    background-size: auto 55px;
+}
+
+.shake {
+    animation: pop 0.3s linear 1;
+}
+
+@keyframes pop {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
     }
 }
