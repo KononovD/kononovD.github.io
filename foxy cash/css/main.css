@@ -2076,3 +2076,87 @@ td {
 .hidden-menu-ticker:checked ~ .inSite-mobile-menu {
     left: 0;
 }
+
+.rooms__title{
+    font-weight: 900;
+    color:#ccd7dd;
+    text-transform: uppercase;
+    font-size: 12px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.some__rooms{
+    padding-left: 22px;
+    float: left;
+    padding-top: 10px;
+}
+
+.create-room-btn-wrap{
+    margin-bottom: 45px;
+}
+
+.room-item{
+    width: 100%;
+    margin: 7.5px 0;
+    padding: 12px 28px 16px 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 0 30px 0 rgba(48, 48, 48, 0.1);
+    transition: 0.2s;
+}
+
+.room__text{
+    font-size: 13px;
+    color: rgb(237, 90, 53);
+    font-weight: 900;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 3px 0;
+}
+
+.room-user-bg{
+    background:url("../img/mini-user-ico.png") no-repeat center left;
+}
+
+.room-user{
+    text-align: left;
+    width: 211px;
+    padding-left: 40px;
+}
+
+.room-user-left{
+    padding: 0;
+    margin-right: 17px;
+}
+
+.room-rate{
+    text-align: center;
+    width: 77px;
+    margin-right: 110px;
+}
+
+.room-field{
+    text-align: center;
+    width: 109px;
+}
+
+.into-game{
+    font-size: 12px;
+    font-weight: 900;
+    color: #ED5A35;
+    border-radius: 3px;
+    border:1px solid #ED5A35;
+    padding: 8px 24px;
+    transition: 0.2s;
+    margin-left: 150px;
+}
+
+.into-game:hover{
+    background-image: -webkit-linear-gradient(45deg, rgb(233, 67, 58) 0%, rgb(248, 174, 35) 99%);
+}
+
+.room-item:hover{
+    transform: scale(1.05);
+}

@@ -103,6 +103,14 @@
     .footer::before {
         width: 100%;
     }
+
+    .into-game {
+        margin-left: 34px;
+    }
+
+    .create-room-btn-wrap {
+        margin-bottom: 37px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -270,13 +278,35 @@
         float: right;
     }
 
-    .inSite-mobile-menu{
+    .inSite-mobile-menu {
         display: block;
         width: 218px;
     }
 
     .btn-menu {
         display: block;
+    }
+
+    .some__rooms {
+        padding: 0;
+        float: none;
+    }
+
+    .inSite-select-room {
+        padding-top: 0;
+        margin-top: -35px;
+    }
+
+    .room-user-left {
+        margin-right: 0;
+    }
+
+    .room-user {
+        width: 194px;
+    }
+
+    .room-rate {
+        margin-right: 101px;
     }
 }
 
@@ -441,6 +471,32 @@
 
     .birth-year {
         width: 72px;
+    }
+
+    .room-item {
+        padding: 14px;
+    }
+
+    .room-user {
+        text-align: left;
+        padding-left: 26px;
+        width: 161px;
+    }
+
+    .room-rate {
+        margin-right: 0;
+    }
+
+    .room-user-left {
+        margin-right: 4px;
+    }
+
+    .into-game {
+        margin-left: 5px;
+    }
+
+    .room-field {
+        width: 100px;
     }
 }
 
@@ -694,11 +750,53 @@
         display: block;
         margin: 0 auto;
     }
-    .correct-labell{
+
+    .correct-labell {
         padding-left: 29px;
     }
 
     .inSite-area {
         padding-bottom: 39px;
+    }
+
+    .room-item {
+        display: block;
+    }
+
+    .into-game {
+        margin: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .room-user-left{
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .room-user {
+        padding-left: 0;
+        width: 105px;
+    }
+
+    .room-user-bg {
+        background: none;
+    }
+
+    .room-rate {
+        width: 50px;
+    }
+
+    .room-field {
+        width: 96px;
+    }
+
+    .room-rate-center{
+        margin: 0 9px 0 15px;
+    }
+
+    .inSite-select-room {
+        margin-top: -34px;
     }
 }
