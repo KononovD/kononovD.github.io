@@ -77,6 +77,32 @@
     .td-bet {
         background-position-x: 37px;
     }
+
+    .inSite__menu {
+        width: 149px;
+    }
+
+    .inSite__menu-list {
+        padding-left: 10px;
+    }
+
+    .inSite__title {
+        margin-bottom: 19px;
+    }
+
+    .contact-data {
+        padding: 18px 23px 50px 19px;
+        margin-left: 15px;
+        width: 342px;
+    }
+
+    .personal-data {
+        width: 408px;
+    }
+
+    .footer::before {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -209,8 +235,48 @@
         background-position-x: 2px;
     }
 
-    .footer::before {
+    .inSite__menu {
+        display: none;
+    }
+
+    .contact-data {
+        padding: 15px 15px 50px 15px;
+        margin-left: 0;
+        width: 329px;
+    }
+
+    .personal-right {
+        float: none;
         width: 100%;
+        padding-top: 0;
+    }
+
+    .upload-img-label {
+        float: none;
+        width: 116px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .personal-left {
+        float: none;
+        width: 192px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .personal-data {
+        width: 231px;
+        float: right;
+    }
+
+    .inSite-mobile-menu{
+        display: block;
+        width: 218px;
+    }
+
+    .btn-menu {
+        display: block;
     }
 }
 
@@ -351,6 +417,30 @@
 
     .footer__list {
         margin-top: 30px;
+    }
+
+    .personal-left {
+        width: 206px;
+    }
+
+    .contact-data {
+        padding: 15px 20px 50px 20px;
+        width: 400px;
+        margin: 0 auto 40px auto;
+        float: none;
+    }
+
+    .personal-data {
+        width: 400px;
+        float: none;
+    }
+
+    .birth-input {
+        width: 41px;
+    }
+
+    .birth-year {
+        width: 72px;
     }
 }
 
@@ -539,39 +629,76 @@
     .mines-money {
         float: none;
     }
-    .cash__replenish-btn{
+
+    .cash__replenish-btn {
         margin: 0 auto;
         display: block;
         float: none;
         text-align: center;
     }
-    .cash__curr{
+
+    .cash__curr {
         float: none;
         margin: 15px 0 0 0;
     }
+
     .cash__name {
         margin-bottom: 3px;
     }
+
     .form__money-wrap {
         text-align: center;
     }
+
     .inputSum {
         width: 100%;
         margin-right: 0;
         margin-bottom: 16px;
     }
+
     .form__mine-wrap {
         text-align: center;
     }
+
     .min-custom-number {
         top: 84px;
         left: 98px;
     }
-    .container{
+
+    .container {
         width: 320px;
     }
 
     .revealed {
         background-size: auto 37px;
+    }
+
+    .contact-data {
+        width: 300px;
+    }
+
+    .personal-data {
+        width: 300px;
+    }
+
+    .contact-sbm-btn {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+
+    .contact-email-input {
+        float: none;
+        padding: 10px 10px;
+        display: block;
+        margin: 0 auto;
+    }
+    .correct-labell{
+        padding-left: 29px;
+    }
+
+    .inSite-area {
+        padding-bottom: 39px;
     }
 }
