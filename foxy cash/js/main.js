@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $(".owl-carousel").owlCarousel({
         loop: true,
         items: 1,
@@ -6,25 +6,24 @@ $(document).ready(function () {
         dots: false,
         navText: ["<i class='fa fa-chevron-left nav-owl nav-left'></i>", "<i class='fa fa-chevron-right nav-owl nav-right'></i>"]
     });
-    new WOW({}).init({offset: 70});
+    new WOW({}).init({ offset: 70 });
 
-    $("a.footer__up-btn").click(function () {
-        return $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top + "px"}, {
+    $("a.footer__up-btn").click(function() {
+        return $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top + "px" }, {
             duration: 500,
             easing: "swing"
         });
     });
 
-    $.fn.parallax = function (resistance, mouse) {
+    $.fn.parallax = function(resistance, mouse) {
         $el = $(this);
-        TweenLite.to($el, 0.2,
-            {
-                x: -((mouse.clientX - (window.innerWidth / 2)) / resistance),
-                y: -((mouse.clientY - (window.innerHeight / 2)) / resistance)
-            });
+        TweenLite.to($el, 0.2, {
+            x: -((mouse.clientX - (window.innerWidth / 2)) / resistance),
+            y: -((mouse.clientY - (window.innerHeight / 2)) / resistance)
+        });
     };
 
-    $('body').mousemove(function (e) {
+    $('body').mousemove(function(e) {
         $('._image-2').parallax(-10, e);
         $('._image-3').parallax(20, e);
         $('._image-4').parallax(30, e);
@@ -46,7 +45,7 @@ $(document).ready(function () {
         $('._image-foxicash').parallax(80, e);
     });
 
-    $('.menu__open').on('click', function () {
+    $('.menu__open').on('click', function() {
         $('body').toggleClass('open');
     });
 
@@ -72,7 +71,7 @@ $(document).ready(function () {
 
 
     function soundClick() {
-        var audio = new Audio(); /
+        var audio = new Audio();
         audio.src = './sound/press.mp3';
         audio.autoplay = true;
     }
