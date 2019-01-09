@@ -49,37 +49,37 @@
 		<ul class="inSite__menu-list clearfix">
 				<li class="inSite__menu-item">
 						<a class="inSite__menu-link inSite__menu-link-games "
-						   href="#">
+						   href="#" onclick="menuSoundClick()">
 								Игры
 						</a>
 				</li>
 				<li class="inSite__menu-item">
 						<a class="inSite__menu-link inSite__menu-link-stock "
-						   href="#">
+						   href="#" onclick="menuSoundClick()">
 								Акции
 						</a>
 				</li>
 				<li class="inSite__menu-item">
 						<a class="inSite__menu-link inSite__menu-link-fight "
-						   href="#">
+						   href="#" onclick="menuSoundClick()">
 								Битвы
 						</a>
 				</li>
 				<li class="inSite__menu-item">
 						<a class="inSite__menu-link inSite__menu-link-lottery "
-						   href="#">
+						   href="#" onclick="menuSoundClick()">
 								Лоторея
 						</a>
 				</li>
 				<li class="inSite__menu-item">
 						<a class="inSite__menu-link inSite__menu-link-winners "
-						   href="#">
+						   href="#" onclick="menuSoundClick()">
 								Победители
 						</a>
 				</li>
 				<li class="inSite__menu-item">
 						<a class="inSite__menu-link inSite__menu-link-help "
-						   href="#">
+						   href="#" onclick="menuSoundClick()">
 								Помощь
 						</a>
 				</li>
@@ -200,37 +200,37 @@
 										<ul class="inSite__menu-list clearfix">
 												<li class="inSite__menu-item">
 														<a class="inSite__menu-link inSite__menu-link-games "
-														   href="#">
+														   href="#" onclick="menuSoundClick()">
 																Игры
 														</a>
 												</li>
 												<li class="inSite__menu-item">
 														<a class="inSite__menu-link inSite__menu-link-stock "
-														   href="#">
+														   href="#" onclick="menuSoundClick()">
 																Акции
 														</a>
 												</li>
 												<li class="inSite__menu-item">
 														<a class="inSite__menu-link inSite__menu-link-fight "
-														   href="#">
+														   href="#" onclick="menuSoundClick()">
 																Битвы
 														</a>
 												</li>
 												<li class="inSite__menu-item">
 														<a class="inSite__menu-link inSite__menu-link-lottery "
-														   href="#">
+														   href="#" onclick="menuSoundClick()">
 																Лоторея
 														</a>
 												</li>
 												<li class="inSite__menu-item">
 														<a class="inSite__menu-link inSite__menu-link-winners "
-														   href="#">
+														   href="#" onclick="menuSoundClick()">
 																Победители
 														</a>
 												</li>
 												<li class="inSite__menu-item">
 														<a class="inSite__menu-link inSite__menu-link-help "
-														   href="#">
+														   href="#" onclick="menuSoundClick()">
 																Помощь
 														</a>
 												</li>
@@ -523,8 +523,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="js/main.js"></script>
 <script>
-		function openNav() {
-			$("#inSite-nav").toggleClass("inSite-nav-open");
+        function menuSoundClick() {
+            var audio = new Audio();
+            audio.src = './sound/menu-click.mp3';
+            audio.autoplay = true;
+            audio.volume = 0.3;
         }
 </script>
 </body>

@@ -1906,6 +1906,7 @@ td {
 
 .inSite__menu-link:hover {
     color: rgb(233, 67, 58);
+    transform: scale(1.2);
 }
 
 .contact-data {

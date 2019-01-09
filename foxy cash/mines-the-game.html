@@ -39,6 +39,54 @@
 		</ul>
 </nav>
 
+<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+<label class="btn-menu" for="hmt">
+		<i class="fas fa-chevron-right"></i>
+</label>
+<div id="inSite-nav" class="inSite__menu inSite-mobile-menu">
+		<p class="inSite__title">
+				Меню
+		</p>
+		<ul class="inSite__menu-list clearfix">
+				<li class="inSite__menu-item">
+						<a class="inSite__menu-link inSite__menu-link-games "
+						   href="#" onclick="menuSoundClick()">
+								Игры
+						</a>
+				</li>
+				<li class="inSite__menu-item">
+						<a class="inSite__menu-link inSite__menu-link-stock "
+						   href="#" onclick="menuSoundClick()">
+								Акции
+						</a>
+				</li>
+				<li class="inSite__menu-item">
+						<a class="inSite__menu-link inSite__menu-link-fight "
+						   href="#" onclick="menuSoundClick()">
+								Битвы
+						</a>
+				</li>
+				<li class="inSite__menu-item">
+						<a class="inSite__menu-link inSite__menu-link-lottery "
+						   href="#" onclick="menuSoundClick()">
+								Лоторея
+						</a>
+				</li>
+				<li class="inSite__menu-item">
+						<a class="inSite__menu-link inSite__menu-link-winners "
+						   href="#" onclick="menuSoundClick()">
+								Победители
+						</a>
+				</li>
+				<li class="inSite__menu-item">
+						<a class="inSite__menu-link inSite__menu-link-help "
+						   href="#" onclick="menuSoundClick()">
+								Помощь
+						</a>
+				</li>
+		</ul>
+</div>
+
 <section class="hat " id="up">
 		<div class="container">
 				<div class="row">
@@ -830,7 +878,13 @@
     function soundClick() {
         var audio = new Audio();
         audio.src = './sound/click.mp3';
+        audio.autoplay = true;
+        audio.volume = 0.4;
+    }
 
+    function menuSoundClick() {
+        var audio = new Audio();
+        audio.src = './sound/menu-click.mp3';
         audio.autoplay = true;
         audio.volume = 0.4;
     }
