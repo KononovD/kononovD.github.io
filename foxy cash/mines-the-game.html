@@ -151,10 +151,10 @@
 																<p class="form__label">
 																		Сумма ставки($):
 																</p>
-																<input class="inputSum" id="inputSum" type="text">
-																<input class="factorBtn" type="button" value="1/2">
-																<input class="factorBtn" type="button" value="2X">
-																<input class="factorBtn" type="button" value="3X">
+																<input class="inputSum" id="inputSum" type="text" >
+																<input class="factorBtn" type="button" value="1/2" onclick="soundClick()" >
+																<input class="factorBtn" type="button" value="2X" onclick="soundClick()">
+																<input class="factorBtn" type="button" value="3X" onclick="soundClick()">
 														</div>
 														<div class="form__mine-wrap">
 																<p class="form__label">
@@ -163,25 +163,25 @@
 																<input class="checkbox_hidden" id="min-number-1"
 																       name="min-number"
 																       type="radio">
-																<label class="form__min-label" for="min-number-1">
+																<label class="form__min-label" for="min-number-1" onclick="soundClick()">
 																		1
 																</label>
 																<input class="checkbox_hidden" id="min-number-2"
 																       name="min-number"
 																       type="radio">
-																<label class="form__min-label" for="min-number-2">
+																<label class="form__min-label" for="min-number-2" onclick="soundClick()">
 																		2
 																</label>
 																<input class="checkbox_hidden" id="min-number-3"
 																       name="min-number"
 																       type="radio">
-																<label class="form__min-label" for="min-number-3">
+																<label class="form__min-label" for="min-number-3" onclick="soundClick()">
 																		3
 																</label>
 																<input class="checkbox_hidden" id="min-number-10"
 																       name="min-number"
 																       type="radio">
-																<label class="form__min-label" for="min-number-10">
+																<label class="form__min-label" for="min-number-10" onclick="soundClick()">
 																		10
 																</label>
 																<input
@@ -189,17 +189,17 @@
 																	id="min-number-custom"
 																	name="min-number"
 																	type="radio">
-																<label class="min-custom-label" for="min-number-custom">
+																<label class="min-custom-label" for="min-number-custom" onclick="soundClick()">
 																		Клиентский
 																</label>
 																<input class="min-custom-number" id="min-custom-number"
 																       max="24"
 																       min="1" placeholder="000"
-																       type="number">
+																       type="number" onclick="soundClick()">
 														</div>
 														<input class="press-to-play hat__btn a_hover bright-button"
 														       type="submit"
-														       value="Нажмите, чтобы играть">
+														       value="Нажмите, чтобы играть" onclick="soundClick()">
 														<div class="bomb-coin-ratio">
 																<span class="coin-ratio">
 																		3
@@ -818,6 +818,12 @@
     }
 
     document.getElementById("defaultOpen").click();
+
+    function soundClick() {
+        var audio = new Audio();
+            audio.src = './sound/click.mp3';
+            audio.autoplay = true;
+        }
 
 
 </script>
