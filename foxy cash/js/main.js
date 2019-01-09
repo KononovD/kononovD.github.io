@@ -76,11 +76,11 @@ $(document).ready(function () {
         if(e.target.style.backgroundImage == "url(\"./img/game-bomb.png\")"){
             audio.src = './sound/bomb.mp3';
             audio.autoplay = true;
-            audio.volume = 0.4;
+            audio.volume = 0.3;
         } else{
             audio.src = './sound/coin.mp3';
             audio.autoplay = true;
-            audio.volume = 0.7;
+            audio.volume = 0.5;
         }
 
     }
