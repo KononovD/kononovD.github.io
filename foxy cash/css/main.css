@@ -1335,6 +1335,7 @@ ul.phone__menu li:hover::after {
     font-size: 20px;
     color: #1b1e21;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .inSite-top {
