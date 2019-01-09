@@ -4,7 +4,8 @@ body {
     overflow-x: hidden;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -12,7 +13,8 @@ html, body {
 }
 
 
-ul, li {
+ul,
+li {
     display: block;
     padding: 0;
     margin: 0;
@@ -40,8 +42,8 @@ img {
     max-width: 100%;
 }
 
-button{
-    outline:none !important
+button {
+    outline: none !important
 }
 
 input {
@@ -181,7 +183,7 @@ input {
     border: 2px solid #c03528;
 }
 
-.lang:hover > .lang-ico {
+.lang:hover>.lang-ico {
     margin-top: 0;
 }
 
@@ -189,7 +191,7 @@ input {
     border: 2px solid #c06532;
 }
 
-.lang-active > .lang-ico {
+.lang-active>.lang-ico {
     margin-top: 0;
 }
 
@@ -765,15 +767,19 @@ input {
     0% {
         transform: scale(1);
     }
+
     25% {
         transform: scale(1.05);
     }
+
     50% {
         transform: scale(1);
     }
+
     75% {
         transform: scale(0.95);
     }
+
     100% {
         transform: scale(1);
     }
@@ -783,36 +789,47 @@ input {
     0% {
         opacity: 1;
     }
+
     10% {
         opacity: 0.2;
     }
+
     15% {
         opacity: 0.8;
     }
+
     37% {
         opacity: 0.4;
     }
+
     41% {
         opacity: 0.7;
     }
+
     54% {
         opacity: 0.1;
     }
+
     70% {
         opacity: 1;
     }
+
     77% {
         opacity: 1;
     }
+
     80% {
         opacity: 0.2;
     }
+
     90% {
         opacity: 0.8;
     }
+
     97% {
         opacity: 0.3;
     }
+
     100% {
         opacity: 1;
     }
@@ -1037,30 +1054,36 @@ ul.phone__menu li:hover::after {
         -webkit-transform: scale(0.04) translateY(300%);
         transform: scale(0.04) translateY(300%);
     }
+
     40% {
         -webkit-transform: scale(0.04) translateY(0);
         transform: scale(0.04) translateY(0);
         -webkit-transition: ease-out;
         transition: ease-out;
     }
+
     40% {
         -webkit-transform: scale(0.04) translateY(0);
         transform: scale(0.04) translateY(0);
     }
+
     60% {
         opacity: 1;
         -webkit-transform: scale(0.02) translateY(0px);
         transform: scale(0.02) translateY(0px);
     }
+
     61% {
         -webkit-transform: scale(0.04);
         transform: scale(0.04);
     }
+
     99.9% {
         height: 0;
         padding-bottom: 100%;
         border-radius: 100%;
     }
+
     100% {
         -webkit-transform: scale(2);
         transform: scale(2);
@@ -1076,30 +1099,36 @@ ul.phone__menu li:hover::after {
         -webkit-transform: scale(0.04) translateY(300%);
         transform: scale(0.04) translateY(300%);
     }
+
     40% {
         -webkit-transform: scale(0.04) translateY(0);
         transform: scale(0.04) translateY(0);
         -webkit-transition: ease-out;
         transition: ease-out;
     }
+
     40% {
         -webkit-transform: scale(0.04) translateY(0);
         transform: scale(0.04) translateY(0);
     }
+
     60% {
         opacity: 1;
         -webkit-transform: scale(0.02) translateY(0px);
         transform: scale(0.02) translateY(0px);
     }
+
     61% {
         -webkit-transform: scale(0.04);
         transform: scale(0.04);
     }
+
     99.9% {
         height: 0;
         padding-bottom: 100%;
         border-radius: 100%;
     }
+
     100% {
         -webkit-transform: scale(2);
         transform: scale(2);
@@ -1217,7 +1246,7 @@ ul.phone__menu li:hover::after {
     padding-top: 3px;
 }
 
-.chat__icons img{
+.chat__icons img {
     width: 26px;
 }
 
@@ -1278,12 +1307,12 @@ ul.phone__menu li:hover::after {
     z-index: 0;
 }
 
-.send-svg{
+.send-svg {
     position: absolute;
     width: 25px;
     top: 37px;
     right: 74px;
-    pointer-events:none;
+    pointer-events: none;
 }
 
 .chat__input-massage {
@@ -1314,7 +1343,7 @@ ul.phone__menu li:hover::after {
 .chat__send-massage {
     border-radius: 3px;
     background: #CB463D;
-    background:  linear-gradient(45deg, rgb(194, 72, 58) 0%, rgb(237, 188, 44) 100%);
+    background: linear-gradient(45deg, rgb(194, 72, 58) 0%, rgb(237, 188, 44) 100%);
     background-size: contain;
     position: absolute;
     right: 49px;
@@ -1507,7 +1536,7 @@ ul.phone__menu li:hover::after {
     display: none;
 }
 
-.checkbox_hidden:checked + label {
+.checkbox_hidden:checked+label {
     background-image: -moz-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
     background-image: -webkit-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
     background-image: -ms-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
@@ -1540,11 +1569,11 @@ ul.phone__menu li:hover::after {
     box-shadow: 0 0 15px 2px rgb(235, 77, 56);
 }
 
-.min-custom-number-settings:checked + label {
+.min-custom-number-settings:checked+label {
     color: #fff;
 }
 
-.min-custom-number-settings:checked + label + .min-custom-number {
+.min-custom-number-settings:checked+label+.min-custom-number {
     display: block;
 }
 
@@ -1615,6 +1644,7 @@ ul.phone__menu li:hover::after {
     background-position: center;
     background-repeat: no-repeat;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .play-button:hover {
@@ -1664,7 +1694,7 @@ ul.phone__menu li:hover::after {
     caption-side: bottom;
 }
 
-tr > td:last-child {
+tr>td:last-child {
     margin: 0;
 }
 
@@ -1756,6 +1786,7 @@ td {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -1781,33 +1812,43 @@ td {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
     }
+
     10% {
         transform: translate(-1px, -2px) rotate(-1deg);
     }
+
     20% {
         transform: translate(-3px, 0px) rotate(1deg);
     }
+
     30% {
         transform: translate(3px, 2px) rotate(0deg);
     }
+
     40% {
         transform: translate(1px, -1px) rotate(1deg);
     }
+
     50% {
         transform: translate(-1px, 2px) rotate(-1deg);
     }
+
     60% {
         transform: translate(-3px, 1px) rotate(0deg);
     }
+
     70% {
         transform: translate(3px, 1px) rotate(-1deg);
     }
+
     80% {
         transform: translate(-1px, -1px) rotate(1deg);
     }
+
     90% {
         transform: translate(1px, 2px) rotate(0deg);
     }
+
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
@@ -1823,9 +1864,11 @@ td {
     0% {
         background-position: 0 0;
     }
+
     50% {
         background-position: 100% 0;
     }
+
     100% {
         background-position: 0 0;
     }
@@ -1971,7 +2014,7 @@ td {
     left: 0;
 }
 
-.contact-checkbox:checked + .check-label:before {
+.contact-checkbox:checked+.check-label:before {
     content: "\2713";
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
     font-size: 15px;
@@ -2083,19 +2126,19 @@ td {
     display: none;
 }
 
-.hidden-menu-ticker:checked ~ .btn-menu {
+.hidden-menu-ticker:checked~.btn-menu {
     left: 216px;
 }
 
-.btn-menu > i {
+.btn-menu>i {
     transition: .2s;
 }
 
-.hidden-menu-ticker:checked ~ .btn-menu > i {
+.hidden-menu-ticker:checked~.btn-menu>i {
     transform: rotate(180deg);
 }
 
-.hidden-menu-ticker:checked ~ .inSite-mobile-menu {
+.hidden-menu-ticker:checked~.inSite-mobile-menu {
     left: 0;
 }
 
@@ -2183,19 +2226,19 @@ td {
     transform: scale(1.05);
 }
 
-.chat-target{
+.chat-target {
     display: none;
 }
 
-.chat-target:checked ~ .chat {
+.chat-target:checked~.chat {
     right: 0;
 }
 
-.chat-target:checked ~ .chat-block{
+.chat-target:checked~.chat-block {
     display: none;
 }
 
-.chat{
+.chat {
     position: fixed;
     right: -500px;
     top: 0;
@@ -2204,11 +2247,11 @@ td {
     z-index: 30;
 }
 
-.chat__tab{
-    border:none;
+.chat__tab {
+    border: none;
 }
 
-.add-room-content{
+.add-room-content {
     padding: 2px 2px 2px 16px;
 }
 
@@ -2219,24 +2262,24 @@ td {
     margin-top: -19px;
 }
 
-.room-inputs{
+.room-inputs {
     float: left;
     width: 77%;
 }
 
-.room-inputs .modal_input{
+.room-inputs .modal_input {
     font-weight: 900;
 }
 
-.room-inputs .modal_title{
+.room-inputs .modal_title {
     margin-bottom: 23px;
 }
 
-.add-room-modal{
+.add-room-modal {
     padding-top: 19px;
 }
 
-.add-room-btn{
+.add-room-btn {
     width: 100%;
     height: 100%;
     background-image: -moz-linear-gradient(45deg, rgb(233, 67, 58) 0%, rgb(248, 174, 35) 99%);
@@ -2248,52 +2291,52 @@ td {
     text-transform: uppercase;
 }
 
-.add-room-btn:hover{
+.add-room-btn:hover {
     background-image: -moz-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
     background-image: -webkit-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
     background-image: -ms-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
     box-shadow: 0 0 20px 6px rgb(235, 80, 55);
 }
 
-.modal-select{
+.modal-select {
     font-weight: 900;
 }
 
 #moral-rate-input::-webkit-input-placeholder {
-    color:#d7dfe4;
+    color: #d7dfe4;
 }
 
 #moral-rate-input::-moz-placeholder {
-    color:#d7dfe4;
+    color: #d7dfe4;
 }
 
 #moral-rate-input:-moz-placeholder {
-    color:#d7dfe4;
+    color: #d7dfe4;
 }
 
 #moral-rate-input:-ms-input-placeholder {
-    color:#d7dfe4;
+    color: #d7dfe4;
 }
 
-.add-room-dialog{
+.add-room-dialog {
     max-width: 520px;
     margin: 12% auto 0 auto;
 }
 
-.room-inputs .modal_input{
+.room-inputs .modal_input {
     width: 260px;
-    color:#d7dfe4;
+    color: #d7dfe4;
 }
 
-.modal-select option{
-    color:#d7dfe4;
+.modal-select option {
+    color: #d7dfe4;
     font-weight: 900;
 }
 
-.label-for-rate{
+.label-for-rate {
     width: 98px;
 }
 
-.add-room-input-wrap{
+.add-room-input-wrap {
     margin: 17px 0;
 }
