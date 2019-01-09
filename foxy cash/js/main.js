@@ -54,17 +54,34 @@ $(document).ready(function () {
         button.style.backgroundImage = drawBackground();
     });
 
+
+
     document.querySelectorAll('.play-button').forEach(button => {
         button.addEventListener('click', e => {
             e.target.classList.add('shake');
             e.target.classList.add('revealed');
+            soundClick();
         });
     });
+
 
     function drawBackground() {
         const backgroundValue = Math.floor(Math.random() * 101) % 2 != 0 ? 'game-coin' : 'game-bomb';
         return `url('./img/${backgroundValue}.png')`;
     }
+
+
+    function soundClick() {
+        var audio = new Audio(); /
+        audio.src = './sound/press.mp3';
+        audio.autoplay = true;
+    }
+
+    // function playSound () {
+    //     document.getElementById('play').play();
+    // }
+
+
 
     // $('.mobile__choice-lang').click(function () {
     //     $(this).siblings('.mobile__lang-menu').toggle();
