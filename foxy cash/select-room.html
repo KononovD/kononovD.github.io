@@ -233,7 +233,9 @@
 										<div class="some__rooms">
 												<div class="create-room-btn-wrap ">
 														<a href="#"
-														   class="create-room-btn hat__btn a_hover bright-button">
+														   class="create-room-btn hat__btn a_hover bright-button"
+														   data-target="#addRoomModal"
+														   data-toggle="modal">
 																Создать комнату
 														</a>
 												</div>
@@ -516,6 +518,38 @@
 								</div>
 								<div>
 										<input class="modal_btn forgot-repass-btn" type="submit" value="Восстановить">
+								</div>
+						</form>
+				</div>
+		</div>
+</div>
+<div class="modal fade" id="addRoomModal" role="dialog">
+		<div class="modal-dialog add-room-dialog">
+				<div class="modal-content add-room-content">
+						<form action="#" class="modal-form add-room-modal">
+								<div class="room-inputs">
+										<h4 class="modal_title ">Создать комнату</h4>
+										<div class="add-room-input-wrap">
+												<label class="modal_label label-for-rate" for="moral-rate-input">
+														Ставка
+												</label>
+												<input type="text" id="moral-rate-input" class="modal_input"
+												       placeholder="10">
+										</div>
+										<div class="add-room-input-wrap">
+												<label class="modal_label label-for-rate" for="moral-size-field">
+														Размер поля
+												</label>
+												<select type="text" id="moral-size-field"
+												        class="js-example-basic-single modal_input modal-select">
+														<option value="4x4">4Х4</option>
+														<option value="5x5">5Х5</option>
+														<option value="6x6">6Х6</option>
+												</select>
+										</div>
+								</div>
+								<div class="add-room-smb">
+										<input class="modal_btn add-room-btn" type="submit" value="Создать >">
 								</div>
 						</form>
 				</div>

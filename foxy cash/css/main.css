@@ -174,6 +174,7 @@ input {
 .lang {
     border-radius: 50%;
     display: block;
+    border: 2px solid transparent;
 }
 
 .lang:hover {
@@ -2203,4 +2204,94 @@ td {
 
 .chat__tab{
     border:none;
+}
+
+.add-room-content{
+    padding: 2px 2px 2px 16px;
+}
+
+.add-room-smb {
+    height: 192px;
+    width: 23%;
+    float: right;
+    margin-top: -19px;
+}
+
+.room-inputs{
+    float: left;
+    width: 77%;
+}
+
+.room-inputs .modal_input{
+    font-weight: 900;
+}
+
+.room-inputs .modal_title{
+    margin-bottom: 23px;
+}
+
+.add-room-modal{
+    padding-top: 19px;
+}
+
+.add-room-btn{
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient(45deg, rgb(233, 67, 58) 0%, rgb(248, 174, 35) 99%);
+    background-image: -webkit-linear-gradient(45deg, rgb(233, 67, 58) 0%, rgb(248, 174, 35) 99%);
+    background-image: -ms-linear-gradient(45deg, rgb(233, 67, 58) 0%, rgb(248, 174, 35) 99%);
+    font-weight: 900;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.add-room-btn:hover{
+    background-image: -moz-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    background-image: -webkit-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    background-image: -ms-linear-gradient(-45deg, rgb(235, 53, 20) 0%, rgb(247, 211, 16) 100%);
+    box-shadow: 0 0 20px 6px rgb(235, 80, 55);
+}
+
+.modal-select{
+    font-weight: 900;
+}
+
+#moral-rate-input::-webkit-input-placeholder {
+    color:#d7dfe4;
+}
+
+#moral-rate-input::-moz-placeholder {
+    color:#d7dfe4;
+}
+
+#moral-rate-input:-moz-placeholder {
+    color:#d7dfe4;
+}
+
+#moral-rate-input:-ms-input-placeholder {
+    color:#d7dfe4;
+}
+
+.add-room-dialog{
+    max-width: 520px;
+    margin: 12% auto 0 auto;
+}
+
+.room-inputs .modal_input{
+    width: 260px;
+    color:#d7dfe4;
+}
+
+.modal-select option{
+    color:#d7dfe4;
+    font-weight: 900;
+}
+
+.label-for-rate{
+    width: 98px;
+}
+
+.add-room-input-wrap{
+    margin: 17px 0;
 }
