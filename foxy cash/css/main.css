@@ -1403,6 +1403,8 @@ ul.phone__menu li:hover::after {
 .right-btn {
     float: right;
     padding-top: 69px;
+    position: relative;
+    z-index: 10;
 }
 
 .back-btn {
@@ -1420,9 +1422,13 @@ ul.phone__menu li:hover::after {
     color: #ccd7dd;
     background-color: rgb(239, 239, 242);
     border-radius: 50%;
-    padding: 9px 10px;
+    width: 38px;
+    height: 38px;
     font-size: 18px;
     margin-left: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .right-btn a:hover {
