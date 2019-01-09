@@ -160,37 +160,45 @@
 																<p class="form__label">
 																		Количество мин:
 																</p>
-																<input class="checkbox_hidden" id="min-number-1" name="min-number"
+																<input class="checkbox_hidden" id="min-number-1"
+																       name="min-number"
 																       type="radio">
 																<label class="form__min-label" for="min-number-1">
 																		1
 																</label>
-																<input class="checkbox_hidden" id="min-number-2" name="min-number"
+																<input class="checkbox_hidden" id="min-number-2"
+																       name="min-number"
 																       type="radio">
 																<label class="form__min-label" for="min-number-2">
 																		2
 																</label>
-																<input class="checkbox_hidden" id="min-number-3" name="min-number"
+																<input class="checkbox_hidden" id="min-number-3"
+																       name="min-number"
 																       type="radio">
 																<label class="form__min-label" for="min-number-3">
 																		3
 																</label>
-																<input class="checkbox_hidden" id="min-number-10" name="min-number"
+																<input class="checkbox_hidden" id="min-number-10"
+																       name="min-number"
 																       type="radio">
 																<label class="form__min-label" for="min-number-10">
 																		10
 																</label>
-																<input class="min-custom-number min-custom-number-settings" id="min-number-custom"
-																       name="min-number"
-																       type="radio">
+																<input
+																	class="min-custom-number min-custom-number-settings"
+																	id="min-number-custom"
+																	name="min-number"
+																	type="radio">
 																<label class="min-custom-label" for="min-number-custom">
 																		Клиентский
 																</label>
-																<input class="min-custom-number" id="min-custom-number" max="24"
+																<input class="min-custom-number" id="min-custom-number"
+																       max="24"
 																       min="1" placeholder="000"
 																       type="number">
 														</div>
-														<input class="press-to-play hat__btn a_hover bright-button" type="submit"
+														<input class="press-to-play hat__btn a_hover bright-button"
+														       type="submit"
 														       value="Нажмите, чтобы играть">
 														<div class="bomb-coin-ratio">
 																<span class="coin-ratio">
@@ -641,14 +649,16 @@
 														</p>
 												</li>
 												<li class="footer__list-item">
-														<a class="menu__list-link a_hover footer_white-btn" data-target="#loginModal"
+														<a class="menu__list-link a_hover footer_white-btn"
+														   data-target="#loginModal"
 														   data-toggle="modal"
 														   href="#">
 																Вход
 														</a>
 												</li>
 												<li class="footer__list-item">
-														<a class="menu__list-link a_hover footer_white-btn" data-target="#registerModal"
+														<a class="menu__list-link a_hover footer_white-btn"
+														   data-target="#registerModal"
 														   data-toggle="modal"
 														   href="#">
 																Регистрация
@@ -791,22 +801,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script>
     function openLogs(evt, person) {
-        // Declare all variables
         var i, tabcontent, tablinks;
 
-        // Get all elements with class="tabcontent" and hide them
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }
 
-        // Get all elements with class="tablinks" and remove the class "active"
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
         }
 
-        // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(person).style.display = "block";
         evt.currentTarget.className += " tab-active";
     }

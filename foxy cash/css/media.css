@@ -799,4 +799,18 @@
     .inSite-select-room {
         margin-top: -34px;
     }
+
+    .chat__mail-ico {
+        margin-left: 16px;
+        margin-right: 11px;
+    }
+
+    .send-svg {
+        right: 54px;
+    }
+
+    .chat{
+        right: -300px;
+        width: 300px;
+    }
 }

@@ -111,20 +111,246 @@
 				</div>
 		</div>
 </section>
+
+<input type="checkbox" name="chat-target" id="chat-target" class="chat-target">
+<label class="chat-block" for="chat-target">
+		<a class="chat-link wow rubberBand" data-wow-delay="1s"
+		   data-wow-duration="1s"
+		   data-wow-iteration="2">
+				<img alt="open chat" src="img/chat-online.png">
+		</a>
+		<p class="chat-text">Онлайн чат</p>
+</label>
+<div class="chat" id="chat">
+		<div class=" chat-modal">
+				<div class="chat__header-top clearfix">
+						<label for="chat-target" class="chat-close" data-dismiss="modal">
+								×
+						</label>
+						<p class="chat__header-text">
+								Чаты:
+						</p>
+						<div class="chat__lang">
+								<div class="choice-lang">
+										<ul class="lang-menu clearfix">
+												<li class="lang-menu-item">
+														<a class="lang lang-ru" href="#">
+																<img alt="ru lang" class="lang-ico"
+																     src="img/ru.svg">
+														</a>
+												</li>
+												<li class="lang-menu-item">
+														<a class="lang lang-de" href="#">
+																<img alt="de lang" class="lang-ico"
+																     src="img/de.svg">
+														</a>
+												</li>
+												<li class="lang-menu-item">
+														<a class="lang lang-en" href="#">
+																<img alt="en lang" class="lang-ico"
+																     src="img/en.svg">
+														</a>
+												</li>
+										</ul>
+								</div>
+						</div>
+						<p class="chat__online">
+								Online: 784
+						</p>
+				</div>
+				<div class="chat__header-bot clearfix">
+						<div class="chat__tabs clearfix">
+								<button class="chat__tab" id="defaultOpen" onclick="openLogs(event, 'chat-ru' )">
+										<a class="chat__tab-close" href="#">
+												×
+												<img alt="ru chat" class="chat__tab-lang" src="img/ru.svg">
+										</a>
+								</button>
+								<button class="chat__tab" onclick="openLogs(event, 'chat-de' )">
+										<a class="chat__tab-close" href="#">
+												×
+												<img alt="de chat" class="chat__tab-lang" src="img/de.svg">
+										</a>
+								</button>
+								<button class="chat__tab" onclick="openLogs(event, 'chat-en' )">
+										<a class="chat__tab-close" href="#">
+												×
+												<img alt="en chat" class="chat__tab-lang" src="img/en.svg">
+										</a>
+								</button>
+						</div>
+						<div class="chat__icons">
+								<a class="chat__add-friend-ico" href="#">
+										<img alt="add friend" src="img/add-friend.svg">
+								</a>
+								<a class="chat__mail-ico" href="#">
+										<img alt="mail" src="img/mail.svg">
+								</a>
+						</div>
+				</div>
+				<div class="chat-tab-content" id="chat-ru">
+						<div class="chat__massage-list">
+								<div class="chat__massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage chat__my-massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage chat__my-massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+						</div>
+				</div>
+				<div class="chat-tab-content" id="chat-de">
+						<div class="chat__massage-list">
+								<div class="chat__massage chat__my-massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage chat__my-massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage chat__my-massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage chat__my-massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+						</div>
+				</div>
+				<div class="chat-tab-content" id="chat-en">
+						<div class="chat__massage-list">
+								<div class="chat__massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage chat__my-massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+								<div class="chat__massage">
+										<p class="chat__massage-sender">
+												User Name:
+										</p>
+										<p class="chat__massage-text">
+												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore
+										</p>
+								</div>
+						</div>
+				</div>
+				<div class="chat__footer">
+						<form action="#" class="chat__send-mail">
+								<input class="chat__input-massage" placeholder="Написать сообщение" type="text">
+								<input class="chat__send-massage" type="submit" value="">
+								<img src="img/send.svg" alt="send" class="send-svg">
+						</form>
+				</div>
+		</div>
+</div>
+
+
 <section class="body-content">
 		<header class="header">
 				<div class="container">
 						<div class="row">
 								<div class="col-12">
-										<div class="chat-block">
-												<a class="chat-link wow rubberBand" data-target="#chatModal"
-												   data-toggle="modal" data-wow-delay="1s"
-												   data-wow-duration="1s"
-												   data-wow-iteration="2" href="#">
-														<img alt="" src="img/chat-online.png">
-												</a>
-												<p class="chat-text">Онлайн чат</p>
-										</div>
 										<div class="img">
 												<!-- можно добавлять свои картинки
 												картинке обязательно дать класс "_image" и "_image-N,
@@ -414,14 +640,16 @@
 														</p>
 												</li>
 												<li class="footer__list-item">
-														<a class="menu__list-link a_hover footer_white-btn" data-target="#loginModal"
+														<a class="menu__list-link a_hover footer_white-btn"
+														   data-target="#loginModal"
 														   data-toggle="modal"
 														   href="#">
 																Вход
 														</a>
 												</li>
 												<li class="footer__list-item">
-														<a class="menu__list-link a_hover footer_white-btn" data-target="#registerModal"
+														<a class="menu__list-link a_hover footer_white-btn"
+														   data-target="#registerModal"
 														   data-toggle="modal"
 														   href="#">
 																Регистрация
@@ -557,162 +785,34 @@
 				</div>
 		</div>
 </div>
-<div class="modal fade" id="chatModal" role="dialog">
-		<div class="modal-dialog">
-				<div class="modal-content chat-modal">
-						<div class="chat__header-top">
-								<a class="chat-close" data-dismiss="modal" href="#">
-										×
-								</a>
-								<p class="chat__header-text">
-										Чаты:
-								</p>
-								<div class="chat__lang">
-										<div class="choice-lang">
-												<ul class="lang-menu clearfix">
-														<li class="lang-menu-item">
-																<a class="lang lang-ru" href="#">
-																		<img alt="ru lang" class="lang-ico"
-																		     src="img/ru.svg">
-																</a>
-														</li>
-														<li class="lang-menu-item">
-																<a class="lang lang-de" href="#">
-																		<img alt="de lang" class="lang-ico"
-																		     src="img/de.svg">
-																</a>
-														</li>
-														<li class="lang-menu-item">
-																<a class="lang lang-en" href="#">
-																		<img alt="en lang" class="lang-ico"
-																		     src="img/en.svg">
-																</a>
-														</li>
-												</ul>
-										</div>
-								</div>
-								<p class="chat__online">
-										Online: 784
-								</p>
-						</div>
-						<div class="chat__header-bot">
-								<ul class="chat__tabs clearfix">
-										<li class="chat__tab chat__tab-active">
-												<a class="chat__tab-close" href="#">
-														×
-														<img alt="ru chat" class="chat__tab-lang" src="img/ru.svg">
-												</a>
-										</li>
-										<li class="chat__tab">
-												<a class="chat__tab-close" href="#">
-														×
-														<img alt="de chat" class="chat__tab-lang" src="img/de.svg">
-												</a>
-										</li>
-										<li class="chat__tab">
-												<a class="chat__tab-close" href="#">
-														×
-														<img alt="en chat" class="chat__tab-lang" src="img/en.svg">
-												</a>
-										</li>
-								</ul>
-								<div class="chat__icons">
-										<a class="chat__add-friend-ico" href="#">
-												<img alt="add friend" src="img/add-friend.png">
-										</a>
-										<a class="chat__mail-ico" href="#">
-												<img alt="mail" src="img/mail.png">
-										</a>
-								</div>
-						</div>
-						<div class="chat__massage-list">
-								<div class="chat__massage">
-										<p class="chat__massage-sender">
-												User Name:
-										</p>
-										<p class="chat__massage-text">
-												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
-												eiusmod tempor incididunt ut labore et dolore
-										</p>
-								</div>
-								<div class="chat__massage">
-										<p class="chat__massage-sender">
-												User Name:
-										</p>
-										<p class="chat__massage-text">
-												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
-												eiusmod tempor incididunt ut labore et dolore
-										</p>
-								</div>
-								<div class="chat__massage chat__my-massage">
-										<p class="chat__massage-sender">
-												User Name:
-										</p>
-										<p class="chat__massage-text">
-												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
-												eiusmod tempor incididunt ut labore et dolore
-										</p>
-								</div>
-								<div class="chat__massage">
-										<p class="chat__massage-sender">
-												User Name:
-										</p>
-										<p class="chat__massage-text">
-												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
-												eiusmod tempor incididunt ut labore et dolore
-										</p>
-								</div>
-								<div class="chat__massage">
-										<p class="chat__massage-sender">
-												User Name:
-										</p>
-										<p class="chat__massage-text">
-												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
-												eiusmod tempor incididunt ut labore et dolore
-										</p>
-								</div>
-								<div class="chat__massage">
-										<p class="chat__massage-sender">
-												User Name:
-										</p>
-										<p class="chat__massage-text">
-												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
-												eiusmod tempor incididunt ut labore et dolore
-										</p>
-								</div>
-								<div class="chat__massage">
-										<p class="chat__massage-sender">
-												User Name:
-										</p>
-										<p class="chat__massage-text">
-												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
-												eiusmod tempor incididunt ut labore et dolore
-										</p>
-								</div>
-								<div class="chat__massage chat__my-massage">
-										<p class="chat__massage-sender">
-												User Name:
-										</p>
-										<p class="chat__massage-text">
-												Lorem ipsum dolor scit amet, consectetur adipisicing elit, sed do
-												eiusmod tempor incididunt ut labore et dolore
-										</p>
-								</div>
-						</div>
-						<div class="chat__footer">
-								<form action="#" class="chat__send-mail">
-										<input class="chat__input-massage" placeholder="Написать сообщение" type="text">
-										<input class="chat__send-massage" type="submit" value="">
-								</form>
-						</div>
-				</div>
-		</div>
-</div>
+
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script>
+    function openLogs(evt, person) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("chat-tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("chat__tab");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" chat__tab-active", "");
+        }
+
+        document.getElementById(person).style.display = "block";
+        evt.currentTarget.className += " chat__tab-active";
+    }
+
+    document.getElementById("defaultOpen").click();
+
+
+</script>
 <script src="js/main.js"></script>
 </body>
 

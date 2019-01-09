@@ -40,6 +40,10 @@ img {
     max-width: 100%;
 }
 
+button{
+    outline:none !important
+}
+
 input {
     outline: none !important;
 }
@@ -67,6 +71,7 @@ input {
     bottom: -1px;
     height: 3px;
     width: 1146px;
+    background: #CB463D;
     background: linear-gradient(276deg, #cb463d, #e5ab37);
     background-position: 0 50px;
     background-size: 400% 400%;
@@ -369,7 +374,7 @@ input {
     width: 178px;
     top: 20px;
     left: 20px;
-    box-shadow: 7px 7px 30px 0px #000;
+    box-shadow: 7px 7px 30px 0 #000;
     border-radius: 10px;
 }
 
@@ -595,6 +600,7 @@ input {
     top: -1px;
     height: 3px;
     width: 1146px;
+    background: #CB463D;
     background: linear-gradient(276deg, #cb463d, #e5ab37);
     background-position: 0 50px;
     background-size: 400% 400%;
@@ -662,7 +668,7 @@ input {
     display: block;
     margin: 0 auto;
     font-size: 20px;
-    font-family: "Geometria";
+    font-family: "Geometria", sans-serif;
     font-weight: 900;
     color: rgb(206, 214, 221);
     text-transform: uppercase;
@@ -671,7 +677,7 @@ input {
 
 .modal_label {
     font-size: 13px;
-    font-family: "Geometria";
+    font-family: "Geometria", sans-serif;
     color: rgb(58, 58, 58);
     font-weight: 900;
     width: 80px;
@@ -713,7 +719,6 @@ input {
     outline: none;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     position: relative;
@@ -879,8 +884,8 @@ input {
     -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
     transform: translate3d(0, 0, 0) rotate(360deg);
     -webkit-transition: opacity 0.4s 1s ease-out, -webkit-transform 0.4s 1s ease-out;
-    transition: opacity 0.4s 1s ease-out, -webkit-transform 0.4s 1s ease-out;
-    transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out;
+    /*transition: opacity 0.4s 1s ease-out, -webkit-transform 0.4s 1s ease-out;*/
+    /*transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out;*/
     transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out, -webkit-transform 0.4s 1s ease-out;
 }
 
@@ -971,8 +976,6 @@ ul.phone__menu li::after {
     -webkit-transform: translate(-24px, 6px);
     transform: translate(-24px, 6px);
     -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
-    transition: opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
-    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
     transition: transform 0.1s ease-out, opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
 }
 
@@ -988,8 +991,6 @@ ul.phone__menu li:hover::after {
     -webkit-transform: translate(0px, 6px);
     transform: translate(0px, 6px);
     -webkit-transition: opacity 0.2s 0.14s ease-out, -webkit-transform 0.2s 0.14s ease-out;
-    transition: opacity 0.2s 0.14s ease-out, -webkit-transform 0.2s 0.14s ease-out;
-    transition: transform 0.2s 0.14s ease-out, opacity 0.2s 0.14s ease-out;
     transition: transform 0.2s 0.14s ease-out, opacity 0.2s 0.14s ease-out, -webkit-transform 0.2s 0.14s ease-out;
 }
 
@@ -998,8 +999,6 @@ ul.phone__menu li:hover::after {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
-    transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
-    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
     transition: transform 0.2s ease-out, opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
@@ -1143,10 +1142,12 @@ ul.phone__menu li:hover::after {
     left: -1px;
     height: 100%;
     width: 4px;
-    background: linear-gradient(276deg, #cb463d, #e5ab37);
-    background-position: 0 50px;
+    background: #CB463D;
+    background: linear-gradient(90deg, #cb463d, #e5ab37);
+    background-position: 50px 0;
     background-size: 400% 400%;
     animation: pulse-color 1s ease-in infinite;
+    z-index: 1;
 }
 
 .chat-text {
@@ -1212,14 +1213,15 @@ ul.phone__menu li:hover::after {
 
 .chat__icons {
     float: right;
+    padding-top: 3px;
+}
+
+.chat__icons img{
+    width: 26px;
 }
 
 .chat__mail-ico {
     margin-left: 33px;
-}
-
-.chat__icons {
-    padding-top: 3px;
 }
 
 .chat__massage-list {
@@ -1273,6 +1275,14 @@ ul.phone__menu li:hover::after {
     z-index: 0;
 }
 
+.send-svg{
+    position: absolute;
+    width: 25px;
+    top: 37px;
+    right: 74px;
+    pointer-events:none;
+}
+
 .chat__input-massage {
     padding: 13px 90px 13px 11px;
     border: none;
@@ -1280,7 +1290,6 @@ ul.phone__menu li:hover::after {
     background: #fff;
     position: relative;
     width: 100%;
-    outline: none;
 }
 
 ::-webkit-input-placeholder {
@@ -1301,9 +1310,9 @@ ul.phone__menu li:hover::after {
 
 .chat__send-massage {
     border-radius: 3px;
-    background: url("../img/send.png") no-repeat center center, -moz-linear-gradient(45deg, rgb(194, 72, 58) 0%, rgb(237, 188, 44) 100%);
-    background: url("../img/send.png") no-repeat center center, -webkit-linear-gradient(45deg, rgb(194, 72, 58) 0%, rgb(237, 188, 44) 100%);
-    background: url("../img/send.png") no-repeat center center, -ms-linear-gradient(45deg, rgb(194, 72, 58) 0%, rgb(237, 188, 44) 100%);
+    background: #CB463D;
+    background:  linear-gradient(45deg, rgb(194, 72, 58) 0%, rgb(237, 188, 44) 100%);
+    background-size: contain;
     position: absolute;
     right: 49px;
     top: 28px;
@@ -1311,11 +1320,11 @@ ul.phone__menu li:hover::after {
     height: 43px;
     border: none;
     outline: none;
+    transition: .2s;
+    cursor: pointer;
 }
 
 .chat__send-massage:hover {
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -1380,6 +1389,7 @@ ul.phone__menu li:hover::after {
     width: 630px;
     bottom: 0;
     left: 0;
+    background: #E19F29;
     background: linear-gradient(45deg, rgba(225, 159, 41, 0) 0%, rgb(225, 159, 41) 70%, rgb(207, 112, 46) 100%);
     background-position: 0 50px;
     background-size: 400% 400%;
@@ -1430,6 +1440,7 @@ ul.phone__menu li:hover::after {
     width: 630px;
     bottom: 22px;
     left: 17%;
+    background: #E19F29;
     background: linear-gradient(45deg, rgb(207, 112, 46) 0%, rgb(225, 159, 41) 70%, rgba(225, 159, 41, 0) 100%);
     background-position: 0 50px;
     background-size: 400% 400%;
@@ -1853,6 +1864,30 @@ td {
     margin-bottom: 50px;
 }
 
+.inSite__menu-link-games {
+    background: url("../img/games-ico.svg") no-repeat center left;
+}
+
+.inSite__menu-link-stock {
+    background: url("../img/stock-ico.svg") no-repeat center left;
+}
+
+.inSite__menu-link-fight {
+    background: url("../img/fight-ico.svg") no-repeat center left;
+}
+
+.inSite__menu-link-lottery {
+    background: url("../img/lottery-ico.svg") no-repeat center left;
+}
+
+.inSite__menu-link-winners {
+    background: url("../img/winners-ico.svg") no-repeat center left;
+}
+
+.inSite__menu-link-help {
+    background: url("../img/help-ico.svg") no-repeat center left;
+}
+
 .inSite__menu-link {
     color: rgb(204, 215, 221);
     text-align: left;
@@ -1860,30 +1895,13 @@ td {
     padding-left: 50px;
     margin: 10px 0;
     display: inline-block;
+    -webkit-background-size: 20px 16px;
+    background-size: 20px 16px;
+    transition: 0.2s;
 }
 
-.inSite__menu-link-games {
-    background: url("../img/games-ico.png") no-repeat center left;
-}
-
-.inSite__menu-link-stock {
-    background: url("../img/stock-ico.png") no-repeat center left;
-}
-
-.inSite__menu-link-fight {
-    background: url("../img/fight-ico.png") no-repeat center left;
-}
-
-.inSite__menu-link-lottery {
-    background: url("../img/lottery-ico.png") no-repeat center left;
-}
-
-.inSite__menu-link-winners {
-    background: url("../img/winners-ico.png") no-repeat center left;
-}
-
-.inSite__menu-link-help {
-    background: url("../img/help-ico.png") no-repeat center left;
+.inSite__menu-link:hover {
+    color: rgb(233, 67, 58);
 }
 
 .contact-data {
@@ -2077,28 +2095,28 @@ td {
     left: 0;
 }
 
-.rooms__title{
+.rooms__title {
     font-weight: 900;
-    color:#ccd7dd;
+    color: #ccd7dd;
     text-transform: uppercase;
     font-size: 12px;
     float: left;
     margin-bottom: 20px;
 }
 
-.some__rooms{
+.some__rooms {
     padding-left: 22px;
     float: left;
     padding-top: 10px;
 }
 
-.create-room-btn-wrap{
+.create-room-btn-wrap {
     margin-bottom: 45px;
 }
 
-.room-item{
+.room-item {
     width: 100%;
-    margin: 7.5px 0;
+    margin: 8px 0;
     padding: 12px 28px 16px 20px;
     background: #fff;
     display: flex;
@@ -2107,7 +2125,7 @@ td {
     transition: 0.2s;
 }
 
-.room__text{
+.room__text {
     font-size: 13px;
     color: rgb(237, 90, 53);
     font-weight: 900;
@@ -2116,47 +2134,72 @@ td {
     padding: 3px 0;
 }
 
-.room-user-bg{
-    background:url("../img/mini-user-ico.png") no-repeat center left;
+.room-user-bg {
+    background: url("../img/mini-user-ico.svg") no-repeat center left;
 }
 
-.room-user{
+.room-user {
     text-align: left;
     width: 211px;
     padding-left: 40px;
 }
 
-.room-user-left{
+.room-user-left {
     padding: 0;
     margin-right: 17px;
 }
 
-.room-rate{
+.room-rate {
     text-align: center;
     width: 77px;
     margin-right: 110px;
 }
 
-.room-field{
+.room-field {
     text-align: center;
     width: 109px;
 }
 
-.into-game{
+.into-game {
     font-size: 12px;
     font-weight: 900;
     color: #ED5A35;
     border-radius: 3px;
-    border:1px solid #ED5A35;
+    border: 1px solid #ED5A35;
     padding: 8px 24px;
     transition: 0.2s;
     margin-left: 150px;
 }
 
-.into-game:hover{
+.into-game:hover {
     background-image: -webkit-linear-gradient(45deg, rgb(233, 67, 58) 0%, rgb(248, 174, 35) 99%);
 }
 
-.room-item:hover{
+.room-item:hover {
     transform: scale(1.05);
+}
+
+.chat-target{
+    display: none;
+}
+
+.chat-target:checked ~ .chat {
+    right: 0;
+}
+
+.chat-target:checked ~ .chat-block{
+    display: none;
+}
+
+.chat{
+    position: fixed;
+    right: -500px;
+    top: 0;
+    transition: .3s;
+    width: 500px;
+    z-index: 30;
+}
+
+.chat__tab{
+    border:none;
 }
