@@ -20,7 +20,8 @@ var path = {
         html: 'app/*.html',
         js: 'app/js/*.js',
         jsmain: 'app/js/main.js',
-        css: 'app/css/*.scss',
+        scss: 'app/css/*.scss',
+        css: 'app/css/*.css',
         img: 'app/img/**/*.*',
         fonts: 'app/fonts/**/*.*'
     },
@@ -28,6 +29,7 @@ var path = {
         html: 'app/**/*.html',
         js: 'app/js/**/*.js',
         scss: 'app/css/*.scss',
+        css: 'app/css/*.css',
         img: 'app/img/**/*.*',
         fonts: 'app/fonts/**/*.*'
     },
@@ -70,18 +72,24 @@ gulp.task('html:build', function (done) {
 });
 
 // сбор стилей
-gulp.task('css:build', function (done) {
-    gulp.src(path.app.css) // получим main.scss
+gulp.task('scss:build', function (done) {
+    gulp.src(path.app.scss) // получим main.scss
         .pipe(plumber()) // для отслеживания ошибок
         .pipe(sourcemaps.init()) // инициализируем sourcemap
         .pipe(sass({
             outputStyle: 'expanded'
-        })) // scss -> css
-        .pipe(autoprefixer({/*тут был автопрефиксер-лист(галп-автопрефиксер)*/})) // добавим префиксы
+        }).on('error', sass.logError)) // scss -> css
+        .pipe(autoprefixer(/*{тут был автопрефиксер-лист(галп-автопрефиксер я поменял его на просто автопрефиксер)}*/)) // добавим префиксы
         .pipe(cleanCSS()) // минимизируем CSS
         .pipe(sourcemaps.write('./')) // записываем sourcemap
         .pipe(gulp.dest(path.dist.css)) // выгружаем в dist
         .pipe(webserver.reload({stream: true})); // перезагрузим сервер
+    done();
+});
+
+gulp.task('css:build', function (done) {
+    gulp.src(path.app.css)
+        .pipe(gulp.dest(path.dist.css));// Переносим скрипты в продакшен
     done();
 });
 
@@ -141,7 +149,8 @@ gulp.task('cache:clear', function (done) {
 });
 
 // сборка
-gulp.task('build', gulp.series('clean:build', 'html:build', 'css:build', 'js:build', 'jsmain:build', 'fonts:build', 'image:build', function () {
+gulp.task('build', gulp.series('clean:build', 'html:build', 'scss:build', 'css:build', 'js:build', 'jsmain:build', 'fonts:build', 'image:build', function (done) {
+    done();
 }));
 
 // запуск задач при изменении файлов
@@ -162,6 +171,9 @@ gulp.task('watch', function (done) {
     });
     watch([path.watch.css], function (event, cb) {
         gulp.start('css:build');
+    });
+    watch([path.watch.scss], function (event, cb) {
+        gulp.start('scss:build');
     });
     watch([path.watch.js], function (event, cb) {
         gulp.start('js:build');
