@@ -20,14 +20,16 @@ var path = {
         html: 'app/*.html',
         js: 'app/js/*.js',
         jsmain: 'app/js/main.js',
-        scss: 'app/css/*.scss',
+        scss: 'app/css/main.scss',
         css: 'app/css/*.css',
         img: 'app/img/**/*.*',
         fonts: 'app/fonts/**/*.*'
     },
     watch: {
-        html: 'app/**/*.html',
-        js: 'app/js/**/*.js',
+        html: 'app/*.html',
+        htmlTemplate:'app/template/*.html',
+        js: 'app/js/*.js',
+        jsmain: 'app/js/main.js',
         scss: 'app/css/*.scss',
         css: 'app/css/*.css',
         img: 'app/img/**/*.*',
@@ -37,8 +39,7 @@ var path = {
 };
 
 var gulp = require("gulp"),
-    watch = require('gulp-watch'), // смотритель
-    webserver = require('browser-sync'), // сервер для работы и автоматического обновления страниц
+    browserSync = require('browser-sync').create(), // сервер для работы и автоматического обновления страниц
     plumber = require('gulp-plumber'), // модуль для отслеживания ошибок
     rigger = require('gulp-rigger'), // модуль для импорта содержимого одного файла в другой
     sourcemaps = require('gulp-sourcemaps'), // модуль для генерации карты исходных файлов
@@ -50,14 +51,15 @@ var gulp = require("gulp"),
     imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
     jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg
     pngquant = require('imagemin-pngquant'), // плагин для сжатия png
-    del = require('del'); // плагин для удаления файлов и каталогов
+    del = require('del'), // плагин для удаления файлов и каталогов
+    postcss = require('gulp-postcss');
 
 
 /* задачи */
 
 // запуск сервера +
-gulp.task('webserver', function (done) {
-    browserSync(config);
+gulp.task('browserSync', function (done) {
+    browserSync.init(config);
     done();
 });
 
@@ -67,7 +69,7 @@ gulp.task('html:build', function (done) {
         .pipe(plumber()) // отслеживание ошибок
         .pipe(rigger()) // импорт вложений
         .pipe(gulp.dest(path.dist.html)) // выкладывание готовых файлов
-        .pipe(webserver.reload({stream: true})); // перезагрузка сервера
+        .pipe(browserSync.reload({stream: true})); // перезагрузка сервера
     done();
 });
 
@@ -77,13 +79,19 @@ gulp.task('scss:build', function (done) {
         .pipe(plumber()) // для отслеживания ошибок
         .pipe(sourcemaps.init()) // инициализируем sourcemap
         .pipe(sass({
-            outputStyle: 'expanded'
+            outputStyle: 'compact'
         }).on('error', sass.logError)) // scss -> css
-        .pipe(autoprefixer(/*{тут был автопрефиксер-лист(галп-автопрефиксер я поменял его на просто автопрефиксер)}*/)) // добавим префиксы
-        .pipe(cleanCSS()) // минимизируем CSS
+        .pipe(postcss([autoprefixer({browsers: ['last 2 version']})]))
+        // .pipe(autoprefixer(/*{тут был автопрефиксер-лист(галп-автопрефиксер я поменял его на просто автопрефиксер)}*/)) // добавим префиксы
+        .pipe(cleanCSS({
+            level: 2
+        }, (details) => {
+            console.log(`${details.name}: ${details.stats.originalSize}`);
+            console.log(`${details.name}: ${details.stats.minifiedSize}`);
+        })) // минимизируем CSS
         .pipe(sourcemaps.write('./')) // записываем sourcemap
         .pipe(gulp.dest(path.dist.css)) // выгружаем в dist
-        .pipe(webserver.reload({stream: true})); // перезагрузим сервер
+        .pipe(browserSync.reload({stream: true})); // перезагрузим сервер
     done();
 });
 
@@ -102,7 +110,7 @@ gulp.task('jsmain:build', function (done) {
         .pipe(uglify()) // минимизируем js
         .pipe(sourcemaps.write('./')) //  записываем sourcemap
         .pipe(gulp.dest(path.dist.jsmain)) // положим готовый файл
-        .pipe(webserver.reload({stream: true})); // перезагрузим сервер
+        .pipe(browserSync.reload({stream: true})); // перезагрузим сервер
     done();
 });
 
@@ -154,39 +162,17 @@ gulp.task('build', gulp.series('clean:build', 'html:build', 'scss:build', 'css:b
 }));
 
 // запуск задач при изменении файлов
-/*
-gulp.task('watch', function () {
-    gulp.watch(path.watch.html, ['html:build']);
-    gulp.watch(path.watch.css, ['css:build']);
-    gulp.watch(path.watch.js, ['js:build']);
-    gulp.watch(path.watch.img, ['image:build']);
-    gulp.watch(path.watch.fonts, ['fonts:build']);
-    gulp.watch(path.watch.fonts, ['jsmain:build']);
-});
-*/
 
-gulp.task('watch', function (done) {
-    watch([path.watch.html], function (event, cb) {
-        gulp.start('html:build');
-    });
-    watch([path.watch.css], function (event, cb) {
-        gulp.start('css:build');
-    });
-    watch([path.watch.scss], function (event, cb) {
-        gulp.start('scss:build');
-    });
-    watch([path.watch.js], function (event, cb) {
-        gulp.start('js:build');
-    });
-    watch([path.watch.img], function (event, cb) {
-        gulp.start('image:build');
-    });
-    watch([path.watch.fonts], function (event, cb) {
-        gulp.start('fonts:build');
-    });
-    done();
+gulp.task('watch', function () {
+    gulp.watch(path.watch.html,gulp.series('html:build'));
+    gulp.watch(path.watch.htmlTemplate,gulp.series('html:build'));
+    gulp.watch(path.watch.css,gulp.series('css:build'));
+    gulp.watch(path.watch.scss,gulp.series('scss:build'));
+    gulp.watch(path.watch.js, gulp.series('js:build'));
+    gulp.watch(path.watch.img, gulp.series('image:build'));
+    gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
+    gulp.watch(path.watch.jsmain, gulp.series('jsmain:build'));
 });
 
 // задача по умолчанию
-gulp.task('default', gulp.series(/*'clean:build', */ 'build', 'webserver', 'watch', function () {
-}));
+gulp.task('default', gulp.series('clean:build', 'build', gulp.parallel('browserSync', 'watch')));
