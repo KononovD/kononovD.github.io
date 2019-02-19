@@ -1,7 +1,6 @@
 {
   "name": "testGulp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,5 +25,6 @@
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^6.0.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "description": ""
 }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+		<title>Hello express</title>
+		<meta charset="UTF-8"> <!-- Мета тег указывающий кодировку страницы -->
+		<!-- Полезные мета-теги или радость сеошника -->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><!-- Запрещаем менять размер на моб устройствах -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Заставляем ie работать в высоком режиме -->
+		<meta name="description" content="">
+		<!--Мета тег для поискового робота (описание сайта при выводе результатов поиска в браузере ~ 50 - 300 символов) -->
+		<meta name="keywords" content="">
+		<!--Мета тег для поискового робота (ключевые слова. обязательно разные) -->
+		<meta name="robots" content="index, follow, noodp"><!-- Мета тег для поискового робота (индексировать страницу и ссылки, не использовать описание из каталога DMOZ в результатах поиска.) -->
+		<meta name="googlebot" content="index, follow"><!-- Мета тег для поискового гугл-робота (индексировать страницу и ссылки)-->
+		<meta name="google" content="notranslate"><!-- Мета тег для поискового гугл-робота (не переводить)-->
+		<meta name="format-detection" content="telephone=no"><!-- Мета тег, запрещающий выделять телефонные номера -->
+		<!-- Шаблон Open Graph меток -->
+		<meta property="og:locale" content="ru_RU"> <!-- Локализация сайта -->
+		<meta property="og:type" content="article"><!-- Указываем тип страницы (article - статья) -->
+		<meta property="og:title" content=""><!-- Заголовок статьи -->
+		<meta property="og:description" content=""><!-- Описание, которое выводится в превью-ссылке -->
+		<meta property="og:url" content=""><!-- Ссылка на страницу сайта -->
+		<meta property="og:image" content=""><!-- Ссылка на картинку, которая будет в посте -->
+		<meta property="og:site_name" content=""> <!-- Название сайта -->
+		<!-- Шаблон базовых изображений -->
+		<link rel="apple-touch-icon" sizes="180x180" href=""><!-- Иконка для ретина дисплеев  -->
+		<link rel="icon" type="image/png" sizes="32x32" href=""><!-- Иконка сайта в вкладке 32х32 -->
+		<link rel="icon" type="image/png" sizes="16x16" href=""><!-- Иконка сайта в вкладке 16х16 -->
+		
+		<!-- Подключаемые стили -->
+		<!-- Bootstrap CDN-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<!-- font awesome cdn-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css">
+		
+		<meta name="theme-color" content="$accent"><!-- Цвет вкладки в мобильном хроме -->
+</head>
+
+<body>
+<header>
+		<div class="container">
+				<div class="row">
+						<div class="logo">
+								<img src="img/logo.svg" alt="logo">
+						</div>
+				</div>
+				<div class="row align-items-center">
+						<div class="col-lg-3">
+								<form class="search" action="#">
+										<input type="text" placeholder="Я ищу..." class="search__input">
+										<button>
+												<img src="img/glass.svg" alt="search">
+										</button>
+								</form>
+						</div>
+						<div class="col-lg-2">
+								<div class="nav">
+										<div class="nav__item">
+												<img src="img/like.svg" alt="like">
+										</div>
+										<div class="nav__title">Избранное</div>
+								</div>
+						</div>
+						<div class="col-lg-2">
+								<div class="nav" id="cart">
+										<div class="nav__item">
+												<img src="img/cart.svg" alt="cart">
+												<div class="nav__badge">0</div>
+										</div>
+										<div class="nav__title">Корзина</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</header>
+<hr>
+<div class="container">
+		<div class="breadcrumbs">
+				<a href="#">Главная</a>
+				/
+				<a href="#">Мобильные телефоны</a>
+		</div>
+</div>
+<div class="goods">
+		<div class="container">
+				<div class="goods__wrapper">
+						<div class="goods__item">
+								<img class="goods__img" src="img/1.jpg" alt="phone">
+								<div class="goods__colors">Доступно цветов: 4</div>
+								<div class="goods__title">
+										Смартфон Xiaomi Redmi 6A 16 ГБ. Лучший подарок для молодёжи и родителей.
+										Основная камера 13 Мп, полноэкранный дисплей.
+								</div>
+								<div class="goods__price">
+										<span>5768</span> руб/шт
+								</div>
+								<button class="goods__btn">Добавить в корзину</button>
+						</div>
+						<div class="goods__item">
+								<img class="goods__img" src="img/2.jpg" alt="phone">
+								<div class="goods__colors">Доступно цветов: 4</div>
+								<div class="goods__title">
+										Смартфон Xiaomi Redmi 6A 32 ГБ. Лучший подарок для молодёжи и родителей.
+										Основная камера 13 Мп, полноэкранный дисплей, современный дизайн. Официальная
+										гарантия 1 год
+								</div>
+								<div class="goods__price">
+										<span>7468</span> руб/шт
+								</div>
+								<button class="goods__btn">Добавить в корзину</button>
+						</div>
+						<div class="goods__item">
+								<img class="goods__img" src="img/3.jpg" alt="phone">
+								<div class="goods__colors">Доступно цветов: 4</div>
+								<div class="goods__title">
+										Смартфон HUAWEI Y6 Prime 2018
+								</div>
+								<div class="goods__price">
+										<span>8790</span> руб/шт
+								</div>
+								<button class="goods__btn">Добавить в корзину</button>
+						</div>
+						<div class="goods__item">
+								<img class="goods__img" src="img/4.jpg" alt="phone">
+								<div class="goods__colors">Доступно цветов: 4</div>
+								<div class="goods__title">
+										Cмартфон Honor 7С Pro 32 ГБ. Безрамочный экран 5, 99".
+								</div>
+								<div class="goods__price">
+										<span>10772</span> руб/шт
+								</div>
+								<button class="goods__btn">Добавить в корзину</button>
+						</div>
+						<div class="goods__item">
+								<img class="goods__img" src="img/5.jpg" alt="phone">
+								<div class="goods__colors">Доступно цветов: 4</div>
+								<div class="goods__title">
+										Смартфон Xiaomi Redmi 5 16 ГБ с широким экраном .
+								</div>
+								<div class="goods__price">
+										<span>8443</span> руб/шт
+								</div>
+								<button class="goods__btn">Добавить в корзину</button>
+						</div>
+						<div class="goods__item">
+								<img class="goods__img" src="img/6.jpg" alt="phone">
+								<div class="goods__colors">Доступно цветов: 4</div>
+								<div class="goods__title">
+										Cмартфон Honor 8X 64 ГБ. Безрамочный экран FullView 6,5“. Доставка из России от
+										2 дней. Новинка!【Официальная российская гарантия】
+								</div>
+								<div class="goods__price">
+										<span>17990</span> руб/шт
+								</div>
+								<button class="goods__btn">Добавить в корзину</button>
+						</div>
+						<div class="goods__item">
+								<img class="goods__img" src="img/7.jpg" alt="phone">
+								<div class="goods__colors">Доступно цветов: 4</div>
+								<div class="goods__title">
+										Смартфон HUAWEI P20 lite. Самый современный
+								</div>
+								<div class="goods__price">
+										<span>16990</span> руб/шт
+								</div>
+								<button class="goods__btn">Добавить в корзину</button>
+						</div>
+						<div class="goods__item">
+								<img class="goods__img" src="img/8.jpg" alt="phone">
+								<div class="goods__colors">Доступно цветов: 4</div>
+								<div class="goods__title">
+										Смартфон Xiaomi Mi8 Lite 4 + 64 ГБ, Успейте получить купон!
+								</div>
+								<div class="goods__price">
+										<span>17990</span> руб/шт
+								</div>
+								<button class="goods__btn">Добавить в корзину</button>
+						</div>
+				</div>
+		</div>
+</div>
+
+<div class="cart">
+		<div class="cart__body">
+				<div class="cart__title">Корзина</div>
+				<div class="cart__total">Общая сумма: <span>0</span> руб</div>
+				<hr>
+				<div class="cart__wrapper">
+						<div class="empty">
+								Ваша корзина пока пуста
+						</div>
+				</div>
+				<button class="cart__confirm">Оформить заказ</button>
+				<div class="cart__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="18" y1="6" x2="6" y2="18"></line>
+								<line x1="6" y1="6" x2="18" y2="18"></line>
+						</svg>
+				</div>
+		</div>
+</div>
+
+<div class="confirm">
+		<img src="img/confirm.svg" alt="confirm">
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
