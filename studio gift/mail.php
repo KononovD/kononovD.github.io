@@ -7,7 +7,7 @@ $message .= "<h1>Заказ звонка</h1>";
 $message .= "<p>Имя: " . $_POST["name"] . "</p>";
 $message .= "<p>Телефон: " . $_POST["tel"] . "</p>";
 
-$to = "some@mail";
+$to = "dvpsmm@gmail.com";
 $spectext = "
 <!doctype html>
 <html lang='ru'>
