@@ -53,17 +53,17 @@
 								<nav class="menu">
 										<ul class="menu__list">
 												<li class="menu__item">
-														<a href="" class="menu__link">
+														<a href="#" class="menu__link about-me-link">
 																Обо мне
 														</a>
 												</li>
 												<li class="menu__item">
-														<a href="" class="menu__link">
+														<a href="#" class="menu__link skills-link">
 																Навыки
 														</a>
 												</li>
 												<li class="menu__item">
-														<a href="" class="menu__link">
+														<a href="#" class="menu__link works-link">
 																Работы
 														</a>
 												</li>
@@ -345,15 +345,29 @@
 		</div>
 </footer>
 
+
+<div class="modal-overlay"></div>
+<div class="modal"></div>
+<div class="selector-wrap"></div>
+
 <div class="modal__form modal-meeting">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae eligendi enim eos nostrum numquam
 		placeat repellat repudiandae. Atque, cumque, eligendi facere inventore laboriosam necessitatibus non obcaecati
 		quae quibusdam ratione tempora unde veniam, voluptatem. Blanditiis deleniti ducimus eligendi eos, facilis illum
 		molestias mollitia nemo nulla placeat similique, sunt suscipit unde.
+		<div class="startModalFooter">
+				<div class="modal-checkbox">
+						<input type="checkbox" id="rememberModalWindow"
+						       name="rememberModalWindow" class="rememberModalWindow">
+						<label for="rememberModalWindow" class="rememberModalWindowLabel">
+								Поставьте галочку, что бы не появлялось снова при загрузке страницы( Ответ
+								сохраняется в LocalStorage )
+						</label>
+
+				</div>
+				<button class="closeStartModal">Закрыть</button>
+		</div>
 </div>
-<div class="modal-overlay"></div>
-<div class="modal"></div>
-<div class="selector-wrap"></div>
 <script src="js/main.js"></script>
 </body>
 
