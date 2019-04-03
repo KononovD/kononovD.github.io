@@ -81,8 +81,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
     function run() {
         timer = setTimeout(function () {
-            if (finish()) return false;
             draw();
+            if (finish()) return false;
             flag = true;
             for (let i = tetris.length - 1; i >= 0; i--) {
                 for (let j = 0; j < tetris[i].length; j++) {
