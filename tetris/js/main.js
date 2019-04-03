@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
         timer,
         score = 0,
         flag, // проверка на запуск следующего блока
-        level = 1;
+        level = 400;
 
     startButton.addEventListener("click", start);
     document.addEventListener("keydown", (e) => {
@@ -150,7 +150,7 @@ window.addEventListener("DOMContentLoaded", function () {
                         tetris[i][j + 1] = 0;
                         tetris[i][j + 2] = 0;
                         score += 20;
-                        // checkScore();
+                        checkScore();
                         for (let m = i; m >= 0; m--) {
                             if (tetris[m][j] > 10) tetris[m][j] = tetris[m][j] - 10;
                             if (tetris[m][j + 1] > 10) tetris[m][j + 1] = tetris[m][j + 1] - 10;
@@ -165,7 +165,7 @@ window.addEventListener("DOMContentLoaded", function () {
                             tetris[i - 1][j] = 0;
                             tetris[i - 2][j] = 0;
                             score += 20;
-                            // checkScore();
+                            checkScore();
                         }
                     }
             }
