@@ -9,7 +9,10 @@ window.addEventListener("DOMContentLoaded", function () {
         flag, // проверка на запуск следующего блока
         level = 400;
 
-    startButton.addEventListener("click", start);
+    startButton.addEventListener("click", start, {
+        once: true
+    });
+
     document.addEventListener("keydown", (e) => {
         switch (e.code) {
             case "ArrowRight":
@@ -82,7 +85,12 @@ window.addEventListener("DOMContentLoaded", function () {
     function run() {
         timer = setTimeout(function () {
             draw();
-            if (finish()) return false;
+            if (finish()) {
+                startButton.addEventListener("click", start, {
+                    once: true
+                });
+                return false;
+            }
             flag = true;
             for (let i = tetris.length - 1; i >= 0; i--) {
                 for (let j = 0; j < tetris[i].length; j++) {
