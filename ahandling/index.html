@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<title>AHandling</title>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport"
+	  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	
+	<meta name="keywords" content="">
+	
+	<meta name="robots" content="index, follow, noodp">
+	<meta name="googlebot" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta property="og:title" content="AHandling">
+	<meta property="og:locale" content="ua">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Ми робимо ваш час комфортним">
+	<meta property="og:url" content="https://ahandling.aero">
+	<meta property="og:image" content="img/headerBg.jpg">
+	<meta property="og:site_name" content="AHandling">
+	
+	<link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png" />
+	
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	
+	<!-- Шрифты-->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/main.css">
+	
+	<meta name="theme-color" content="#EBC55F">
+</head>
+
+<body>
+	<input type="checkbox" class="toggle-mob-menu" id="toggle-mob-menu">
+
+	<label class="toggle-mob-menu-label" for="toggle-mob-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+
+	<nav class="mob-menu-list">
+		<a href="#about" class="mob-menu-link">
+			Про нас
+		</a>
+		<a href="#services" class="mob-menu-link">
+			Послуги
+		</a>
+		<a href="#advantages" class="mob-menu-link">
+			Чому ми
+		</a>
+		<a href="#work" class="mob-menu-link">
+			Як ми працюємо
+		</a>
+		<a href="#find" class="mob-menu-link">
+			Як нас знайти
+		</a>
+		<a class="phone mob-menu-link__phone" href="tel:380503334268">
+			+380 50 333 42 68
+		</a>
+		<a href="mailto:" class="mob-menu-link__mail">
+			info@ahandling.aero
+		</a>
+	</nav>
+
+	<header class="header parallax-background ">
+		<div class="parallax-inner" style="background: url('img/headerBg.jpg') no-repeat center / cover"></div>
+		<div class="container">
+			<div class="hat wow fadeInLeftBig" data-wow-delay='0.2s'>
+				<a class="phone" href="tel:380503334268">
+					+380 50 333 42 68
+				</a>
+				<nav class="hat__nav">
+					<a href="#about" class="hat__nav-link">
+						Про нас
+					</a>
+					<a href="#services" class="hat__nav-link">
+						Послуги
+					</a>
+					<a href="#advantages" class="hat__nav-link">
+						Чому ми
+					</a>
+					<a href="#work" class="hat__nav-link">
+						Як ми працюємо
+					</a>
+					<a href="#find" class="hat__nav-link">
+						Як нас знайти
+					</a>
+				</nav>
+				<ul class="hat__lang">
+					<li class="hat__lang-item hat__lang-item_active">
+						<a href="index.html" class="hat__lang-link hat__lang-link_active">
+							укр
+						</a>
+					</li>
+					<li class="hat__lang-item">
+						<a href="index_ru.html" class="hat__lang-link">
+							рус
+						</a>
+					</li>
+					<li class="hat__lang-item">
+						<a href="index_eng.html" class="hat__lang-link">
+							eng
+						</a>
+					</li>
+					<li class="hat__lang-item">
+						<a href="index_ch.html" class="hat__lang-link">
+							中文
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__img">
+				<img src="img/logo.svg" alt="AHandling logo" class="wow fadeIn">
+			</div>
+			<h1 class="first-title header__title header__description wow fadeIn">
+				<span class="golden-text">
+					We make
+				</span> your time comfortable
+			</h1>
+			<button class="main-button open-modal d-none  wow fadeIn">
+				Залишити заявку
+			</button>
+		</div>
+		<div class="social-links d-none wow fadeIn" data-wow-delay="0.6s" data-wow-offset="0">
+			<a href="" class="social-link social-link_fb tooltipTrigger"></a>
+			<div class="tooltip">Посилання на фейсбук</div>
+			<a href="" class="social-link social-link_linkedin tooltipTrigger"></a>
+			<div class="tooltip">Посилання на лiнкeдiн</div>
+			<a href="" class="social-link social-link_telegram tooltipTrigger"></a>
+			<div class="tooltip">Посилання на телеграм</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about__inner">
+					<div class="about__box">
+						<div class="about__text">
+							<h2 class="second-title about__title wow fadeIn">
+								WELCOME TO
+								<br class="about__br">
+								AHandling
+							</h2>
+							<p class="about__description wow slideInUp">
+								Компанію створив колектив фахівців, які працюють у галузі з 1999 року. Досвід використовуємо в
+								хендлінгових послугах нового рівня разом із нашими партнерами АЕРОХЕНДЛІНГ, FAST LINE, SKY FOOD
+								SERVICES. Обслуговуємо приватні та бізнес-літаки, логістичні компанії, замовників рейсів. Кінцевий
+								клієнт для нас — Головний Пасажир. Екіпаж патронуємо від моменту отримання заявки. Знаходимося в
+								Борисполі, працюємо зі всією Європою, Китаєм, Близьким і Середнім Сходом, США та Канадою.
+							</p>
+						</div>
+					</div>
+					<div class="about__box">
+						<img src="img/aboutImg.jpg" alt="о нас" class="about__img wow slideInUp">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services " id="services">
+			<div class="container">
+				<h2 class="second-title services__title wow fadeIn">
+					Наші послуги
+				</h2>
+				<ul class="service__list">
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-1.jpg" alt="обслуживание" class="service__img wow slideInLeft" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Наземне обслуговування
+								</h3>
+								<p class="service__description">
+									Надаємо комплекс аеропортових, пасажирських і вантажних послуг згідно із заявками Замовника та
+									Екіпажу. Забезпечуємо контроль якості та повноту наданих послуг. Зокрема, супроводжуємо та
+									завантажуємо багаж, обслуговуємо літак на стоянці, забезпечуємо зв’язок між пероном і кабіною екіпажу.
+									За необхідності організовуємо технічне обслуговування, буксирування літака по аеродрому, збереження
+									літакових техаптечок і водил.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-2.jpg" alt="обслуживание" class="service__img wow slideInRight" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Паливне забезпечення
+								</h3>
+								<p class="service__description">
+									Організовуємо заправку повітряних суден за оптимальною ціною, враховуючи ринкові пропозиції кількох
+									паливних агентів. Зберігаємо літакові гідрорідини та мастильні матеріали.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-3.jpg" alt="обслуживание" class="service__img  wow slideInLeft" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Генеральне прибирання інтер’єра літака
+								</h3>
+								<p class="service__description">
+									Сервіс пройшов сертифікацію, що дозволяє ідеально прибирати літаки бізнес-авіації спеціальними
+									чистильними антиалергенними засобами без запаху. Виконуємо спеціальні види прибирань. Тепер прибирання
+									відбувається в Україні, а не закордоном, не потрібно витрачати на перегін літака.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-4.jpg" alt="обслуживание" class="service__img wow slideInRight" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									VIP обслуговування головних пасажирів і екіпажу
+								</h3>
+								<p class="service__description">
+									Доставляємо Вас до літака з максимальним комфортом. Є можливість скористатися посадкою через Прем’єр
+									Зал або через Зал офіційних делегацій.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-5.jpg" alt="обслуживание" class="service__img  wow slideInLeft" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Прискорене проходження передпольотних і післяпольотних процедур
+								</h3>
+								<p class="service__description">
+									За принципом Short Track: супроводимо Вас до літака швидко та без черги зі стоянки автомобіля до трапу
+									та навпаки.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-6.jpg" alt="обслуживание" class="service__img wow slideInRight" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Розміщення в готелях і транспортування
+								</h3>
+								<p class="service__description">
+									Організовуємо посилання у кращих готелях категорії 4* та 5*. Ви обираєте місце — решту робимо ми:
+									бронюємо номер, організовуємо трансфер. І Ви відчуваєте себе як удома.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-7.jpg" alt="обслуживание" class="service__img  wow slideInLeft" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Бортхарчування від шеф-кухаря
+								</h3>
+								<p class="service__description">
+									Замовляйте будь-які страви й Шеф-кухар сертифікованої компанії Sky Food Services приготує їх,
+									врахувавши особливості Вашої національної кухні. У наявності меню для дітей, діабетиків, вегетаріанців
+									і т. п. Приготування згідно з сучасними технологіями стандартів гігієни, що гарантує безпеку здоров’я.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-8.jpg" alt="обслуживание" class="service__img wow slideInRight" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Забезпечення польотів
+								</h3>
+								<p class="service__description">
+									Ми підготуємо пакет польотної документації та брифінг екіпажу. З нами Ваше повітряне судно виконає
+									політ до потрібного пункту планети в заявлений час.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-9.jpg" alt="обслуживание" class="service__img  wow slideInLeft" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Додаткові послуги
+								</h3>
+								<p class="service__description">
+									Перша в Україні сертифікована мийка екстер'єру бізнес-літаків з використанням спеціального обладнання
+									та сертифікованих мийних засобів.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-10.jpg" alt="обслуживание" class="service__img wow slideInRight" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Послуга "Ближче до дому"
+								</h3>
+								<p class="service__description">
+									За 20 хв. гелікоптером доставляємо головного пасажира з Києва або передмістя до Борисполя. І навпаки.
+									Автомобільні пробки та затори не заважають: тепер Ви розраховуєте свій час точно і прибуваєте вчасно.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="service">
+						<div class="service__box">
+							<img src="img/service-11.jpg" alt="обслуживание" class="service__img  wow slideInLeft" />
+						</div>
+						<div class="service__box">
+							<div class="service__text wow fadeIn">
+								<h3 class="third-title service__title">
+									Обслуговування вантажних літаків
+								</h3>
+								<p class="service__description">
+									Обслуговуємо за принципом "від літака до вантажного термінала" повітряні судна будь-якого класу.
+									Підготовлений персонал використовує розвантажувально-навантажувальні механізми та обладнання, що
+									підходять усім типам вантажних літаків, зокрема всі модифікації Boeing-747-Freighter.
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="advantages" id="advantages">
+			<div class="container">
+				<h2 class="second-title advantages__title wow fadeIn">
+					Чому нас обирають / Наші переваги
+				</h2>
+				<ul class="advantage__list">
+					<li class="advantage wow fadeInLeftBig" data-wow-duration="2s" data-wow-delay="0s">
+						<h4 class="fourth-title advantage__title">
+							Запобігаємо непередбачуваних затримок вильоту та прильоту
+						</h4>
+						<p class="advantage__description">
+							Фахівці компанії AHandling контролюють своєчасність надання всіх послуг і попереджають появу неприємних
+							несподіванок. Ми цінуємо Ваш час.
+						</p>
+					</li>
+					<li class="advantage wow fadeInLeftBig" data-wow-duration="1.8s" data-wow-delay="0.2s">
+						<h4 class=" fourth-title advantage__title">
+							Виставляємо оплату по факту
+						</h4>
+						<p class="advantage__description">
+							Ви оплачуєте послуги згідно з інвойсом протягом 3-х робочих днів. Комфортні умови фінансового супорта в
+							режимі 24/7.
+						</p>
+					</li>
+					<li class="advantage wow fadeInLeftBig" data-wow-duration="1.6s" data-wow-delay="0.4s">
+						<h4 class=" fourth-title advantage__title">
+							Гарантуємо комфортні ціни
+						</h4>
+						<p class="advantage__description">
+							Завжди пропонуємо кілька варіантів наборів послуг. Знаходимо оптимальну вартість згідно із запитами та
+							фінансовими побажаннями клієнта. За найкраще Ви сплачуєте справедливу ціну.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="work" id="work">
+			<div class="container">
+				<h2 class="second-title work__title wow fadeIn">
+					Как мы работаем
+				</h2>
+				<div class="work__option wow fadeInLeftBig">
+					<div class="work__option-text">
+						1 вариант
+					</div>
+					<ul class="work__steps">
+						<li class="work__step-item">
+							<span class="work__step work__step-file">
+								Заявка
+							</span>
+						</li>
+						<li class="work__step-item">
+							<span class="work__step work__step-contract">
+								Договор
+							</span>
+						</li>
+						<li class="work__step-item">
+							<span class="work__step work__step-plane">
+								Получение услуг
+							</span>
+						</li>
+						<li class="work__step-item">
+							<span class="work__step work__step-payment">
+								Оплата
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="work__option wow fadeInLeftBig" data-wow-delay="0.5s">
+					<div class="work__option-text">
+						2 вариант
+					</div>
+					<ul class="work__steps">
+						<li class="work__step-item">
+							<span class="work__step work__step-file">
+								Заявка
+							</span>
+						</li>
+						<li class="work__step-item">
+							<span class="work__step work__step-check">
+								Счет
+							</span>
+						</li>
+						<li class="work__step-item">
+							<span class="work__step work__step-payment">
+								Оплата
+							</span>
+						</li>
+						<li class="work__step-item">
+							<span class="work__step work__step-plane">
+								Получение услуг
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="work__buttons wow fadeInLeftBig" data-wow-delay="0.3s">
+					<button class="main-button work__button work__button-client">
+						Клієнтам
+					</button>
+					<button class="main-button work__button work__button-show-contract">
+						Відкрити договір
+					</button>
+					<a href='' class="main-button work__button ">
+						Завантажити договір
+					</a>
+					<button class="main-button work__button ">
+						Особистий кабінет
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="find" id="find">
+			<div class="container">
+				<h2 class="second-title find__title wow fadeIn">
+					Як нас знайти
+				</h2>
+				<img src="img/findImg.jpg" alt="найти нас" class="find__img wow zoomIn">
+			</div>
+		</section>
+
+		<section class="callback">
+			<div class="container">
+				<div class="callback__inner wow fadeInLeft" data-wow-offset="20">
+					<p class="callback__text">
+						Залиште заявку зараз і ми зв'яжемося з вами!
+					</p>
+					<button class="main-button open-modal" title="оформити заяву">
+						Залишити заявку
+					</button>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner wow fadeInLeftBig" data-wow-offset="20">
+				<div class="footer__row">
+					<img src="img/logo.svg" alt="AHandling logo" class="footer__logo">
+					<a href="tel:380503334268" class="phone">
+						+380 50 333 42 68
+					</a>
+				</div>
+				<div class="footer__row">
+					<a href="mailto:" class="footer__email">
+						info@ahandling.aero
+					</a>
+					<a href="some.file" class="download-button">
+						<span class="download-button__text">
+							Наше бiзнес досьє
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="overlay"></div>
+	<div class="modal">
+		<h2 class="second-title modal__title">
+			Заявка
+		</h2>
+		<form class="modal__form">
+
+			<label class="modal__form-field">
+				<span class="modal__form-name">
+					ПІБ<span> * </span>
+				</span>
+				<div class="modal__form-input-wrap">
+					<input class="modal__form-input" required type="text" name="ФИО" placeholder="Іванов Іван Іванович" autofocus>
+				</div>
+			</label>
+
+			<label class="modal__form-field">
+				<span class="modal__form-name">
+					Email, телефон або месенджер<span> * </span>
+				</span>
+				<div class="modal__form-input-wrap">
+					<input class="modal__form-input" required type="text" name="Email телефон или месенджер"
+						placeholder="email@gmail.com, 098-763-54-32, Viber">
+				</div>
+			</label>
+
+			<label class="modal__form-field">
+				<span class="modal__form-name">
+					Маршрут<span> * </span>
+				</span>
+				<div class="modal__form-input-wrap modal__form-input-wrap_double">
+					<label>
+						<span class="modal__form-name modal__form-name_abs">
+							з
+						</span>
+						<input class="modal__form-input modal__form-input_small" required type="text" name="Маршрут  из"
+							placeholder="Місто 1">
+					</label>
+					<label>
+						<span class="modal__form-name modal__form-name_abs">
+							до
+						</span>
+						<input class="modal__form-input modal__form-input_small" required type="text" name="Маршрут в"
+							placeholder="Місто 2">
+					</label>
+				</div>
+			</label>
+
+			<label class="modal__form-field">
+				<span class="modal__form-name">
+					Дата і час прибуття<span> * </span>
+				</span>
+				<div class="modal__form-input-wrap modal__form-input-wrap_double">
+					<label>
+						<span class="modal__form-name modal__form-name_abs">
+							дата
+						</span>
+						<input class="modal__form-input modal__form-input_small" required type="date" name="Дата прибытия">
+					</label>
+					<label>
+						<span class="modal__form-name modal__form-name_abs">
+							час
+						</span>
+						<input class="modal__form-input modal__form-input_small" required type="time" name="Время прибытия"
+							value='08:00'>
+					</label>
+				</div>
+			</label>
+			<label class="modal__form-field">
+				<span class="modal__form-name">
+					Тип літака та кількість пасажирів<span> * </span>
+				</span>
+				<div class="modal__form-input-wrap modal__form-input-wrap_double">
+					<label>
+						<span class="modal__form-name modal__form-name_abs">
+							тип
+						</span>
+						<input class="modal__form-input modal__form-input_small" required type="text" name="Тип самолета"
+							placeholder="Тип 1">
+					</label>
+					<label>
+						<span class="modal__form-name modal__form-name_abs">
+							к-сть
+						</span>
+						<input class="modal__form-input modal__form-input_small" required type="number" min="1" value="1"
+							name="Количество пассажиров">
+					</label>
+				</div>
+			</label>
+
+			<div class="modal__form-checkbox-box">
+				<ul class="modal__form-checkbox-list">
+					<li class="modal__form-checkbox-item">
+						<label class="modal__form-checkbox-label">
+							<input type="checkbox" class="modal__form-checkbox" name='Топливо'>
+							<span class="modal__form-name">
+								Паливне забезпечення
+							</span>
+						</label>
+					</li>
+					<li class="modal__form-checkbox-item">
+						<label class="modal__form-checkbox-label">
+							<input type="checkbox" class="modal__form-checkbox" name='Питание'>
+							<span class="modal__form-name">
+								Бортхарчування
+							</span>
+						</label>
+					</li>
+					<li class="modal__form-checkbox-item">
+						<label class="modal__form-checkbox-label">
+							<input type="checkbox" class="modal__form-checkbox" name='Отели'>
+							<span class="modal__form-name">
+								Розміщення в готелях
+							</span>
+						</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class="modal__form-field">
+				<span class="modal__form-name">
+					Додаткові послуги
+				</span>
+				<div class="modal__form-input-wrap multiple-select"></div>
+			</div>
+
+			<label class="modal__form-field">
+				<span class="modal__form-name">
+					Коментар
+				</span>
+				<div class="modal__form-input-wrap">
+					<textarea class="modal__form-textarea" name="Комментарий" placeholder="Коментар"></textarea>
+				</div>
+			</label>
+
+			<button class="main-button modal__button">
+				Відправити заявку
+			</button>
+		</form>
+		<div class="modal__close">&times;</div>
+	</div>
+
+	<div class="alert-window alert-window__success">
+		<h2 class="alert-window__title">
+			Дякуємо!
+		</h2>
+		<p class="alert-window__text">
+			Ваша заява прийнята!
+		</p>
+		<div class="modal__close">&times;</div>
+	</div>
+
+	<div class="alert-window alert-window__fail">
+		<h2 class="alert-window__title">
+			Упс..
+		</h2>
+		<p class="alert-window__text">
+			Щось трапилось не так. Спробуйте, будь-ласка, пізніше.
+		</p>
+		<div class="modal__close">&times;</div>
+	</div>
+
+	<div class="contract-modal">
+		bla-bla
+		<div class="modal__close">&times;</div>
+	</div>
+
+	<div class="float-buttons">
+		<button
+			class=" float-buttons__button float-buttons__button_file float-buttons__button_gold open-modal tooltipTrigger">
+		</button>
+		<div class="tooltip">Залишити заявку</div>
+		<button
+			class="float-buttons__button float-buttons__button_massanger float-buttons__button_gold d-none tooltipTrigger">
+		</button>
+		<div class="tooltip">Фейсбук мессенджер</div>
+		<button class="float-buttons__button float-buttons__button_wechat float-buttons__button_gold d-none tooltipTrigger">
+		</button>
+		<div class="tooltip">Вi Чат мессенджер</div>
+	</div>
+
+	<script src="js/main.js"></script>
+
+	<script async defer src="https://connect.facebook.net/ru_RU/sdk.js"></script>
+
+	<!-- Load Facebook SDK for JavaScript -->
+
+	<div id="fb-root"></div>
+
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init( {
+				xfbml: true,
+				version: 'v4.0'
+			} );
+
+
+			let isShow = false;
+			document.querySelector( '.float-buttons__button_massanger' ).addEventListener( 'click', () => {
+				isShow = !isShow
+				if ( isShow )
+					FB.CustomerChat.showDialog();
+				else
+					FB.CustomerChat.hideDialog();
+			} );
+		};
+
+		( function ( d, s, id ) {
+			var js, fjs = d.getElementsByTagName( s )[0];
+			if ( d.getElementById( id ) ) return;
+			js = d.createElement( s ); js.id = id;
+			js.src = 'https://connect.facebook.net/ru_RU/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore( js, fjs );
+		}( document, 'script', 'facebook-jssdk' ) );
+
+	</script>
+
+	<!-- Your customer chat code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="105668584153246" theme_color="#0084ff"
+		logged_in_greeting="Здравствуйте, могу я вам помочь?" logged_out_greeting="Здравствуйте, могу я вам помочь?">
+	</div>
+</body>
+
+</html>
